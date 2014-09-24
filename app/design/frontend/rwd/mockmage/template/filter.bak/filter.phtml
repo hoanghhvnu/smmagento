@@ -1,0 +1,24 @@
+<h3 id="he">Hoang</h3>
+<input type="checkbox" name ='oeua' value="checkbox_value">checkbox</input>
+<script type="text/javascript">
+//    alert('hoang');
+//    $(function(){
+    function send(){
+        $j.ajax({
+            url: "http://localhost/mockmagentosample/filter/index/solveajax",
+            // url: "http://localhost/phpmock/default/product/listproduct/receiveAjax",
+            type: "post", //can be post or get
+            data: {'data':'hoang huy hoang'},
+            success: function(result){
+                alert(result);
+            } // en success
+        }); // end .ajax
+    }
+
+    $j(document).ready(function(){
+        $j('input[name=oeua]').change(function(){
+            send();
+        });
+    }); // end document ready
+
+</script>

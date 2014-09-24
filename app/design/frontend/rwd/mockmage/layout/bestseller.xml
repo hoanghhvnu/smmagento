@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+    <cms_index_index>
+
+        <reference name="content">
+            <block type="bestseller/bestseller" name="show.bestseller.product" before="-" >
+                <action method="setTemplate" ifconfig="sm_bestseller/sm_bestseller/enable">
+                    <template>bestseller/bestseller.phtml</template>
+                </action>
+            </block>
+
+        </reference>
+    </cms_index_index>
+
+    <catalog_category_view>
+
+        <reference name="content">
+            <block type="bestseller/bestseller" name="showe.bestseller.product" before="-">
+                <action method="setTemplate" ifconfig="sm_bestseller/sm_bestseller/enable">
+                    <template>bestseller/bestseller.phtml</template>
+                </action>
+            </block>
+
+        </reference>
+    </catalog_category_view>
+</layout>
