@@ -1,27 +1,9 @@
 <?php
 /**
- * This template show featured product
+ * This template show bestseller product
  */
 ?>
-<!--<style>-->
-<!--    hr.style-eight-bestseller {-->
-<!--        padding: 0;-->
-<!--        border: none;-->
-<!--        border-top: 1px solid #333;-->
-<!--        color: #333;-->
-<!--        text-align: center;-->
-<!--    }-->
-<!--    hr.style-eight-bestseller:after {-->
-<!--        content: "--><?php //echo $this->__('Bestseller Product');?><!--";-->
-<!--        display: inline-block;-->
-<!--        position: relative;-->
-<!--        top: -0.7em;-->
-<!--        font-size: 1.5em;-->
-<!--        padding: 0 0.25em;-->
-<!--        background: white;-->
-<!---->
-<!--</style>-->
-<!--<hr class="style-eight-bestseller"/>-->
+
 <h3>Bestseller show here</h3>
 <?php if (($_products = $this->myBest()) && $_products->getSize()): ?>
 <?php //if (($_products = $this->getBestsellerProducts()) && $_products->getSize()): ?>
@@ -67,25 +49,16 @@
 <?php endif; ?>
 <?php
     $NumberProductIsFeatured = $_products->count();
-//    echo 'num'. $NumberProductIsFeatured;
     $FeaturedConfig = Mage::getStoreConfig('sm_bestseller/sm_bestseller_config');
     $SlidePerView = $FeaturedConfig['bestsellerquantity'];
-
-
     $AutoPlayTime = isset($FeaturedConfig['autoplay']) ? $FeaturedConfig['autoplay'] : 5000;
     $SpeedAnimation = isset($FeaturedConfig['speedanimate']) ? $FeaturedConfig['speedanimate'] : 300;
-
-//    var_dump($SlidePerView);
 ?>
 <script>
-
-
     var featuredSlider = new Swiper('.bestseller',{
         slidesPerView: <?php echo $SlidePerView ?>,
         autoplay: <?php echo $AutoPlayTime ?>,
         speed: <?php echo $SpeedAnimation ?>,
-//        slidesPerView: ,
-//            loop: true,
         <?php
             if($NumberProductIsFeatured >= $SlidePerView){
                 echo 'loop: true' . ',';

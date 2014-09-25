@@ -10,14 +10,14 @@ class SM_Megamenu_Block_Adminhtml_Megamenu_Edit_Tab_Form extends Mage_Adminhtml_
       $this->setForm($form);
       $fieldset = $form->addFieldset('megamenu_form', array('legend'=>Mage::helper('megamenu')->__('Item information')));
      
-      $Title = $fieldset->addField('title', 'text', array(
+      $title = $fieldset->addField('title', 'text', array(
           'label'     => Mage::helper('megamenu')->__('Title'),
           'class'     => 'required-entry',
           'required'  => true,
           'name'      => 'title',
       ));
 
-      $Type = $fieldset->addField('type', 'select', array(
+      $type = $fieldset->addField('type', 'select', array(
           'label'     => Mage::helper('megamenu')->__('Type'),
           'name'      => 'type',
           'values'    => array(
@@ -43,14 +43,14 @@ class SM_Megamenu_Block_Adminhtml_Megamenu_Edit_Tab_Form extends Mage_Adminhtml_
 //          'required'  => false,
 //          'name'      => 'filename',
 //	  ));
-      $Link = $fieldset->addField('link', 'text', array(
+      $link = $fieldset->addField('link', 'text', array(
           'label'     => Mage::helper('megamenu')->__('Link'),
           'name'      => 'link',
       ));
 
 
 
-      $StaticBlockId = $fieldset->addField('static_block_id', 'select', array(
+      $staticBlockId = $fieldset->addField('static_block_id', 'select', array(
           'label'     => Mage::helper('megamenu')->__('Static Block'),
           'name'      => 'static_block_id',
           'values'    => $this->getListStaticBlock(),
@@ -58,7 +58,7 @@ class SM_Megamenu_Block_Adminhtml_Megamenu_Edit_Tab_Form extends Mage_Adminhtml_
       ));
 
 
-      $CategoryId = $fieldset->addField('category_id', 'select', array(
+      $categoryId = $fieldset->addField('category_id', 'select', array(
           'label'     => Mage::helper('megamenu')->__('Category link'),
           'name'      => 'category_id',
           'values'    => $this->getCategoryForForm(),
@@ -66,7 +66,7 @@ class SM_Megamenu_Block_Adminhtml_Megamenu_Edit_Tab_Form extends Mage_Adminhtml_
       ));
 
 
-      $Status = $fieldset->addField('status', 'select', array(
+      $status = $fieldset->addField('status', 'select', array(
           'label'     => Mage::helper('megamenu')->__('Status'),
           'name'      => 'status',
           'values'    => array(
@@ -82,7 +82,7 @@ class SM_Megamenu_Block_Adminhtml_Megamenu_Edit_Tab_Form extends Mage_Adminhtml_
           ),
       ));
 
-      $Position = $fieldset->addField('position', 'text', array(
+      $position = $fieldset->addField('position', 'text', array(
           'label'     => Mage::helper('megamenu')->__('Position'),
 
           'index' => 'position',
@@ -103,27 +103,27 @@ class SM_Megamenu_Block_Adminhtml_Megamenu_Edit_Tab_Form extends Mage_Adminhtml_
 
       $this->setForm($form);
       $this->setChild('form_after', $this->getLayout()->createBlock('adminhtml/widget_form_element_dependence')
-              ->addFieldMap($Title->getHtmlId(), $Title->getName())
-              ->addFieldMap($Type->getHtmlId(), $Type->getName())
-              ->addFieldMap($Link->getHtmlId(), $Link->getName())
-              ->addFieldMap($StaticBlockId->getHtmlId(), $StaticBlockId->getName())
-              ->addFieldMap($CategoryId->getHtmlId(), $CategoryId->getName())
-              ->addFieldMap($Status->getHtmlId(), $Status->getName())
-              ->addFieldMap($Position->getHtmlId(), $Position->getName())
+              ->addFieldMap($title->getHtmlId(), $title->getName())
+              ->addFieldMap($type->getHtmlId(), $type->getName())
+              ->addFieldMap($link->getHtmlId(), $link->getName())
+              ->addFieldMap($staticBlockId->getHtmlId(), $staticBlockId->getName())
+              ->addFieldMap($categoryId->getHtmlId(), $categoryId->getName())
+              ->addFieldMap($status->getHtmlId(), $status->getName())
+              ->addFieldMap($position->getHtmlId(), $position->getName())
 
               ->addFieldDependence(
-                  $Link->getName(),
-                  $Type->getName(),
+                  $link->getName(),
+                  $type->getName(),
                   '2'
               )
               ->addFieldDependence(
-                  $CategoryId->getName(),
-                  $Type->getName(),
+                  $categoryId->getName(),
+                  $type->getName(),
                   '1'
               )
               ->addFieldDependence(
-                  $StaticBlockId->getName(),
-                  $Type->getName(),
+                  $staticBlockId->getName(),
+                  $type->getName(),
                   '3'
               )
       );
@@ -137,14 +137,14 @@ class SM_Megamenu_Block_Adminhtml_Megamenu_Edit_Tab_Form extends Mage_Adminhtml_
           ->addFieldToSelect('block_id')
           ->addFieldToSelect('title')
           ->addFieldToSelect('identifier');
-      $ListStaticBlock = array();
+      $listStaticBlock = array();
       foreach ($collection as $block){
-          $ListStaticBlock[] = array(
+          $listStaticBlock[] = array(
               'value' => $block->getBlockId(),
               'label' => $block->getTitle() . " (identifier: " . $block->getIdentifier() . ")",
           );
       } // end foreach $collection
-      return $ListStaticBlock;
+      return $listStaticBlock;
   } // end method gitListStaticBlock()
 
 
@@ -164,27 +164,27 @@ class SM_Megamenu_Block_Adminhtml_Megamenu_Edit_Tab_Form extends Mage_Adminhtml_
             ->getCollection()
             ->addAttributeToSelect('name')
         ;
-        $ListCate = array();
+        $listCate = array();
         foreach ($catecollection as $cate){
-            $ListCate[] = array(
+            $listCate[] = array(
                 'cate_id' =>  $cate->getId(),
                 'cate_name' =>  $cate->getName(),
                 'cate_parent' =>  $cate->getParentId(),
                 'cate_order' =>  $cate->getPosition(),
             );
         } // end forearch
-        return $ListCate;
+        return $listCate;
     } // end method getCategory()
 
-    private function getCategory($LevelSign = ""){
-       $SequenceList = $this->getRawCategory();
-        if( empty($SequenceList)){
+    private function getCategory($levelSign = ""){
+       $sequenceList = $this->getRawCategory();
+        if( empty($sequenceList)){
             echo "Have no category!";
         } else{
             // get Category level 0, ParentId = 0;
             $strLevel = "";
-            $SortedList = $this->recursive(0, $SequenceList, $strLevel);
-            return $SortedList;
+            $sortedList = $this->recursive(0, $sequenceList, $strLevel);
+            return $sortedList;
         } // end if empty
     } // end getCategory
 
@@ -192,135 +192,135 @@ class SM_Megamenu_Block_Adminhtml_Megamenu_Edit_Tab_Form extends Mage_Adminhtml_
     /**
      * written by HoangHH
      * Use to get sub-level category, support for listcate() method
-     * @param  [type] $ParentId
-     * @param  [type] $List
+     * @param  [type] $parentId
+     * @param  [type] $list
      * @param  [type] $strLevel
      * @return [type]
      */
-    private function recursive($ParentId, &$List, $strLevel){
-        if( ! empty($List)){
-            if( $ParentId != 0 ){
+    private function recursive($parentId, &$list, $strLevel){
+        if( ! empty($list)){
+            if( $parentId != 0 ){
                 $strLevel .= "____";
             } else{
                 // $strLevel = "";
             }
 
-            $LevelList = array();
+            $levelList = array();
 
-            foreach ($List as $key => $CateDetail) {
-                if($ParentId == $CateDetail['cate_parent']){
+            foreach ($list as $key => $cateDetail) {
+                if($parentId == $cateDetail['cate_parent']){
                     $temp = array(
-                        'cate_id' => $CateDetail ['cate_id'],
-                        'cate_name' => $strLevel . $CateDetail ['cate_name'],
-                        'cate_parent' => $CateDetail ['cate_parent'],
-                        'cate_order' => $strLevel . $CateDetail ['cate_order']
+                        'cate_id' => $cateDetail ['cate_id'],
+                        'cate_name' => $strLevel . $cateDetail ['cate_name'],
+                        'cate_parent' => $cateDetail ['cate_parent'],
+                        'cate_order' => $strLevel . $cateDetail ['cate_order']
                     );
-                    $LevelList[$key] = $temp;
-                    // $LevelList[$key] = $CateDetail;
-                    unset($List[$key]);
+                    $levelList[$key] = $temp;
+                    // $levelList[$key] = $cateDetail;
+                    unset($list[$key]);
                 } // end if ParentId
-            } // end foreach $List
+            } // end foreach $list
 
 
 
-            if( ! empty($LevelList)){
-                $LevelSortByOrder = array();
-                foreach ($LevelList as $key => $LevelCateDetail) {
-                    $LevelKeyOrder[$key] = $LevelCateDetail['cate_order'];
+            if( ! empty($levelList)){
+                $levelSortByOrder = array();
+                foreach ($levelList as $key => $levelCateDetail) {
+                    $levelKeyOrder[$key] = $levelCateDetail['cate_order'];
                 }
 
-                asort($LevelKeyOrder);
+                asort($levelKeyOrder);
 
-                $LevelSorted = array();
-                foreach ($LevelKeyOrder as $key => $CateOrder) {
-                    $LevelSorted[$key] = $LevelList[$key];
+                $levelSorted = array();
+                foreach ($levelKeyOrder as $key => $cateOrder) {
+                    $levelSorted[$key] = $levelList[$key];
                 }
 
-                $LevelAndSub = array();
-                foreach ($LevelSorted as $key => $LevelCateDetail) {
-                    $LevelAndSub[] = $LevelCateDetail;
-                    $SubLevel = $this->recursive($LevelCateDetail['cate_id'], $List, $strLevel);
-                    if ( ! empty($SubLevel)){
-                        foreach ($SubLevel as $key => $SubLevelCateDetail) {
-                            $LevelAndSub[] = $SubLevelCateDetail;
+                $levelAndSub = array();
+                foreach ($levelSorted as $key => $levelCateDetail) {
+                    $levelAndSub[] = $levelCateDetail;
+                    $subLevel = $this->recursive($levelCateDetail['cate_id'], $list, $strLevel);
+                    if ( ! empty($subLevel)){
+                        foreach ($subLevel as $key => $subLevelCateDetail) {
+                            $levelAndSub[] = $subLevelCateDetail;
                         }
                     } // end if SubLevel
                 } // end foreach LevelSorted
-                return $LevelAndSub;
-            } // end if empty $Level
+                return $levelAndSub;
+            } // end if empty $level
         } // end if ! empty()
     } // end recursive()
 
     protected function getSortedCategory(){
-        $Categories = Mage::getModel('catalog/category')
+        $categories = Mage::getModel('catalog/category')
             ->getCollection()
             ->addAttributeToSelect('name')
 //            ->addAttributeToFilter('level',array('eq'=>'0'))
 //            ->setOrder('position','ASC')
         ;
-//        Zend_Debug::dump($ListCateLevel0->getData());
-        $SortedArray = array();
-        foreach($Categories as $Category){
-            $SortedArray[] = array(
-                'label' => $this->_separateCategoryLevelSign($Category->getLevel(), '--')
-                         . $Category->getName(),
-                'value' => $Category->getId(),
+//        Zend_Debug::dump($listCateLevel0->getData());
+        $sortedArray = array();
+        foreach($categories as $category){
+            $sortedArray[] = array(
+                'label' => $this->_separateCategoryLevelSign($category->getLevel(), '--')
+                         . $category->getName(),
+                'value' => $category->getId(),
             );
-            $this->listSortedChildreenByCategoryId($Category->getId());
-//            if($Cate->hasChildren()){
-////                Zend_Debug::dump($Cate->getAllChildren());
-//                $ChildrenArray = explode(',',$Cate->getChildren());
-////                Zend_Debug::dump($ChildrenArray);
+            $this->listSortedChildreenByCategoryId($category->getId());
+//            if($cate->hasChildren()){
+////                Zend_Debug::dump($cate->getAllChildren());
+//                $childrenArray = explode(',',$cate->getChildren());
+////                Zend_Debug::dump($childrenArray);
 //
-//                foreach ($ChildrenArray as $CateChild){
-//                    $SortedArray[] = array(
-//                        'label' => $this->_separateCategoryLevelSign($CateChild->getLevel(), '--')
-//                                .  $CateChild->getName(),
-//                        'value' => $CateChild->getId(),
+//                foreach ($childrenArray as $cateChild){
+//                    $sortedArray[] = array(
+//                        'label' => $this->_separateCategoryLevelSign($cateChild->getLevel(), '--')
+//                                .  $cateChild->getName(),
+//                        'value' => $cateChild->getId(),
 //                    );
 //                } // end foreach
-////                Zend_debug::dump($ChildrenArray);
+////                Zend_debug::dump($childrenArray);
 //            }
         }// end forearch
-        Zend_Debug::dump($SortedArray);
+        Zend_Debug::dump($sortedArray);
     } // end method getSortedCategory
 
-    public function listSortedChildrenByCategoryId($CategoryId = ''){
-        if (! $CategoryId  || ! ctype_digit($CategoryId)) {
+    public function listSortedChildrenByCategoryId($categoryId = ''){
+        if (! $categoryId  || ! ctype_digit($categoryId)) {
             return FALSE;
         }
-        $CateAndChilden = array();
-        $Cate = Mage::getModel('catalog/category')
-            ->load($CategoryId)
+        $cateAndChilden = array();
+        $cate = Mage::getModel('catalog/category')
+            ->load($categoryId)
         ;
-        $CateAndChilden[] = array(
-            'label' => $this->_separateCategoryLevelSign($Cate->getLevel(), '--')
-                    . $Cate->getName(),
-            'value' => $Cate->getId(),
+        $cateAndChilden[] = array(
+            'label' => $this->_separateCategoryLevelSign($cate->getLevel(), '--')
+                    . $cate->getName(),
+            'value' => $cate->getId(),
         );
-        if($Cate->hasChildren()){
-            $ChildrenArray = explode(',',$Cate->getChildren());
-            foreach ($ChildrenArray as $CateChild){
-                $CateAndChilden[] = array(
-                    'label' => $this->_separateCategoryLevelSign($CateChild->getLevel(), '--')
-                        .  $CateChild->getName(),
-                    'value' => $CateChild->getId(),
+        if($cate->hasChildren()){
+            $childrenArray = explode(',',$cate->getChildren());
+            foreach ($childrenArray as $cateChild){
+                $cateAndChilden[] = array(
+                    'label' => $this->_separateCategoryLevelSign($cateChild->getLevel(), '--')
+                        .  $cateChild->getName(),
+                    'value' => $cateChild->getId(),
                 );
-                $this->listSortedChildrenByCategoryId($CateChild->getId());
+                $this->listSortedChildrenByCategoryId($cateChild->getId());
             } // end foreach
-//                Zend_debug::dump($ChildrenArray);
+//                Zend_debug::dump($childrenArray);
         } // end if
-        return $CateAndChilden;
+        return $cateAndChilden;
     } // end method listSortedChildernByCategoryId
 
-    protected function _separateCategoryLevelSign($Level='',$Sign = '' ){
-        $Result = '';
-        if ($Level && ctype_digit($Level) && ($Level > 0) && $Sign ) {
-            for ($i = 0; $i < $Level; $i++) {
-                $Result .= $Sign;
+    protected function _separateCategoryLevelSign($level='',$sign = '' ){
+        $result = '';
+        if ($level && ctype_digit($level) && ($level > 0) && $sign ) {
+            for ($i = 0; $i < $level; $i++) {
+                $result .= $sign;
             }
         }
-        return $Result;
+        return $result;
     } // end method separateLevelSign
 } // end class
 // end file

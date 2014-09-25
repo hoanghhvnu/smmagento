@@ -90,3 +90,15 @@ div.megacontainer{
     position: relative;
     top: -110px;
 }
+
+#header a.logo{
+    position: relative;
+    z-index: 200;
+}
+
+/*
+for featured slider
+*/
+div.featured img{
+    width: 100%;
+}

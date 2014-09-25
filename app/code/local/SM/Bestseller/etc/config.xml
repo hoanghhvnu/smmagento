@@ -32,71 +32,33 @@
 					<frontName>bestsellerfront</frontName>
 				</args>
 			</bestsellerrouter>
-
-            <!--rewrite-->
-            <adminhtml>
-                <args>
-                    <modules>
-                        <sm_bestseller before="Mage_Adminhtml">SM_Bestseller_Adminhtml</sm_bestseller>
-                    </modules>
-                </args>
-            </adminhtml>
-
         </routers>
     </admin>
 
     <adminhtml>
 
-		<layout>
-			<updates>
-				<bestseller>
-					<file>bestseller.xml</file>
-				</bestseller>
-			</updates>
-		</layout>
+		<!--<layout>-->
+			<!--<updates>-->
+				<!--<bestseller>-->
+					<!--<file>bestseller.xml</file>-->
+				<!--</bestseller>-->
+			<!--</updates>-->
+		<!--</layout>-->
     </adminhtml>
 
     <global>
         <events>
-            <!--add grid to backend-->
             <core_block_abstract_to_html_before>
-            <!--<adminhtml_block_html_before>-->
                 <observers>
-                    <add_bestseller_column_to_product_grid>
+                    <add_bestseller_every_home_page>
                         <!--<type>singleton</type>-->
                         <type>disabled</type>
-                        <class>SM_Bestseller_Model_CustomizeProductGridForBestseller</class>
-                        <method>addBestsellerColumn</method>
-                    </add_bestseller_column_to_product_grid>
+                        <class>SM_Bestseller_Model_Observer_AddBestsellerBlock</class>
+                        <method>addBestseller</method>
+                    </add_bestseller_every_home_page>
                 </observers>
-            <!--</adminhtml_block_html_before>-->
             </core_block_abstract_to_html_before>
-
-            <!--edit collection before product-->
-            <catalog_product_collection_load_before>
-                <observers>
-                    <edit_collection_to_add_bestseller>
-                        <!--<type>singleton</type>-->
-                        <type>disabled</type>
-                        <class>SM_Bestseller_Model_CustomizeProductGridForBestseller</class>
-                        <method>addSelect</method>
-                    </edit_collection_to_add_bestseller>
-                </observers>
-            </catalog_product_collection_load_before>
-
-            <!--add massaction-->
-            <adminhtml_catalog_product_grid_prepare_massaction>
-                <observers>
-                    <add_massaction_for_bestseller>
-                        <!--<type>singleton</type>-->
-                        <type>disabled</type>
-                        <class>SM_Bestseller_Model_CustomizeProductGridForBestseller</class>
-                        <method>addMassaction</method>
-                    </add_massaction_for_bestseller>
-                </observers>
-            </adminhtml_catalog_product_grid_prepare_massaction>
         </events>
-
         <models>
             <bestseller>
                 <class>SM_Bestseller_Model</class>
@@ -135,14 +97,6 @@
             <bestseller>
                 <class>SM_Bestseller_Block</class>
             </bestseller>
-
-
-            <!--<adminhtml>-->
-                <!--<rewrite>-->
-                    <!--<catalog_product_grid>SM_Bestseller_Block_Adminhtml_Featured_Grid</catalog_product_grid>-->
-                <!--</rewrite>-->
-            <!--</adminhtml>-->
-
         </blocks>
         <helpers>
             <bestseller>

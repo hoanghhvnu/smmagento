@@ -8,9 +8,9 @@
 class SM_Featured_Model_Showhandle{
     public function showHandle($o)
     {
-        $Handle = $o->getLayout()->getUpdate()->getHandles();
+        $handle = $o->getLayout()->getUpdate()->getHandles();
 //        echo "<pre>";
-//        var_dump( $Handle);
+//        var_dump( $handle);
 //        echo Mage::helper('core/url')->getCurrentUrl();
 //        echo Mage::registry('current_category')->getId();
 //        Mage::getModel('catalog/layer')->getCurrentCategory()->getId();

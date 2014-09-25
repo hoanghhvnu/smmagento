@@ -11,43 +11,6 @@ class SM_Bestseller_Block_Bestseller extends Mage_Catalog_Block_Product_New
     const LIMIT_BESTSELLER_PRODUCT = 5;
 
     protected $_productCount;
-
-    public function getBestsellerProducts()
-    {
-        $storeId = (int)Mage::app()->getStore()->getId();
-
-        // Date
-        $myFromDate = Mage::getStoreConfig('sm_bestseller/sm_bestseller_source/fromdate');
-        $myToDate = Mage::getStoreConfig('sm_bestseller/sm_bestseller_source/todate');
-
-        $date = new Zend_Date();
-        Zend_debug::dump($date->getDate()->get('Y-MM-dd'));
-        die();
-        $fromDate = $date->setDate($myFromDate)->get('Y-MM-dd');
-        $toDate = $date->setDate($myToDate)->get('Y-MM-dd');
-        $collection = Mage::getResourceModel('catalog/product_collection')
-            ->addAttributeToSelect(Mage::getSingleton('catalog/config')->getProductAttributes())
-            ->addStoreFilter()
-            ->addPriceData()
-            ->addTaxPercents()
-            ->addUrlRewrite()
-            ->setPageSize(6);
-
-        $collection->getSelect()
-            ->joinLeft(
-                array('aggregation' => $collection->getResource()->getTable('sales/bestsellers_aggregated_yearly')),
-                "e.entity_id = aggregation.product_id AND aggregation.store_id={$storeId} AND aggregation.period BETWEEN '{$fromDate}' AND '{$toDate}'",
-                array('SUM(aggregation.qty_ordered) AS sold_quantity')
-            )
-            ->group('e.entity_id')
-            ->order(array('sold_quantity DESC', 'e.created_at'));
-
-        Mage::getSingleton('catalog/product_status')->addVisibleFilterToCollection($collection);
-        Mage::getSingleton('catalog/product_visibility')->addVisibleInCatalogFilterToCollection($collection);
-
-        return $collection;
-    }
-
     /**
      * Retrieve Bestseller product to show in frontend
      * @return mixed
@@ -56,24 +19,24 @@ class SM_Bestseller_Block_Bestseller extends Mage_Catalog_Block_Product_New
     {
         $storeId = Mage::app()->getStore()->getId();
 
-        $HandleArray = Mage::app()->getLayout()->getUpdate()->getHandles();
-        $CategoryHandle = 'catalog_category_view';
+        $handleArray = Mage::app()->getLayout()->getUpdate()->getHandles();
+        $categoryHandle = 'catalog_category_view';
 
-        $SourceConfig = Mage::getStoreConfig('sm_bestseller/sm_bestseller_source');
-        if ($SourceConfig && ! empty($SourceConfig) ){
-            $SourceType = $SourceConfig['timeperiod'];
+        $sourceConfig = Mage::getStoreConfig('sm_bestseller/sm_bestseller_source');
+        if ($sourceConfig && ! empty($sourceConfig) ){
+            $sourceType = $sourceConfig['timeperiod'];
             $date = new Zend_Date();
             /**
              * Select time range to retrive bestseller
              */
-            if ($SourceType && $SourceType == 'specify') {
-                $fromDate = $date->setDate($SourceConfig['fromdate'] )->get('Y-MM-dd');
-                $toDate = $date->setDate($SourceConfig['todate'] )->get('Y-MM-dd');
+            if ($sourceType && $sourceType == 'specify') {
+                $fromDate = $date->setDate($sourceConfig['fromdate'] )->get('Y-MM-dd');
+                $toDate = $date->setDate($sourceConfig['todate'] )->get('Y-MM-dd');
             } else {
                 /**
                  * use switch to return begin of week, month, year...
                  */
-                switch ($SourceType) {
+                switch ($sourceType) {
                     case 'subWeek':
                         $toDate = $date->subDay(
                             $date->getDate()->get('e') ) // return day of week in digit
@@ -103,15 +66,15 @@ class SM_Bestseller_Block_Bestseller extends Mage_Catalog_Block_Product_New
                         ;
                 } // end switch
 
-                $subType = $SourceType;
-                $unit = ($SourceConfig['unit']) ? $SourceConfig['unit'] : 1;
+                $subType = $sourceType;
+                $unit = ($sourceConfig['unit']) ? $sourceConfig['unit'] : 1;
                 $fromDate = $date->$subType($unit)->getDate()->get('Y-MM-dd');
 
             } // end else
             /**
              * Limit maximum product retrieve
              */
-            $limit = $SourceConfig['limitproduct'];
+            $limit = $sourceConfig['limitproduct'];
             if ($limit > 0 && ctype_digit($limit)) {
                 $this->setProductsCount($limit);
             }
@@ -128,11 +91,12 @@ class SM_Bestseller_Block_Bestseller extends Mage_Catalog_Block_Product_New
             Mage::getSingleton('catalog/product_visibility')->addVisibleInCatalogFilterToCollection($products);
 
             $products->setPageSize($limit)
-                     ->setCurPage(1);
-            if (in_array($CategoryHandle, $HandleArray)) {
-                $CategoryId = Mage::getModel('catalog/layer')->getCurrentCategory()->getId();
-                $CategoryModel = Mage::getModel('catalog/category')->load($CategoryId);
-                $products->addCategoryFilter($CategoryModel);
+                     ->setCurPage(1)
+            ;
+            if (in_array($categoryHandle, $handleArray)) {
+                $categoryId = Mage::getModel('catalog/layer')->getCurrentCategory()->getId();
+                $categoryModel = Mage::getModel('catalog/category')->load($categoryId);
+                $products->addCategoryFilter($categoryModel);
             }
 
             return $products;
@@ -142,8 +106,8 @@ class SM_Bestseller_Block_Bestseller extends Mage_Catalog_Block_Product_New
 
     public function _prepareLayout()
     {
-        $BestsellerStatus = Mage::getStoreConfig('sm_featured/sm_bestseller/enable');
-        if ($BestsellerStatus == 1) {
+        $bestsellerStatus = Mage::getStoreConfig('sm_featured/sm_bestseller/enable');
+        if ($bestsellerStatus == 1) {
             Mage::app()->getLayout()->getBlock('head')->addItem('skin_css', 'css/slider/lib/idangerous.swiper.css');
             $this->getLayout()->getBlock('head')->addItem('skin_js', 'js/slider/lib/idangerous.swiper.js');
         }

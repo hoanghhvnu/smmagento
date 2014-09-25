@@ -7,13 +7,13 @@
  */
 class SM_Slider_Helper_Template{
     public function choose(){
-        $SliderType = Mage::getStoreConfig('sm_slider/sm_slider/type');
-//        var_dump($SliderType);
+        $sliderType = Mage::getStoreConfig('sm_slider/sm_slider/type');
+//        var_dump($sliderType);
 //        die();
-        if($SliderType == ''){
+        if($sliderType == ''){
             return FALSE;
         }
-        switch($SliderType){
+        switch($sliderType){
             case 'dynamic' :
 //                $this->mysetTemplate('slider/showslider.phtml');
                 return 'slider/showslider.phtml';

@@ -13,16 +13,16 @@ class SM_Featured_Block_Featured extends Mage_Catalog_Block_Product_New{
      */
     protected function _getProductCollection()
     {
-        $HandleArray = Mage::app()->getLayout()->getUpdate()->getHandles();
-        $CategoryHandle = 'catalog_category_view';
-        $HomeHandle = 'cms_index_index';
+        $handleArray = Mage::app()->getLayout()->getUpdate()->getHandles();
+        $categoryHandle = 'catalog_category_view';
+        $homeHandle = 'cms_index_index';
 
         $collection = Mage::getResourceModel('catalog/product_collection');
         $collection->setVisibility(Mage::getSingleton('catalog/product_visibility')->getVisibleInCatalogIds());
 
-        $LimitFeatured = Mage::getStoreConfig('sm_featured/sm_featured_config/limitfeatured');
-        if(ctype_digit($LimitFeatured) && $LimitFeatured > 0){
-            $this->setProductsCount($LimitFeatured);
+        $limitFeatured = Mage::getStoreConfig('sm_featured/sm_featured_config/limitfeatured');
+        if(ctype_digit($limitFeatured) && $limitFeatured > 0){
+            $this->setProductsCount($limitFeatured);
         }
 
         $collection = $this->_addProductAttributesAndPrices($collection)
@@ -31,20 +31,20 @@ class SM_Featured_Block_Featured extends Mage_Catalog_Block_Product_New{
             ->setPageSize($this->getProductsCount())
             ->setCurPage(1)
         ;
-        if(in_array($HomeHandle, $HandleArray)){
+        if(in_array($homeHandle, $handleArray)){
             $collection->addAttributeToFilter('is_featured',2);
         }
         // Filter by Category if it is in category page
-        else if(in_array($CategoryHandle, $HandleArray)){
+        else if(in_array($categoryHandle, $handleArray)){
 //            echo 'in cate';
             // if in home it's will not be shown in category
 //            $collection->addAttributeToFilter('is_featured',1);
 
             // if in home it's also show in category
             $collection->addAttributeToFilter('is_featured',array('in'=>array('1','2')));
-            $CategoryId = Mage::getModel('catalog/layer')->getCurrentCategory()->getId();
-            $CategoryModel = Mage::getModel('catalog/category')->load($CategoryId);
-            $collection->addCategoryFilter($CategoryModel)
+            $categoryId = Mage::getModel('catalog/layer')->getCurrentCategory()->getId();
+            $categoryModel = Mage::getModel('catalog/category')->load($categoryId);
+            $collection->addCategoryFilter($categoryModel)
             ;
         }
 //        $collection->getSelect()->limit($this->getProductsCount());
@@ -53,8 +53,8 @@ class SM_Featured_Block_Featured extends Mage_Catalog_Block_Product_New{
 
     public function _prepareLayout()
     {
-        $FeaturedStatus = Mage::getStoreConfig('sm_featured/sm_featured/enable');
-        if($FeaturedStatus == 1){
+        $featuredStatus = Mage::getStoreConfig('sm_featured/sm_featured/enable');
+        if($featuredStatus == 1){
             Mage::app()->getLayout()->getBlock('head')->addItem('skin_css', 'css/slider/lib/idangerous.swiper.css');
             $this->getLayout()->getBlock('head')->addItem('skin_js', 'js/slider/lib/idangerous.swiper.js');
         }

@@ -7,23 +7,23 @@
  */
 class SM_Slider_Model_ListEnableSlider{
     public function getListSlider(){
-        $SliderCollection = Mage::getModel('slider/slider')
+        $sliderCollection = Mage::getModel('slider/slider')
             ->getCollection()
         ;
-        $SliderArray = array();
-        foreach ($SliderCollection as $Slider){
-            if($Slider['status'] == 2){ // if it's Disable
+        $sliderArray = array();
+        foreach ($sliderCollection as $slider){
+            if($slider['status'] == 2){ // if it's Disable
                 continue;
             }
-            if($Slider['status'] == 1){
+            if($slider['status'] == 1){
                 $temp = array(
-                    'label' => $Slider['title'],
-                    'value' => $Slider['slider_id']
+                    'label' => $slider['title'],
+                    'value' => $slider['slider_id']
                 );
-                $SliderArray[] = $temp;
+                $sliderArray[] = $temp;
             } // end if
-        } // end foreach $SliderCollection
-        return $SliderArray;
+        } // end foreach $sliderCollection
+        return $sliderArray;
     } // end method getListSlider
 
     public function toOptionArray(){

@@ -1,14 +1,18 @@
 <?php
 class SM_Megamenu_Block_Megamenu extends Mage_Core_Block_Template
 {
+    const CATEGORY_LINK_TYPE = 1;
+    const CUSTOM_LINK_TYPE   = 2;
+    const BLOCK_LINK_TYPE    = 3;
+
     public function __construct() {
 //        echo __METHOD__;
         return parent::__construct();
     }
 	public function _prepareLayout()
     {
-//        $BlockHead = Mage::app()->getLayout()->getBlock('head');
-//        $BlockHead->addItem('skin_js','js/jquery-1.10.2.min.js');
+//        $blockHead = Mage::app()->getLayout()->getBlock('head');
+//        $blockHead->addItem('skin_js','js/jquery-1.10.2.min.js');
 		return parent::_prepareLayout();
     }
     
@@ -21,69 +25,57 @@ class SM_Megamenu_Block_Megamenu extends Mage_Core_Block_Template
             ->setOrder('position','ASC')
             ->getData()
         ;
-        $ListItem = array();
+        $listItem = array();
         foreach ($megacollection as $item) {
             switch($item['type']) {
-                case 1:
-                    $ItemValue = $item['category_id'];
+                case self::CATEGORY_LINK_TYPE :
+                    $itemValue = $item['category_id'];
                     break;
-                case 2:
-                    $ItemValue = $item['link'];
+                case self::CUSTOM_LINK_TYPE :
+                    $itemValue = $item['link'];
                     break;
-                case 3:
-                    $ItemValue = $item['static_block_id'];
+                case self::BLOCK_LINK_TYPE :
+                    $itemValue = $item['static_block_id'];
                     break;
                 default:
                     continue;
             } // end switch
 
             $temp = array(
-                'title' => $item['title'],
-                'type' => $item['type'],
-                'value' => $ItemValue,
+                'title'    => $item['title'],
+                'type'     => $item['type'],
+                'value'    => $itemValue,
                 'position' => $item['position'],
             );
-            $ListItem[] = $temp;
+            $listItem[] = $temp;
         } // end foreach
-        return $ListItem;
+        return $listItem;
     } // end getMegaItem
 
-//    public function myAsortObject(&$object, $property) {
-//        $arrayKeyValue = array();
-//        foreach ($object as $key => $item) {
-//            $arrayKeyValue[$key] = $item[$property];
-//        }
-//        asort($arrayKeyValue);
-//        $Sorted = array();
-//        foreach ($arrayKeyValue as $key => $value) {
-//            $Sorted[] = $object[$key];
-//        }
-//        $object = $Sorted;
-//    } // end myAsortObject
 
-    public function showCategory($CategoryId='', $isRoot='') {
+    public function showCategory($categoryId='', $isRoot='') {
 //        echo __METHOD__;
 //        die();
-        $CateDetail = Mage::getModel('catalog/category')
-            ->load($CategoryId);
+        $cateDetail = Mage::getModel('catalog/category')
+            ->load($categoryId);
         $result = '';
 
         if ($isRoot != TRUE) {
-            $result .= "<li" . " " . 'category_id = ' . $CategoryId . ">"
-                    . "<a href='" . Mage::getBaseUrl() . $CateDetail['url_path'] . "'>"
-//                  .$CategoryId
-                    . $CateDetail['name'] . "</a>";
+            $result .= "<li" . " " . 'category_id = ' . $categoryId . ">"
+                    . "<a href='" . Mage::getBaseUrl() . $cateDetail['url_path'] . "'>"
+//                  .$categoryId
+                    . $cateDetail['name'] . "</a>";
         }
 
-        if ($CateDetail->hasChildren() === TRUE) {
+        if ($cateDetail->hasChildren() === TRUE) {
             if ($isRoot != TRUE) {
                 $result .= "<ul>";
             }
 
-            $ChildIdString = $CateDetail->getChildren();
-            $ChildIdArray = explode(',', $ChildIdString);
-            foreach ($ChildIdArray as $ChildId) {
-                $result .= $this->showCategory($ChildId);
+            $childIdString = $cateDetail->getChildren();
+            $childIdArray = explode(',', $childIdString);
+            foreach ($childIdArray as $childId) {
+                $result .= $this->showCategory($childId);
             }
             if ($isRoot != TRUE) {
                 $result .= "</ul>";
@@ -97,44 +89,45 @@ class SM_Megamenu_Block_Megamenu extends Mage_Core_Block_Template
         return $result;
     } // end showCategory()
 
-    public function createCustomLink($Title = "", $Link='') {
+    public function createCustomLink($title = "", $customLink= '') {
         $link = '';
-        if ($Title && $Link) {
-            $link .= "<a href='" . $Link . "'>";
-            $link .= $Title;
+        if ($title && $customLink) {
+            $link .= "<a href='" . $customLink . "'>";
+            $link .= $title;
             $link .= "</a>";
         } // end if
+
         return $link;
     } // end createCustomLink
 
-    public function createBlockLink($Title='', $BlockId='') {
+    public function createBlockLink($title='', $blockId='') {
         $link = '';
-        if ($Title && $BlockId) {
-            $BlockModel = Mage::getModel('cms/block')
-                ->load($BlockId)
+        if ($title && $blockId) {
+            $blockModel = Mage::getModel('cms/block')
+                ->load($blockId)
             ;
-            $link .= $Title;
+            $link .= $title;
             $link .= "<ul>";
             $link .= "<li>";
-            $link .= $BlockModel->getContent();
+            $link .= $blockModel->getContent();
             $link .= "</li>";
             $link .= "</ul>";
         } // end if
         return $link;
     } // end createCategoryLink
 
-    public function createCategoryLink($Title='', $CategoryId='') {
-        $CateDetail = Mage::getModel('catalog/category')
-            ->load($CategoryId);
+    public function createCategoryLink($title='', $categoryId='') {
+        $cateDetail = Mage::getModel('catalog/category')
+            ->load($categoryId);
         $link = '';
-        if ($Title && $CategoryId) {
-            $link .= "<a href='" . Mage::getBaseUrl() . $CateDetail['url_path'] ."'>";
-//            $link .= "(" . $CategoryId .  ")";
-            $link .= $Title;
+        if ($title && $categoryId) {
+            $link .= "<a href='" . Mage::getBaseUrl() . $cateDetail['url_path'] ."'>";
+//            $link .= "(" . $categoryId .  ")";
+            $link .= $title;
             $link .= "</a>";
             $link .= "<ul id = 'catelink'>";
-//            $link .= $this->showCategory($CategoryId, TRUE);
-            $link .= $this->showCategory($CategoryId, TRUE);
+//            $link .= $this->showCategory($categoryId, TRUE);
+            $link .= $this->showCategory($categoryId, TRUE);
             $link .= "</ul>";
             return $link;
 
@@ -143,7 +136,7 @@ class SM_Megamenu_Block_Megamenu extends Mage_Core_Block_Template
 
     public function getRawCategory() {
         // get category
-        $catecollection = Mage::getModel('catalog/category')
+        $cateCollection = Mage::getModel('catalog/category')
 //            ->load(4);
             ->getCollection()
             ->addAttributeToSelect('name')
@@ -151,11 +144,11 @@ class SM_Megamenu_Block_Megamenu extends Mage_Core_Block_Template
 //        ->addAttributeToSelect('name')
         ;
 //        echo "<pre>";
-//        print_r($catecollection
+//        print_r($cateCollection
 //            ->getData()
 //        );
-        $ListCate = array();
-        foreach ($catecollection as $cate) {
+        $listCate = array();
+        foreach ($cateCollection as $cate) {
 //            var_dump($cate->getData());
             $id = $cate->getId();
             $parent = $cate->getParentId();
@@ -169,27 +162,28 @@ class SM_Megamenu_Block_Megamenu extends Mage_Core_Block_Template
             $item['cate_parent'] = $parent;
             $item['cate_order'] = $position;
             $item['url_path'] = $path;
-            $ListCate[] = $item;
+            $listCate[] = $item;
         }
 
 //        echo "<pre>";
-//        var_dump($ListCate);
+//        var_dump($listCate);
 //        die();
-        return $ListCate;
+        return $listCate;
 
     } // end method getCategory()
+    //Hoanghh
 
-    public function getCategory($LevelSign = "") {
+    public function getCategory($levelSign = "") {
         echo __METHOD__;
-//        $SequenceList = $this->cate_model->getAll();
-        $SequenceList = $this->getRawCategory();
-        if ( empty($SequenceList)) {
+//        $sequenceList = $this->cate_model->getAll();
+        $sequenceList = $this->getRawCategory();
+        if ( empty($sequenceList)) {
             echo "Have no category!";
         } else{
             // get Category level 0, ParentId = 0;
             $strLevel = "";
-            $SortedList = $this->recursive(0, $SequenceList, $strLevel);
-            return $SortedList;
+            $sortedList = $this->recursive(0, $sequenceList, $strLevel);
+            return $sortedList;
         } // end if empty
     } // end getCategory
 
@@ -197,65 +191,65 @@ class SM_Megamenu_Block_Megamenu extends Mage_Core_Block_Template
     /**
      * written by HoangHH
      * Use to get sub-level category, support for listcate() method
-     * @param  [type] $ParentId
-     * @param  [type] $List
+     * @param  [type] $parentId
+     * @param  [type] $list
      * @param  [type] $strLevel
      * @return [type]
      */
-    private function recursive($ParentId, &$List, $strLevel) {
+    private function recursive($parentId, &$list, $strLevel) {
         echo __METHOD__;
-        if ( ! empty($List)) {
-            if ( $ParentId != 0 ) {
+        if ( ! empty($list)) {
+            if ( $parentId != 0 ) {
 //                $strLevel .= "____";
                 $strLevel = "";
             } else{
                 // $strLevel = "";
             }
 
-            $LevelList = array();
+            $levelList = array();
 
-            foreach ($List as $key => $CateDetail) {
-                if ($ParentId == $CateDetail['cate_parent']) {
+            foreach ($list as $key => $cateDetail) {
+                if ($parentId == $cateDetail['cate_parent']) {
                     $temp = array(
-                        'cate_id' => $CateDetail ['cate_id'],
-                        'cate_name' => $strLevel . $CateDetail ['cate_name'],
-                        'cate_parent' => $CateDetail ['cate_parent'],
-                        'cate_order' => $strLevel . $CateDetail ['cate_order'],
-                        'url_path' => $CateDetail['url_path']
+                        'cate_id' => $cateDetail ['cate_id'],
+                        'cate_name' => $strLevel . $cateDetail ['cate_name'],
+                        'cate_parent' => $cateDetail ['cate_parent'],
+                        'cate_order' => $strLevel . $cateDetail ['cate_order'],
+                        'url_path' => $cateDetail['url_path']
                     );
-                    $LevelList[$key] = $temp;
-                    // $LevelList[$key] = $CateDetail;
-                    unset($List[$key]);
+                    $levelList[$key] = $temp;
+                    // $levelList[$key] = $cateDetail;
+                    unset($list[$key]);
                 } // end if ParentId
-            } // end foreach $List
+            } // end foreach $list
 
 
 
-            if ( ! empty($LevelList)) {
-                $LevelSortByOrder = array();
-                foreach ($LevelList as $key => $LevelCateDetail) {
-                    $LevelKeyOrder[$key] = $LevelCateDetail['cate_order'];
+            if ( ! empty($levelList)) {
+                $levelSortByOrder = array();
+                foreach ($levelList as $key => $levelCateDetail) {
+                    $levelKeyOrder[$key] = $levelCateDetail['cate_order'];
                 }
 
-                asort($LevelKeyOrder);
+                asort($levelKeyOrder);
 
-                $LevelSorted = array();
-                foreach ($LevelKeyOrder as $key => $CateOrder) {
-                    $LevelSorted[$key] = $LevelList[$key];
+                $levelSorted = array();
+                foreach ($levelKeyOrder as $key => $cateOrder) {
+                    $levelSorted[$key] = $levelList[$key];
                 }
 
-                $LevelAndSub = array();
-                foreach ($LevelSorted as $key => $LevelCateDetail) {
-                    $LevelAndSub[] = $LevelCateDetail;
-                    $SubLevel = $this->recursive($LevelCateDetail['cate_id'], $List, $strLevel);
-                    if ( ! empty($SubLevel)) {
-                        foreach ($SubLevel as $key => $SubLevelCateDetail) {
-                            $LevelAndSub[] = $SubLevelCateDetail;
+                $levelAndSub = array();
+                foreach ($levelSorted as $key => $levelCateDetail) {
+                    $levelAndSub[] = $levelCateDetail;
+                    $subLevel = $this->recursive($levelCateDetail['cate_id'], $list, $strLevel);
+                    if ( ! empty($subLevel)) {
+                        foreach ($subLevel as $key => $subLevelCateDetail) {
+                            $levelAndSub[] = $subLevelCateDetail;
                         }
                     } // end if SubLevel
                 } // end foreach LevelSorted
-                return $LevelAndSub;
-            } // end if empty $Level
+                return $levelAndSub;
+            } // end if empty $level
         } // end if ! empty()
     } // end recursive()
 }

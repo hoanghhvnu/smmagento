@@ -1,23 +1,23 @@
 <div class = 'megamenu-container'>
     <ul id="megamenu">
         <?php
-        $MegaItems = $this->getMegaItem();
-        foreach ($MegaItems as $Item){
-            switch($Item['type']){
+        $megaItems = $this->getMegaItem();
+        foreach ($megaItems as $item){
+            switch($item['type']){
                 case 1:
-                    echo "<li class='category-link' category_id=".$Item['value']. ">";
-                    echo $this->createCategoryLink($Item['title'],$Item['value']);
+                    echo "<li class='category-link' category_id=".$item['value']. ">";
+                    echo $this->createCategoryLink($item['title'],$item['value']);
                     echo "</li>";
                     break;
 
                 case 2:
                     echo "<li class='custom-link'>";
-                    echo $this->createCustomLink($Item['title'],$Item['value']);
+                    echo $this->createCustomLink($item['title'],$item['value']);
                     echo "</li>";
                     break;
                 case 3:
                     echo "<li class='block-link'>";
-                    echo $this->createBlockLink($Item['title'],$Item['value']);
+                    echo $this->createBlockLink($item['title'],$item['value']);
                     echo "</li>";
                     break;
             }
@@ -29,19 +29,19 @@
     /**
      * Auto hightlight active (current) category
      */
-    $PathIds = Mage::getModel('catalog/layer')->getCurrentCategory()->getPathIds();
+    $pathIds = Mage::getModel('catalog/layer')->getCurrentCategory()->getPathIds();
     ?>
     <script>
         $j(function(){
 
-            <?php foreach ($PathIds as $id) : ?>
+            <?php foreach ($pathIds as $id) : ?>
             $j('li[category_id=<?php echo $id; ?>]').addClass('active-category');
             <?php endforeach; ?>
             /**
              * for Home
              */
-            <?php $HandleArray = Mage::app()->getLayout()->getUpdate()->getHandles();
-                if(in_array('cms_index_index',$HandleArray)){
+            <?php $handleArray = Mage::app()->getLayout()->getUpdate()->getHandles();
+                if(in_array('cms_index_index',$handleArray)){
                 ?>
             $j('#megamenu >li:first-child').addClass('active-category');
             <?php

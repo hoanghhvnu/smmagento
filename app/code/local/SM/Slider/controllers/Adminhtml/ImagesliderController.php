@@ -8,10 +8,10 @@ class SM_Slider_Adminhtml_ImagesliderController extends Mage_Adminhtml_Controlle
     public function checkFilter(){
         // Hoang HH
 //        parent::__construct();
-        $FilterSliderId = $this->getRequest()->getParam('filtersliderid');
-        if($FilterSliderId != ''){
+        $filterSliderId = $this->getRequest()->getParam('filtersliderid');
+        if($filterSliderId != ''){
 
-            $this->_RedirectLink = '*/*/index' .  '/filtersliderid/' . $FilterSliderId;
+            $this->_RedirectLink = '*/*/index' .  '/filtersliderid/' . $filterSliderId;
         } else{
             $this->_RedirectLink = '*/*/index';
         }
@@ -27,16 +27,16 @@ class SM_Slider_Adminhtml_ImagesliderController extends Mage_Adminhtml_Controlle
 	}   
  
 	public function indexAction() {
-//        $SliderId = $this->getRequest()->getParam('slider_id');
-//        var_dump($SliderId);
+//        $sliderId = $this->getRequest()->getParam('slider_id');
+//        var_dump($sliderId);
 		$this->_initAction()
 			->renderLayout();
 	}
 
 	public function editAction() {
         $this->checkFilter();
-//        $SliderId = $this->getRequest()->getParam('slider_id');
-//        var_dump($SliderId);
+//        $sliderId = $this->getRequest()->getParam('slider_id');
+//        var_dump($sliderId);
 //        $isRequireFile = $this->getRequest()->getParam('require-file');
 		$id     = $this->getRequest()->getParam('id');
 		$model  = Mage::getModel('slider/imageslider')->load($id);
@@ -89,12 +89,12 @@ class SM_Slider_Adminhtml_ImagesliderController extends Mage_Adminhtml_Controlle
 					// true -> get the file in the product like folders 
 					//	(file.jpg will go in something like /media/f/i/file.jpg)
 					$uploader->setFilesDispersion(false);
-                    $NewName = time() . $_FILES['imagename']['name'];
+                    $newName = time() . $_FILES['imagename']['name'];
 							
 					// We set media as the upload dir
 					$path = Mage::getBaseDir('media') . DS . 'images' . DS . 'slider';
 //					$uploader->save($path, $_FILES['imagename']['name'] );
-                    $uploader->save($path, $NewName );
+                    $uploader->save($path, $newName );
                     $data['imagename'] = $uploader->getUploadedFileName();
 				} catch (Exception $e) {
 		      

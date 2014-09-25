@@ -8,38 +8,38 @@ class SM_Slider_Block_Adminhtml_Imageslider_Edit_Tab_Form extends Mage_Adminhtml
       $this->setForm($form);
       $fieldset = $form->addFieldset('imageslider_form', array('legend'=>Mage::helper('slider')->__('Item information')));
      
-      $Title = $fieldset->addField('title', 'text', array(
+      $title = $fieldset->addField('title', 'text', array(
           'label'     => Mage::helper('slider')->__('Title'),
           'class'     => 'required-entry',
           'required'  => true,
           'name'      => 'title',
       ));
 
-      $ImageName = $fieldset->addField('imagename', 'file', array(
-//      $ImageName = $fieldset->addField('imagename', 'image', array(
+      $imageName = $fieldset->addField('imagename', 'file', array(
+//      $imageName = $fieldset->addField('imagename', 'image', array(
           'label'     => Mage::helper('slider')->__('Image'),
 //          'class'     => 'required-entry',
 //          'required'  => true,
           'name'      => 'imagename',
       ));
 
-      $Sortorder = $fieldset->addField('sortorder', 'text', array(
+      $sortorder = $fieldset->addField('sortorder', 'text', array(
           'label'     => Mage::helper('slider')->__('Sort order'),
           'name'      => 'sortorder',
       ));
 
-      $Description = $fieldset->addField('description', 'textarea', array(
+      $description = $fieldset->addField('description', 'textarea', array(
           'label'     => Mage::helper('slider')->__('Description'),
           'name'      => 'description',
       ));
 
-      $SliderId = $fieldset->addField('slider_id', 'select', array(
+      $sliderId = $fieldset->addField('slider_id', 'select', array(
           'label'     => Mage::helper('slider')->__('Slider'),
           'name'      => 'slider_id',
           'values'    => $this->getListSlider(),
       ));
 
-      $Status = $fieldset->addField('status', 'select', array(
+      $status = $fieldset->addField('status', 'select', array(
           'label'     => Mage::helper('slider')->__('Status'),
           'name'      => 'status',
           'values'    => array(
@@ -72,22 +72,22 @@ class SM_Slider_Block_Adminhtml_Imageslider_Edit_Tab_Form extends Mage_Adminhtml
      * get all slider to select
      */
     public function getListSlider(){
-        $SliderCollection = Mage::getModel('slider/slider')
+        $sliderCollection = Mage::getModel('slider/slider')
             ->getCollection()
         ;
 //        echo "<pre>";
-//        var_dump($SliderCollection->getData());
-        $ResultArray = array();
-        foreach ($SliderCollection as $Slider){
+//        var_dump($sliderCollection->getData());
+        $resultArray = array();
+        foreach ($sliderCollection as $slider){
             $temp = array();
-            if($Slider['status'] == 2){
+            if($slider['status'] == 2){
                 continue;
             }
-            $temp['label'] = $Slider['title'];
-            $temp['value'] = $Slider['slider_id'];
-            $ResultArray[] = $temp;
+            $temp['label'] = $slider['title'];
+            $temp['value'] = $slider['slider_id'];
+            $resultArray[] = $temp;
         } // end foreach
-        return $ResultArray;
+        return $resultArray;
     } // end method getListSlider
 } // end class
 // end file

@@ -14,10 +14,10 @@ class SM_Slider_Block_Adminhtml_Imageslider_Grid extends Mage_Adminhtml_Block_Wi
 
   protected function _prepareCollection()
   {
-      $SliderId = $this->getRequest()->getParam('filtersliderid');
+      $sliderId = $this->getRequest()->getParam('filtersliderid');
       $collection = Mage::getModel('slider/imageslider')->getCollection();
-      if($SliderId != ''){
-          $collection = $collection->addFieldToFilter('slider_id', array('eq' => $SliderId));
+      if($sliderId != ''){
+          $collection = $collection->addFieldToFilter('slider_id', array('eq' => $sliderId));
       }
       $this->setCollection($collection);
       return parent::_prepareCollection();
@@ -90,10 +90,10 @@ class SM_Slider_Block_Adminhtml_Imageslider_Grid extends Mage_Adminhtml_Block_Wi
       ));
 
 
-      $SliderId = $this->getRequest()->getParam('filtersliderid');
-	  $LinkRedirect = array('base' => '*/*/edit');
-      if($SliderId != ''){
-          $LinkRedirect['base'] .= '/filtersliderid/' . $SliderId;
+      $sliderId = $this->getRequest()->getParam('filtersliderid');
+	  $linkRedirect = array('base' => '*/*/edit');
+      if($sliderId != ''){
+          $linkRedirect['base'] .= '/filtersliderid/' . $sliderId;
       }
         $this->addColumn('action',
             array(
@@ -105,7 +105,7 @@ class SM_Slider_Block_Adminhtml_Imageslider_Grid extends Mage_Adminhtml_Block_Wi
                     array(
                         'caption'   => Mage::helper('slider')->__('Edit'),
 //                        'url'       => array('base'=> '*/*/edit/'),
-                        'url' => $LinkRedirect,
+                        'url' => $linkRedirect,
                         'field'     => 'id'
                     )
                 ),
@@ -205,23 +205,23 @@ class SM_Slider_Block_Adminhtml_Imageslider_Grid extends Mage_Adminhtml_Block_Wi
 
     // HoangHH
     public function getListSlider(){
-        $SliderCollection = Mage::getModel('slider/slider')
+        $sliderCollection = Mage::getModel('slider/slider')
             ->getCollection()
         ;
 //        echo "<pre>";
-//        var_dump($SliderCollection->getData());
-        $ResultArray = array();
-        foreach ($SliderCollection as $Slider){
+//        var_dump($sliderCollection->getData());
+        $resultArray = array();
+        foreach ($sliderCollection as $slider){
 //            $temp = array();
-//            if($Slider['status'] == 2){
+//            if($slider['status'] == 2){
 //                continue;
 //            }
-//            $temp['label'] = $Slider['title'];
-//            $temp['value'] = $Slider['slider_id'];
-//            $ResultArray[] = $temp;
-            $ResultArray[$Slider['slider_id']] = $Slider['title'];
+//            $temp['label'] = $slider['title'];
+//            $temp['value'] = $slider['slider_id'];
+//            $resultArray[] = $temp;
+            $resultArray[$slider['slider_id']] = $slider['title'];
         } // end foreach
-        return $ResultArray;
+        return $resultArray;
     } // end method getListSlider
 } // end class
 // end file

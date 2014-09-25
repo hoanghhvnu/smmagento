@@ -7,8 +7,8 @@
                 <name>catalog.topnav</name>
             </action>
 
-            <block type="megamenu/megamenu" name="catalog.topnav">
-                <action method="setTemplate" ifconfig="sm_megamenu/sm_megamenu/show" condition="0">
+            <block type="megamenu/megamenu" name="catalog.topnav.custom">
+                <action method="setTemplate" ifconfig="sm_megamenu/sm_megamenu/show">
                     <template>megamenu/megamenu.phtml</template>
                 </action>
             </block>
@@ -24,16 +24,5 @@
                 </action>
             </block>
         </reference>
-        <!--<reference name="top.menu">-->
-            <!--&lt;!&ndash;<block type="megamenu/megamenu" name="megamenu">&ndash;&gt;-->
-            <!--<block type="megamenu/megamenu" name="catalog.topnav">-->
-            <!--<action method="setTemplate" ifconfig="sm_megamenu/sm_megamenu/show">-->
-                <!--<template>megamenu/megamenu.phtml</template>-->
-            <!--</action>-->
-            <!--</block>-->
-        <!--</reference>-->
-
-
-
     </default>
 </layout>

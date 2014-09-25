@@ -4,7 +4,7 @@
     <cms_index_index>
 
         <reference name="content">
-            <block type="bestseller/bestseller" name="show.bestseller.product" before="-" >
+            <block type="bestseller/bestseller" name="show.bestseller.product" before="xxx" >
                 <action method="setTemplate" ifconfig="sm_bestseller/sm_bestseller/enable">
                     <template>bestseller/bestseller.phtml</template>
                 </action>

@@ -10,13 +10,13 @@ class SM_Slider_Block_Slider extends Mage_Core_Block_Template
     {
         
 //        echo __METHOD__;
-        $SliderStatus = Mage::getStoreConfig('sm_slider/sm_slider/show');
+        $sliderStatus = Mage::getStoreConfig('sm_slider/sm_slider/show');
 
-        if ($SliderStatus == 1) {
-            $BlockHead = Mage::app()->getLayout()->getBlock('head');
+        if ($sliderStatus == 1) {
+            $blockHead = Mage::app()->getLayout()->getBlock('head');
             Mage::app()->getLayout()->getBlock('head')->addItem('skin_css', 'css/slider/lib/idangerous.swiper.css');
             $this->getLayout()->getBlock('head')->addItem('skin_js', 'js/slider/lib/idangerous.swiper.js');
-//            $BlockHead->addItem('skin_js','js/runslider.js','defer');
+//            $blockHead->addItem('skin_js','js/runslider.js','defer');
         }
 
 		return parent::_prepareLayout();
@@ -29,11 +29,11 @@ class SM_Slider_Block_Slider extends Mage_Core_Block_Template
      * @return int id if it's valid
      */
     public function getActiveSliderId() {
-        $ActiveSliderId = Mage::getStoreConfig('sm_slider/sm_slider/active_slider');
-        if ($ActiveSliderId == NULL || ! ctype_digit($ActiveSliderId)) {
+        $activeSliderId = Mage::getStoreConfig('sm_slider/sm_slider/active_slider');
+        if ($activeSliderId == NULL || ! ctype_digit($activeSliderId)) {
             return FALSE;
         } // end if
-        return $ActiveSliderId;
+        return $activeSliderId;
     } // end method getActiveSliderId()
 
     /**
@@ -41,16 +41,16 @@ class SM_Slider_Block_Slider extends Mage_Core_Block_Template
      * @return array
      */
     public function getImagesForSlider() {
-        $SliderId = $this->getActiveSliderId();
-        if ($SliderId == NULL) {
+        $sliderId = $this->getActiveSliderId();
+        if ($sliderId == NULL) {
             return FALSE;
         }
-        $ImageCollection = Mage::getModel('slider/imageslider')
+        $imageCollection = Mage::getModel('slider/imageslider')
             ->getCollection()
-            ->addFieldToFilter('slider_id',array('eq'=> $SliderId))
+            ->addFieldToFilter('slider_id',array('eq'=> $sliderId))
             ->setOrder('sortorder','ASC');
         ;
-        return $ImageCollection;
+        return $imageCollection;
     } // end method getSliderInfo
 
 } // end class

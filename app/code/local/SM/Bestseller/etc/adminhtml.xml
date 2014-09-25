@@ -5,23 +5,12 @@
             <title>Best seller</title>
             <sort_order>400</sort_order>
             <children>
-                <items translate="title">
-                    <title>Manage Bestseller</title>
-                    <sort_order>20</sort_order>
-                    <action>bestsellerfront/adminhtml_bestseller</action>
-                </items>
-                <item3 translate="title">
+                <configbestseller translate="title">
                     <title>Config</title>
                     <sort_order>30</sort_order>
                     <action>adminhtml/system_config/edit/section/sm_bestseller</action>
-                </item3>
+                </configbestseller>
 
-
-                <!--<setting module="admin">-->
-                    <!--<title>Config</title>-->
-                    <!--<sort_order>20</sort_order>-->
-                    <!--<action>adminhtml/system_config/edit/section/sm_megamenu</action>-->
-                <!--</setting>-->
             </children>
         </sm_bestseller>
     </menu>

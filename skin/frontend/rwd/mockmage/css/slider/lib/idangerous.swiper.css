@@ -116,3 +116,7 @@ Pagination Styles
 	/*bottom: 20px;*/
 	/*text-align: center;*/
 /*}*/
+
+.swiper-wrapper{
+    height: 300px;
+}
