@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/app/code/local/SM/Filter/Model/Observer/AddFieldToEditAttribute.php" line="23" mnemonic="9" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9e3b85cd-58ba-47f5-bbdd-7ce15fe1331f" name="Default" comment="" />
     <ignored path="smmagento.iws" />
@@ -23,91 +26,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="featured.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/featured/featured.phtml">
+      <file leaf-file-name="install-1.6.0.0.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/install-1.6.0.0.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="56" selection-end="56" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1377">
+            <state line="2064" column="65" selection-start="91407" selection-end="91407" vertical-scroll-proportion="-5.3846154" vertical-offset="34557" max-vertical-offset="53941">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Megamenu.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Megamenu/Block/Megamenu.php">
+      <file leaf-file-name="mysql4-install-1.4.0.0.0.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/mysql4-install-1.4.0.0.0.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="26" selection-start="1005" selection-end="1005" vertical-scroll-proportion="-4.576923" vertical-offset="425" max-vertical-offset="4420">
+            <state line="656" column="3" selection-start="46406" selection-end="46406" vertical-scroll-proportion="54.923077" vertical-offset="12189" max-vertical-offset="14892">
+              <folding>
+                <marker date="1400058216000" expanded="true" signature="39914:39989" placeholder="-- DROP TABL..." />
+                <marker date="1400058216000" expanded="true" signature="40845:40926" placeholder="-- DROP TABL..." />
+                <marker date="1400058216000" expanded="true" signature="41917:41998" placeholder="-- DROP TABL..." />
+                <marker date="1400058216000" expanded="true" signature="42918:43004" placeholder="-- DROP TABL..." />
+                <marker date="1400058216000" expanded="true" signature="43624:43710" placeholder="-- DROP TABL..." />
+                <marker date="1400058216000" expanded="true" signature="44782:44868" placeholder="-- DROP TABL..." />
+                <marker date="1400058216000" expanded="true" signature="45866:46021" placeholder="ALTER TABLE ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql4-upgrade-0.7.73-1.4.0.0.0.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/mysql4-upgrade-0.7.73-1.4.0.0.0.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="3" selection-start="2217" selection-end="2217" vertical-scroll-proportion="-4.6153846" vertical-offset="288" max-vertical-offset="1428">
+              <folding>
+                <marker date="1400058216000" expanded="true" signature="4121:4226" placeholder="INSERT INTO ..." />
+                <marker date="1400058216000" expanded="true" signature="4235:4610" placeholder="SELECT `attr..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql4-upgrade-1.5.9.9-1.6.0.0.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/mysql4-upgrade-1.5.9.9-1.6.0.0.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2377" column="13" selection-start="78805" selection-end="78805" vertical-scroll-proportion="-4.6153846" vertical-offset="39898" max-vertical-offset="102884">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="megamenu.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/megamenu/megamenu.phtml">
+      <file leaf-file-name="mysql4-install-0.7.0.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Eav/sql/eav_setup/mysql4-install-0.7.0.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="23" selection-start="468" selection-end="468" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="1054">
+            <state line="60" column="3" selection-start="2576" selection-end="2576" vertical-scroll-proportion="-4.6153846" vertical-offset="509" max-vertical-offset="5032">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Megamenu.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Megamenu/Block/Adminhtml/Megamenu.php">
+      <file leaf-file-name="mysql4-upgrade-0.7.10-0.7.11.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Eav/sql/eav_setup/mysql4-upgrade-0.7.10-0.7.11.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="340">
+            <state line="42" column="21" selection-start="1249" selection-end="1383" vertical-scroll-proportion="-6.423077" vertical-offset="156" max-vertical-offset="544">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Product.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Block/Catalog/Product.php">
+      <file leaf-file-name="mysql4-install-0.1.0.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/sql/filter_setup/mysql4-install-0.1.0.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1309">
+            <state line="5" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="306">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Block/Catalog/Search.php">
+      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="493">
+            <state line="56" column="45" selection-start="1483" selection-end="1483" vertical-scroll-proportion="-11.346154" vertical-offset="657" max-vertical-offset="2057">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bestseller.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/Block/Bestseller.php">
+      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/etc/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="30" selection-start="769" selection-end="769" vertical-scroll-proportion="-12.961538" vertical-offset="122" max-vertical-offset="2380">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Featured.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/Block/Featured.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="23.653847" vertical-offset="615" max-vertical-offset="1190">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Date.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Zend/Date.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="220" column="29" selection-start="8182" selection-end="8182" vertical-scroll-proportion="-117.46154" vertical-offset="380" max-vertical-offset="85255">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Form.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Block/Catalog/Product/Attribute/Edit/Form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575">
+            <state line="104" column="18" selection-start="2812" selection-end="3057" vertical-scroll-proportion="3.0747826" vertical-offset="0" max-vertical-offset="2057">
               <folding />
             </state>
           </provider>
@@ -140,6 +145,11 @@
         <option value="$PROJECT_DIR$/lib/Zend/Date.php" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/megamenu/megamenu.phtml" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Megamenu/Block/Megamenu.php" />
+        <option value="$PROJECT_DIR$/app/etc/modules/SM_Filter.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Model/Source/FilterRendererType.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Model/Observer/AddFieldToEditAttribute.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/sql/filter_setup/mysql4-install-0.1.0.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/etc/config.xml" />
       </list>
     </option>
   </component>
@@ -437,6 +447,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="etc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="etc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -902,7 +952,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Bestseller" />
+              <option name="myItemId" value="Filter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filter_setup" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -932,11 +990,189 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Bestseller" />
+              <option name="myItemId" value="Filter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Block" />
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Filter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Filter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Observer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Filter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Filter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="etc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Filter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1014,7 +1250,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Adminhtml" />
+              <option name="myItemId" value="Poll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1044,11 +1280,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Adminhtml" />
+              <option name="myItemId" value="Poll" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Block" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1075,14 +1311,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Mage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Adminhtml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Block" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1120,6 +1348,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\smmagento\app\code\local\SM\Filter\sql\filter_setup" />
+      <recent name="C:\xampp\htdocs\smmagento\app\code\local\SM\Filter" />
+      <recent name="C:\xampp\htdocs\smmagento\app\code\local\SM\Filter\etc" />
+      <recent name="C:\xampp\htdocs\smmagento\app\etc\modules" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
@@ -1147,15 +1383,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21669106" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21669106" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -1190,76 +1426,6 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/adminhtml.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="204" selection-end="204" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/Block/Adminhtml/Featured/Grid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Cms/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="42.615383" vertical-offset="1108" max-vertical-offset="1683">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Cms/controllers/PageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Cms/etc/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.3652174" vertical-offset="1360" max-vertical-offset="3825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Cms/etc/system.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/default/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="394" column="16" selection-start="8163" selection-end="8163" vertical-scroll-proportion="0.0" vertical-offset="14025" max-vertical-offset="165393">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/filter.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/megamenu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="71" selection-start="317" selection-end="317" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/adminhtml/default/mockmage/layout/slider.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="9" selection-start="1208" selection-end="1208" vertical-scroll-proportion="-19.192308" vertical-offset="11" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/design/adminhtml/default/mockmage/layout/megamenu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601">
@@ -1298,13 +1464,6 @@
     <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/bestseller.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="23" selection-start="477" selection-end="477" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="45" selection-start="1483" selection-end="1483" vertical-scroll-proportion="-14.615385" vertical-offset="572" max-vertical-offset="2057">
           <folding />
         </state>
       </provider>
@@ -1452,9 +1611,197 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/controllers/Catalog/Product/AttributeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="39.23077" vertical-offset="1020" max-vertical-offset="5712">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Block/Catalog/Product/Attribute/Edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="32.807693" vertical-offset="853" max-vertical-offset="1428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Block/Catalog/Product/Attribute/Grid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="35.96154" vertical-offset="935" max-vertical-offset="1802">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Block/Catalog/Product/Attribute/Edit/Form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Block/Catalog/Product/Attribute/Edit/Tabs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/etc/modules/SM_Filter.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="157" selection-end="157" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Poll/controllers/VoteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.5384617" vertical-offset="170" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Model/Source/FilterRendererType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="29" selection-start="115" selection-end="115" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Model/Observer/AddFieldToEditAttribute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="1" selection-start="801" selection-end="801" vertical-scroll-proportion="-4.5945945" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Block/Catalog/Product/Attribute/Edit/Tab/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="28" selection-start="5923" selection-end="5923" vertical-scroll-proportion="-0.65384614" vertical-offset="1955" max-vertical-offset="4148">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/mysql4-data-upgrade-0.7.57-0.7.58.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="67.46154" vertical-offset="1754" max-vertical-offset="2329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/mysql4-data-upgrade-0.7.63-0.7.64.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/mysql4-data-upgrade-1.4.0.0.28-1.4.0.0.29.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1411">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/mysql4-upgrade-0.7.5-0.7.6.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="559">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/mysql4-upgrade-0.7.2-0.7.3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="559">
+          <folding>
+            <marker date="1400058216000" expanded="true" signature="-1:-1" placeholder="alter table ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/mysql4-upgrade-0.7.1-0.7.2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="559">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/mysql4-upgrade-0.6.40-0.7.0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="559">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/install-1.6.0.0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2064" column="65" selection-start="91407" selection-end="91407" vertical-scroll-proportion="-5.3846154" vertical-offset="34557" max-vertical-offset="53941">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/mysql4-install-1.4.0.0.0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="656" column="3" selection-start="46406" selection-end="46406" vertical-scroll-proportion="54.923077" vertical-offset="12189" max-vertical-offset="14892">
+          <folding>
+            <marker date="1400058216000" expanded="true" signature="39914:39989" placeholder="-- DROP TABL..." />
+            <marker date="1400058216000" expanded="true" signature="40845:40926" placeholder="-- DROP TABL..." />
+            <marker date="1400058216000" expanded="true" signature="41917:41998" placeholder="-- DROP TABL..." />
+            <marker date="1400058216000" expanded="true" signature="42918:43004" placeholder="-- DROP TABL..." />
+            <marker date="1400058216000" expanded="true" signature="43624:43710" placeholder="-- DROP TABL..." />
+            <marker date="1400058216000" expanded="true" signature="44782:44868" placeholder="-- DROP TABL..." />
+            <marker date="1400058216000" expanded="true" signature="45866:46021" placeholder="ALTER TABLE ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/mysql4-upgrade-0.7.73-1.4.0.0.0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="3" selection-start="2217" selection-end="2217" vertical-scroll-proportion="-4.6153846" vertical-offset="288" max-vertical-offset="1428">
+          <folding>
+            <marker date="1400058216000" expanded="true" signature="4121:4226" placeholder="INSERT INTO ..." />
+            <marker date="1400058216000" expanded="true" signature="4235:4610" placeholder="SELECT `attr..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/mysql4-upgrade-1.5.9.9-1.6.0.0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2377" column="13" selection-start="78805" selection-end="78805" vertical-scroll-proportion="-4.6153846" vertical-offset="39898" max-vertical-offset="102884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Eav/sql/eav_setup/mysql4-install-0.7.0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="3" selection-start="2576" selection-end="2576" vertical-scroll-proportion="-4.6153846" vertical-offset="509" max-vertical-offset="5032">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Eav/sql/eav_setup/mysql4-upgrade-0.7.10-0.7.11.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="21" selection-start="1249" selection-end="1383" vertical-scroll-proportion="-6.423077" vertical-offset="156" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/sql/filter_setup/mysql4-install-0.1.0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="45" selection-start="1483" selection-end="1483" vertical-scroll-proportion="-11.346154" vertical-offset="657" max-vertical-offset="2057">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/etc/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="18" selection-start="2812" selection-end="3057" vertical-scroll-proportion="3.0747826" vertical-offset="0" max-vertical-offset="2057">
           <folding />
         </state>
       </provider>
