@@ -1,0 +1,95 @@
+<?php
+    $filterFrontendRendererType =  $this->getAttributeModel()->getFilterFrontendRendererType();
+    if ($filterFrontendRendererType == SM_Filter_Model_Source_FilterRendererType::SELECT_TYPE) {
+        $outerOpen = '<select>';
+        $outerClose = '</select>';
+        $innerOpen = '<option>';
+        $innerClose = '</option>';
+    } else {
+        $outerOpen = '<ol>';
+        $outerClose = '</ol>';
+        $innerOpen = '<li>';
+        $innerClose = '</li>';
+    }
+?>
+<?php echo '<br/>' . $filterFrontendRendererType;?>
+<?php if ($filterFrontendRendererType == SM_Filter_Model_Source_FilterRendererType::SELECT_TYPE) : ?>
+        <select name="select.filter" onchange="window.location = $j(this).val()"/>
+            <?php foreach ($this->getItems() as $_item): ?>
+                <?php if ($_item->getCount() > 0): ?>
+                    <option value="<?php echo $this->urlEscape($_item->getUrl()) ?>"/>
+                    <?php echo $_item->getLabel(); ?>
+                    <?php if ($this->shouldDisplayProductCount()): ?>
+                        <span class="count">(<?php echo $_item->getCount() ?>)</span>
+                    <?php endif; ?>
+                <?php endif; ?>
+            <?php endforeach;?>
+        </select>
+<?php else : ?>
+        <ol>
+            <?php foreach ($this->getItems() as $_item): ?>
+                <li>
+                    <?php if ($filterFrontendRendererType == SM_Filter_Model_Source_FilterRendererType::DEFAULT_TYPE
+                            || $filterFrontendRendererType == SM_Filter_Model_Source_FilterRendererType::LINK_TYPE
+                          ) : ?>
+
+                        <?php if ($_item->getCount() > 0): ?>
+                            <a href="<?php echo $this->urlEscape($_item->getUrl()) ?>">
+                                <?php echo $_item->getLabel() ?>
+                                <?php if ($this->shouldDisplayProductCount()): ?>
+                                    <span class="count">(<?php echo $_item->getCount() ?>)</span>
+                                <?php endif; ?>
+                            </a>
+                        <?php else: ?>
+                            <span>
+                                <?php echo $_item->getLabel(); ?>
+                                <?php if ($this->shouldDisplayProductCount()): ?>
+                                    <span class="count">(<?php echo $_item->getCount() ?>)</span>
+                                <?php endif; ?>
+                            </span>
+                        <?php endif; ?>
+                    <?php elseif ($filterFrontendRendererType == SM_Filter_Model_Source_FilterRendererType::CHECKBOX_TYPE) : ?>
+
+                        <?php if ($_item->getCount() > 0): ?>
+                            <input type='checkbox' name = 'filter.checkbox'
+                                   onclick="window.location = $j(this).val()"
+                                   value="<?php echo $this->urlEscape($_item->getUrl()) ?>">
+                            <?php echo $_item->getLabel() ?>
+                            <?php if ($this->shouldDisplayProductCount()): ?>
+                                <span class="count">(<?php echo $_item->getCount() ?>)</span>
+                            <?php endif; ?>
+                        <?php else: ?>
+                            <span>
+                                <?php echo $_item->getLabel(); ?>
+                                <?php if ($this->shouldDisplayProductCount()): ?>
+                                    <span class="count">(<?php echo $_item->getCount() ?>)</span>
+                                <?php endif; ?>
+                            </span>
+                        <?php endif; ?>
+                    <?php elseif ($filterFrontendRendererType == SM_Filter_Model_Source_FilterRendererType::COLOR_TYPE) : ?>
+                        <?php if ($_item->getCount() > 0): ?>
+                            <a href="<?php echo $this->urlEscape($_item->getUrl()) ?>" style="display: inline-block;">
+                                <div class="filter.color"
+                                     style="height: 40px;width: 40px;border: 1px solid #000000;
+
+                                            background-color: <?php echo $_item->getLabel() ?>;">
+
+
+                                </div>
+                                <?php if ($this->shouldDisplayProductCount()): ?>
+                                    <span class="count">(<?php echo $_item->getCount() ?>)</span>
+                                <?php endif; ?>
+                            </a>
+                        <?php else: ?>
+                            <div class="filter.color" style="height: 40px;width: 40px;
+                                background-color: <?php echo $_item->getLabel() ?>;">
+                                <?php if ($this->shouldDisplayProductCount()): ?>
+                                    <span class="count">(<?php echo $_item->getCount() ?>)</span>
+                                <?php endif; ?>
+                            </div>
+                        <?php endif; ?>
+                    <?php endif; ?>
+                </li>
+            <?php endforeach;?>
+        </ol>
+<?php endif;?>

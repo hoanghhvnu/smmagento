@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/code/local/SM/Filter/Model/Observer/AddFieldToEditAttribute.php" line="23" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/app/code/local/SM/Filter/Model/Observer/FilterObserver.php" line="23" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e3b85cd-58ba-47f5-bbdd-7ce15fe1331f" name="Default" comment="" />
@@ -26,93 +26,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="install-1.6.0.0.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/install-1.6.0.0.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2064" column="65" selection-start="91407" selection-end="91407" vertical-scroll-proportion="-5.3846154" vertical-offset="34557" max-vertical-offset="53941">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql4-install-1.4.0.0.0.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/mysql4-install-1.4.0.0.0.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="656" column="3" selection-start="46406" selection-end="46406" vertical-scroll-proportion="54.923077" vertical-offset="12189" max-vertical-offset="14892">
-              <folding>
-                <marker date="1400058216000" expanded="true" signature="39914:39989" placeholder="-- DROP TABL..." />
-                <marker date="1400058216000" expanded="true" signature="40845:40926" placeholder="-- DROP TABL..." />
-                <marker date="1400058216000" expanded="true" signature="41917:41998" placeholder="-- DROP TABL..." />
-                <marker date="1400058216000" expanded="true" signature="42918:43004" placeholder="-- DROP TABL..." />
-                <marker date="1400058216000" expanded="true" signature="43624:43710" placeholder="-- DROP TABL..." />
-                <marker date="1400058216000" expanded="true" signature="44782:44868" placeholder="-- DROP TABL..." />
-                <marker date="1400058216000" expanded="true" signature="45866:46021" placeholder="ALTER TABLE ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql4-upgrade-0.7.73-1.4.0.0.0.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/mysql4-upgrade-0.7.73-1.4.0.0.0.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="3" selection-start="2217" selection-end="2217" vertical-scroll-proportion="-4.6153846" vertical-offset="288" max-vertical-offset="1428">
-              <folding>
-                <marker date="1400058216000" expanded="true" signature="4121:4226" placeholder="INSERT INTO ..." />
-                <marker date="1400058216000" expanded="true" signature="4235:4610" placeholder="SELECT `attr..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql4-upgrade-1.5.9.9-1.6.0.0.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/sql/catalog_setup/mysql4-upgrade-1.5.9.9-1.6.0.0.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2377" column="13" selection-start="78805" selection-end="78805" vertical-scroll-proportion="-4.6153846" vertical-offset="39898" max-vertical-offset="102884">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql4-install-0.7.0.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Eav/sql/eav_setup/mysql4-install-0.7.0.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="3" selection-start="2576" selection-end="2576" vertical-scroll-proportion="-4.6153846" vertical-offset="509" max-vertical-offset="5032">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql4-upgrade-0.7.10-0.7.11.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Eav/sql/eav_setup/mysql4-upgrade-0.7.10-0.7.11.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="21" selection-start="1249" selection-end="1383" vertical-scroll-proportion="-6.423077" vertical-offset="156" max-vertical-offset="544">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql4-install-0.1.0.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/sql/filter_setup/mysql4-install-0.1.0.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="306">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="45" selection-start="1483" selection-end="1483" vertical-scroll-proportion="-11.346154" vertical-offset="657" max-vertical-offset="2057">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/etc/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="18" selection-start="2812" selection-end="3057" vertical-scroll-proportion="3.0747826" vertical-offset="0" max-vertical-offset="2057">
+            <state line="70" column="40" selection-start="1693" selection-end="2183" vertical-scroll-proportion="-15.230769" vertical-offset="794" max-vertical-offset="2244">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilterObserver.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Model/Observer/FilterObserver.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="19" selection-start="1330" selection-end="1330" vertical-scroll-proportion="-15.038462" vertical-offset="170" max-vertical-offset="799">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="otherfilter.phtml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/catalog/layer/otherfilter.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="116" selection-start="4001" selection-end="4001" vertical-scroll-proportion="0.8003356" vertical-offset="713" max-vertical-offset="1717">
+              <folding>
+                <element signature="n#style#0;n#a#1;n#li#0;n#ol#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#a#1;n#li#0;n#ol#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#li#0;n#ol#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilterRendererType.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Model/Source/FilterRendererType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="47" selection-start="92" selection-end="133" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="561">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/view.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="56" selection-start="1499" selection-end="1499" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
@@ -146,12 +103,20 @@
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/megamenu/megamenu.phtml" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Megamenu/Block/Megamenu.php" />
         <option value="$PROJECT_DIR$/app/etc/modules/SM_Filter.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Model/Source/FilterRendererType.php" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Model/Observer/AddFieldToEditAttribute.php" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Filter/sql/filter_setup/mysql4-install-0.1.0.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/default/layout/page.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/catalog/layer/filter.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/catalog/layer/view.phtml" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Filter/etc/config.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Model/Source/FilterRendererType.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Model/Observer/FilterObserver.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/catalog/layer/otherfilter.phtml" />
       </list>
     </option>
+  </component>
+  <component name="PhpTemplates">
+    <option name="NEW_PHP_FILE_LAST_EXTENSION" value="phtml" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -690,6 +655,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rwd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mockmage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="bestseller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -753,6 +760,124 @@
               <option name="myItemId" value="rwd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rwd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rwd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rwd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -888,70 +1013,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Megamenu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Megamenu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Block" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Filter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -961,44 +1022,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="filter_setup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Filter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sql" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1335,6 +1358,120 @@
               <option name="myItemId" value="code" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Catalog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Block" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Catalog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Block" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Layer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Mage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Catalog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Block" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Layer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Filter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smmagento" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -1350,6 +1487,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\smmagento\app\design\frontend\rwd\mockmage\template\catalog\layer" />
       <recent name="C:\xampp\htdocs\smmagento\app\code\local\SM\Filter\sql\filter_setup" />
       <recent name="C:\xampp\htdocs\smmagento\app\code\local\SM\Filter" />
       <recent name="C:\xampp\htdocs\smmagento\app\code\local\SM\Filter\etc" />
@@ -1426,62 +1564,6 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/design/adminhtml/default/mockmage/layout/megamenu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/Model/TimePeriod.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="622">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/page/html/header.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1649">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/slider/centeractiveslider.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="35.423077" vertical-offset="921" max-vertical-offset="2346">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/featured.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="62" selection-start="161" selection-end="168" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/bestseller.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="477" selection-end="477" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/system.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="0" selection-start="5575" selection-end="5575" vertical-scroll-proportion="-73.26923" vertical-offset="33" max-vertical-offset="2839">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/Model/Observer/AddBestsellerBlock.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="42" selection-start="423" selection-end="423" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/megamenu/megamenu.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="16" selection-start="1678" selection-end="1678" vertical-scroll-proportion="0.0" vertical-offset="1167" max-vertical-offset="1853">
@@ -1493,7 +1575,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="21" selection-start="110" selection-end="110" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="1360">
           <folding>
-            <element signature="e#6#54#0" expanded="true" />
+            <element signature="e#6#54#0" expanded="false" />
             <marker date="1411550442599" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1411550442599" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1411550442599" expanded="true" signature="-1:-1" placeholder="..." />
@@ -1660,20 +1742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Model/Source/FilterRendererType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="29" selection-start="115" selection-end="115" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Model/Observer/AddFieldToEditAttribute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="1" selection-start="801" selection-end="801" vertical-scroll-proportion="-4.5945945" vertical-offset="0" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Block/Catalog/Product/Attribute/Edit/Tab/Main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="139" column="28" selection-start="5923" selection-end="5923" vertical-scroll-proportion="-0.65384614" vertical-offset="1955" max-vertical-offset="4148">
@@ -1743,13 +1811,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="656" column="3" selection-start="46406" selection-end="46406" vertical-scroll-proportion="54.923077" vertical-offset="12189" max-vertical-offset="14892">
           <folding>
-            <marker date="1400058216000" expanded="true" signature="39914:39989" placeholder="-- DROP TABL..." />
-            <marker date="1400058216000" expanded="true" signature="40845:40926" placeholder="-- DROP TABL..." />
-            <marker date="1400058216000" expanded="true" signature="41917:41998" placeholder="-- DROP TABL..." />
-            <marker date="1400058216000" expanded="true" signature="42918:43004" placeholder="-- DROP TABL..." />
-            <marker date="1400058216000" expanded="true" signature="43624:43710" placeholder="-- DROP TABL..." />
-            <marker date="1400058216000" expanded="true" signature="44782:44868" placeholder="-- DROP TABL..." />
-            <marker date="1400058216000" expanded="true" signature="45866:46021" placeholder="ALTER TABLE ..." />
+            <marker date="1400058216000" expanded="true" signature="-1:-1" placeholder="-- DROP TABL..." />
+            <marker date="1400058216000" expanded="true" signature="-1:-1" placeholder="-- DROP TABL..." />
+            <marker date="1400058216000" expanded="true" signature="-1:-1" placeholder="-- DROP TABL..." />
+            <marker date="1400058216000" expanded="true" signature="-1:-1" placeholder="-- DROP TABL..." />
+            <marker date="1400058216000" expanded="true" signature="-1:-1" placeholder="-- DROP TABL..." />
+            <marker date="1400058216000" expanded="true" signature="-1:-1" placeholder="-- DROP TABL..." />
+            <marker date="1400058216000" expanded="true" signature="-1:-1" placeholder="ALTER TABLE ..." />
           </folding>
         </state>
       </provider>
@@ -1758,8 +1826,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="3" selection-start="2217" selection-end="2217" vertical-scroll-proportion="-4.6153846" vertical-offset="288" max-vertical-offset="1428">
           <folding>
-            <marker date="1400058216000" expanded="true" signature="4121:4226" placeholder="INSERT INTO ..." />
-            <marker date="1400058216000" expanded="true" signature="4235:4610" placeholder="SELECT `attr..." />
+            <marker date="1400058216000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1400058216000" expanded="true" signature="-1:-1" placeholder="SELECT `attr..." />
           </folding>
         </state>
       </provider>
@@ -1799,10 +1867,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/layout/catalog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="215" column="125" selection-start="12732" selection-end="12732" vertical-scroll-proportion="-11.153846" vertical-offset="3365" max-vertical-offset="7786">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Layer/Filter/Abstract.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="28" selection-start="1755" selection-end="1755" vertical-scroll-proportion="-4.6153846" vertical-offset="543" max-vertical-offset="2363">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Layer/Filter/Attribute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/page.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="26" selection-start="4964" selection-end="4964" vertical-scroll-proportion="0.3489933" vertical-offset="1203" max-vertical-offset="4318">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/template/catalog/layer/view.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="56" selection-start="1499" selection-end="1499" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/etc/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="18" selection-start="2812" selection-end="3057" vertical-scroll-proportion="3.0747826" vertical-offset="0" max-vertical-offset="2057">
+        <state line="70" column="40" selection-start="1693" selection-end="2183" vertical-scroll-proportion="-15.230769" vertical-offset="794" max-vertical-offset="2244">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Model/Observer/FilterObserver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="19" selection-start="1330" selection-end="1330" vertical-scroll-proportion="-15.038462" vertical-offset="170" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Model/Source/FilterRendererType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="47" selection-start="92" selection-end="133" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/catalog/layer/otherfilter.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="116" selection-start="4001" selection-end="4001" vertical-scroll-proportion="0.8003356" vertical-offset="713" max-vertical-offset="1717">
+          <folding>
+            <element signature="n#style#0;n#a#1;n#li#0;n#ol#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#1;n#li#0;n#ol#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#li#0;n#ol#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

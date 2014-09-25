@@ -53,11 +53,22 @@
                     <add_field_to_from_edit_attribute_admin>
                         <type>singleton</type>
                         <!--<type>disabled</type>-->
-                        <class>SM_Filter_Model_Observer_AddFieldToEditAttribute</class>
+                        <class>SM_Filter_Model_Observer_FilterObserver</class>
                         <method>addField</method>
                     </add_field_to_from_edit_attribute_admin>
                 </observers>
             </adminhtml_catalog_product_attribute_edit_prepare_form>
+
+            <core_block_abstract_to_html_before>
+                <observers>
+                    <change_template_of_filter_frontend>
+                        <type>singleton</type>
+                        <!--<type>disabled</type>-->
+                        <class>SM_Filter_Model_Observer_FilterObserver</class>
+                        <method>changeFilterTemplate</method>
+                    </change_template_of_filter_frontend>
+                </observers>
+            </core_block_abstract_to_html_before>
         </events>
         <models>
             <filter>
