@@ -71,6 +71,25 @@
             </core_block_abstract_to_html_before>
         </events>
         <models>
+            <!-- rewrite model for filter -->
+            <catalog>
+                <rewrite>
+                    <layer_filter_attribute>SM_Filter_Model_Layer_Filter_Attribute</layer_filter_attribute>
+                </rewrite>
+            </catalog>
+            <catalog>
+                <rewrite>
+                    <layer_filter_item>SM_Filter_Model_Layer_Filter_Item</layer_filter_item>
+                </rewrite>
+            </catalog>
+
+            <catalog_resource>
+                <rewrite>
+                    <layer_filter_attribute>SM_Filter_Model_Resource_Layer_Filter_Attribute</layer_filter_attribute>
+                </rewrite>
+            </catalog_resource>
+
+
             <filter>
                 <class>SM_Filter_Model</class>
                 <resourceModel>filter_mysql4</resourceModel>

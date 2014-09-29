@@ -12,7 +12,7 @@
         $innerClose = '</li>';
     }
 ?>
-<?php echo '<br/>' . $filterFrontendRendererType;?>
+<?php //echo '<br/>' . $filterFrontendRendererType;?>
 <?php if ($filterFrontendRendererType == SM_Filter_Model_Source_FilterRendererType::SELECT_TYPE) : ?>
         <select name="select.filter" onchange="window.location = $j(this).val()"/>
             <?php foreach ($this->getItems() as $_item): ?>
