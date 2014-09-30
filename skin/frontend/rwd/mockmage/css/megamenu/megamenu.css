@@ -102,3 +102,40 @@ for featured slider
 div.featured img{
     width: 100%;
 }
+
+/*
+for filter
+*/
+div.filter-color{
+    height: 30px;
+    width: 40px;
+    border: 1px solid #000000;
+}
+li.filter-hidden{
+    /*border: 2px solid #00ff00;*/
+    display: none;
+}
+div.filter-color{
+    position: relative;
+}
+/*div.filter-color span{*/
+    /*position: absolute;*/
+    /*top: 0px;*/
+    /*left: 100%;*/
+    /*display: none;*/
+/*}*/
+/*div.filter-color:hover span{*/
+    /*display: inline-block;*/
+/*}*/
+div.filter-color{
+    /*float: left;*/
+    display: inline-block;
+}
+li span.color-name, li span.count-color{
+    position: relative;
+    /*margin: auto 0px;*/
+    bottom: 10px;
+}
+li a.color{
+    text-decoration: none;
+}

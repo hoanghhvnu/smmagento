@@ -66,13 +66,12 @@ class SM_Filter_Model_Layer_Filter_Item extends Mage_Catalog_Model_Layer_Filter_
     public function getRemoveUrl()
     {
         $currentFilter = $this->getFilter()->getRequestValue();
-        if ($currentFilter == NULL) {
+        if ($currentFilter == NULL || strpos($currentFilter, '_') == FALSE) {
             $query = array($this->getFilter()->getRequestVar()=>$this->getFilter()->getResetValue());
         } else {
             $currentFilterArr = explode('_', $currentFilter);
             unset($currentFilterArr[array_search($this->getValue(),$currentFilterArr)]);
             $final = implode('_', $currentFilterArr);
-
             $query = array($this->getFilter()->getRequestVar()=>$final);
         }
 
@@ -83,5 +82,13 @@ class SM_Filter_Model_Layer_Filter_Item extends Mage_Catalog_Model_Layer_Filter_
         return Mage::getUrl('*/*/*', $params);
     }
 
-
+    public function isSelected()
+    {
+        $currentFilter = $this->getFilter()->getRequestValue();
+        if ( in_array($this->getValue(), explode('_', $currentFilter)) ) {
+            return TRUE;
+        }
+        return FALSE;
+//        return 'hoang';
+    }
 }
