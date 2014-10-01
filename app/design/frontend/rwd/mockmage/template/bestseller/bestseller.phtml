@@ -4,7 +4,21 @@
  */
 ?>
 <?php
-$productLabelUrl = Mage::getBaseUrl('media') . 'images/productlabel/';
+/**
+ * prepare for show label product
+ */
+$shouldShowLabel = Mage::getStoreConfig('sm_productlabel/sm_productlabel/enable');
+$labelImageAllProducts = array();
+if ($shouldShowLabel) {
+    $productLabelUrl = Mage::getBaseUrl('media') . 'images/productlabel/';
+
+    $productIds = array();
+    foreach ($_products = $this->myBest()->getItems() as $_product){
+        $productIds[] = $_product->getId();
+    }
+    // get label image for all products
+    $labelImageAllProducts = Mage::Helper('productlabel/retrievelabel')->getLabel($productIds);
+} // end if shouldSHowLabel
 ?>
 <!--<h3>Bestseller show here</h3>-->
 <?php if (($_products = $this->myBest()) && $_products->getSize()): ?>
@@ -21,10 +35,9 @@ $productLabelUrl = Mage::getBaseUrl('media') . 'images/productlabel/';
                     <?php $_imgSize = 100; ?>
                     <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($_imgSize); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
                     <!--show image label-->
-<!--                    --><?php //if (Mage::helper('productlabel/retrievelabel')->shouldShowLabel()) : ?>
-                    <?php  if (Mage::getStoreConfig('sm_productlabel/sm_productlabel/enable')) : ?>
-                        <?php $listImage =  Mage::Helper('productlabel/retrievelabel')->getLabel($_product->getId()); ?>
-                        <?php foreach ($listImage as $image) : ?>
+                    <?php  if ($shouldShowLabel) : ?>
+                        <?php $labelImage = $labelImageAllProducts[$_product->getId()]; ?>
+                        <?php foreach ($labelImage as $image) : ?>
                             <img <?php echo "class='" . $image['class'] . "'"; ?>
                                 src="<?php echo $productLabelUrl . $image['imagename'] ?>" alt="">
                         <?php endforeach; ?>

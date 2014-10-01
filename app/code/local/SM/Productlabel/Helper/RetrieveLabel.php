@@ -12,36 +12,34 @@ class SM_Productlabel_Helper_RetrieveLabel
     const BOTTOM_LEFT = 3;
     const BOTTOM_RIGHT = 4;
 
-    public function getLabel($productId = '')
+    public function getLabel($productIds = '')
     {
-        if ($productId && ctype_digit($productId)) {
-            $product = Mage::getModel('catalog/product')
-                ->load($productId)
+        if (! empty($productIds)) {
+            $products = Mage::getModel('catalog/product')
+                ->getCollection()
+                ->addAttributeToSelect('product_label')
+                ->addAttributeToFilter('entity_id', array('in' => $productIds))
             ;
-            if ($listLabelId = $product->getProductLabel()) {
-//                Zend_debug::dump($listLabelId);
-//                $labelIdArr = explode(',', $listLabelId);
-//                foreach ($labelIdArr as $labelId) {
-//
-//                }
-                $arrLabelId = explode(',', $listLabelId);
-                $labelCollection = Mage::getModel('productlabel/productlabel')
-                    ->getCollection()
-                    ->addFieldToFilter('label_id', array('in' => $arrLabelId))
-                ;
-//                var_dump(count($labelCollection));
-                $imageInfo = array();
-                foreach ($labelCollection as $label) {
-                    $imageInfo[] = array(
-                        'imagename' => $label->getImageName(),
-                        'class'  => 'product-label' . ' ' . $this->translatePositionToClassHtml($label->getPosition()),
-                    );
-                } // end foreach $labelCollection
-//                Zend_debug::dump($listImageName);
-                return $imageInfo;
-            } // end if $listLabelID
-        } //end if $productId
-        return FALSE;
+            $productImageInfo = array();
+            foreach ($products as $product) {
+                if ($listLabelId = $product->getProductLabel()) {
+                    $arrLabelId = explode(',', $listLabelId);
+                    $labelCollection = Mage::getModel('productlabel/productlabel')
+                        ->getCollection()
+                        ->addFieldToFilter('label_id', array('in' => $arrLabelId))
+                    ;
+                    $imageInfo = array();
+                    foreach ($labelCollection as $label) {
+                        $imageInfo[] = array(
+                            'imagename' => $label->getImageName(),
+                            'class'  => 'product-label' . ' ' . $this->translatePositionToClassHtml($label->getPosition()),
+                        );
+                    } // end foreach $labelCollection
+                    $productImageInfo[$product->getId()] = $imageInfo;
+                } // end if $listLabelID
+            } // end foreach
+            return $productImageInfo;
+        } //end if $productIds
     } // end method getLabel()
 
     public function getPositionArray()

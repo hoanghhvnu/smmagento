@@ -4,30 +4,37 @@
  */
 ?>
 <?php
-    $productLabelUrl = Mage::getBaseUrl('media') . 'images/productlabel/';
-?>
+/**
+ * prepare for show label product
+ */
+    $shouldShowLabel = Mage::getStoreConfig('sm_productlabel/sm_productlabel/enable');
+    $labelImageAllProducts = array();
+    if ($shouldShowLabel) {
+        $productLabelUrl = Mage::getBaseUrl('media') . 'images/productlabel/';
 
-<!--<hr class="style-eight"/>-->
-<!--<h3>Featured show here</h3>-->
+        $productIds = array();
+        foreach ($_products = $this->getProductCollection()->getItems() as $_product){
+            $productIds[] = $_product->getId();
+        }
+        // get label image for all products
+        $labelImageAllProducts = Mage::Helper('productlabel/retrievelabel')->getLabel($productIds);
+    } // end if shouldSHowLabel
+?>
 <?php if (($_products = $this->getProductCollection()) && $_products->getSize()): ?>
-<!--    --><?php //echo var_dump($_products->getData());die();?>
     <h2 class="subtitle"><?php echo $this->__('Featured Products') ?></h2>
     <?php $_columnCount = $this->getColumnCount(); ?>
 <div class="swiper-container featured">
     <div class="swiper-wrapper">
         <?php $i=0; foreach ($_products->getItems() as $_product): ?>
-
         <div class="swiper-slide">
-
                 <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->escapeHtml($_product->getName()) ?>" class="product-image">
 <!--                    --><?php //$_imgSize = 260; ?>
                     <?php $_imgSize = 150; ?>
                     <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($_imgSize); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
                     <!--show image label-->
-<!--                    --><?php //if (Mage::helper('productlabel/retrievelabel')->shouldShowLabel()) : ?>
-                    <?php  if (Mage::getStoreConfig('sm_productlabel/sm_productlabel/enable')) : ?>
-                        <?php $listImage =  Mage::Helper('productlabel/retrievelabel')->getLabel($_product->getId()); ?>
-                        <?php foreach ($listImage as $image) : ?>
+                    <?php  if ($shouldShowLabel) : ?>
+                        <?php $labelImage = $labelImageAllProducts[$_product->getId()]; ?>
+                        <?php foreach ($labelImage as $image) : ?>
                                  <img <?php echo "class='" . $image['class'] . "'"; ?>
                                      src="<?php echo $productLabelUrl . $image['imagename'] ?>" alt="">
                         <?php endforeach; ?>

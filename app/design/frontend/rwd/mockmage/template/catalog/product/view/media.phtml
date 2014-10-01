@@ -37,7 +37,7 @@
     $_helper = $this->helper('catalog/output');
 ?>
 
-<?php $productLabelUrl = Mage::getBaseUrl('media') . 'images/productlabel/'; ?>
+
 <div class="product-image product-image-zoom">
     <div class="product-image-gallery">
         <img id="image-main"
@@ -46,10 +46,11 @@
              alt="<?php echo $this->escapeHtml($this->getImageLabel()) ?>"
              title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>" />
         <!--show image label-->
-<!--        --><?php //if (Mage::helper('productlabel/retrievelabel')->shouldShowLabel()) : ?>
         <?php  if (Mage::getStoreConfig('sm_productlabel/sm_productlabel/enable')) : ?>
-            <?php $listImage =  Mage::Helper('productlabel/retrievelabel')->getLabel($_product->getId()); ?>
-            <?php foreach ($listImage as $image) : ?>
+            <?php $productLabelUrl = Mage::getBaseUrl('media') . 'images/productlabel/'; ?>
+            <?php $imageLabel =  Mage::Helper('productlabel/retrievelabel')->getLabel($_product->getId()); ?>
+            <?php $imageLabel = $imageLabel[$_product->getId()];?>
+            <?php foreach ($imageLabel as $image) : ?>
                 <img <?php echo "class='" . $image['class'] . "'"; ?>
                     src="<?php echo $productLabelUrl . $image['imagename'] ?>" alt="">
             <?php endforeach; ?>
@@ -97,3 +98,20 @@
 <?php endif; ?>
 
 <?php echo $this->getChildHtml('after'); ?>
+<script>
+//    for zoom
+    $j(function(){
+       $j('.gallary-image.visible').elevateZoom({
+           scrollZoom: true,
+           zoomWindowWidth:400,
+           zoomWindowHeight:400
+       });
+    });
+    $j('.thumb-link').click(function(){
+        $j('.gallary-image.visible').elevateZoom({
+            scrollZoom: true,
+            zoomWindowWidth:400,
+            zoomWindowHeight:400
+        });
+    });
+</script>
