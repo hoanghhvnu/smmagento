@@ -45,12 +45,18 @@ $labelImageAllProducts = array();
 if ($shouldShowLabel) {
     $productLabelUrl = Mage::getBaseUrl('media') . 'images/productlabel/';
 
-    $productIds = array();
+    $productIdLabel = array();
+    echo 'from list.phtml';
     foreach ($_productCollection as $_product){
-        $productIds[] = $_product->getId();
+        $productIdLabel[] = array(
+            'id' => $_product->getId(),
+            'label' => $_product->getProductLabel()
+        );
     }
     // get label image for all products
-    $labelImageAllProducts = Mage::Helper('productlabel/retrievelabel')->getLabel($productIds);
+    if (! empty($productIdLabel)) {
+        $labelImageAllProducts = Mage::Helper('productlabel/retrievelabel')->getLabel($productIdLabel);
+    }
 } // end if shouldSHowLabel
 ?>
 <?php if(!$_productCollection->count()): ?>

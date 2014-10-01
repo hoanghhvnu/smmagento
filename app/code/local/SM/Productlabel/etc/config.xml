@@ -46,6 +46,19 @@
     </adminhtml>
 
     <global>
+        <events>
+            <catalog_product_collection_load_before>
+                <observers>
+                    <add_product_label_to_collection_to_show>
+                        <type>singleton</type>
+                        <!--<type>disabled</type>-->
+                        <class>SM_Productlabel_Model_Observer_ProductLabel</class>
+                        <method>addLabelToCollection</method>
+                    </add_product_label_to_collection_to_show>
+                </observers>
+            </catalog_product_collection_load_before>
+
+        </events>
         <models>
             <productlabel>
                 <class>SM_Productlabel_Model</class>

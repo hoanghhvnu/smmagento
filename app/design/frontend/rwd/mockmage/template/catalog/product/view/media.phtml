@@ -37,7 +37,6 @@
     $_helper = $this->helper('catalog/output');
 ?>
 
-
 <div class="product-image product-image-zoom">
     <div class="product-image-gallery">
         <img id="image-main"
@@ -48,7 +47,13 @@
         <!--show image label-->
         <?php  if (Mage::getStoreConfig('sm_productlabel/sm_productlabel/enable')) : ?>
             <?php $productLabelUrl = Mage::getBaseUrl('media') . 'images/productlabel/'; ?>
-            <?php $imageLabel =  Mage::Helper('productlabel/retrievelabel')->getLabel($_product->getId()); ?>
+            <?php
+                $productIdLabel[] = array(
+                    'id' => $_product->getId(),
+                    'label' => $_product->getProductLabel()
+            );
+            ?>
+            <?php $imageLabel =  Mage::Helper('productlabel/retrievelabel')->getLabel($productIdLabel); ?>
             <?php $imageLabel = $imageLabel[$_product->getId()];?>
             <?php foreach ($imageLabel as $image) : ?>
                 <img <?php echo "class='" . $image['class'] . "'"; ?>
@@ -101,17 +106,19 @@
 <script>
 //    for zoom
     $j(function(){
-       $j('.gallary-image.visible').elevateZoom({
+       $j('#image-main').elevateZoom({
            scrollZoom: true,
            zoomWindowWidth:400,
            zoomWindowHeight:400
        });
     });
     $j('.thumb-link').click(function(){
-        $j('.gallary-image.visible').elevateZoom({
-            scrollZoom: true,
-            zoomWindowWidth:400,
-            zoomWindowHeight:400
-        });
+        var imageId = $j('.gallery-image.visible').attr('id');
+            alert(imageId);
+//            $j('#' + imageId).elevateZoom({
+//                scrollZoom: true,
+//                zoomWindowWidth:400,
+//                zoomWindowHeight:400
+//        });
     });
 </script>

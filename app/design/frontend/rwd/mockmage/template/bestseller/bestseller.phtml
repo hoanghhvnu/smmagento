@@ -12,12 +12,17 @@ $labelImageAllProducts = array();
 if ($shouldShowLabel) {
     $productLabelUrl = Mage::getBaseUrl('media') . 'images/productlabel/';
 
-    $productIds = array();
+    $productIdLabel = array();
     foreach ($_products = $this->myBest()->getItems() as $_product){
-        $productIds[] = $_product->getId();
+        $productIdLabel[] = array(
+            'id' => $_product->getId(),
+            'label' => $_product->getProductLabel()
+        );
     }
     // get label image for all products
-    $labelImageAllProducts = Mage::Helper('productlabel/retrievelabel')->getLabel($productIds);
+    if (! empty($productIdLabel)) {
+        $labelImageAllProducts = Mage::Helper('productlabel/retrievelabel')->getLabel($productIdLabel);
+    }
 } // end if shouldSHowLabel
 ?>
 <!--<h3>Bestseller show here</h3>-->

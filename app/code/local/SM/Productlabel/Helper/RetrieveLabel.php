@@ -12,33 +12,32 @@ class SM_Productlabel_Helper_RetrieveLabel
     const BOTTOM_LEFT = 3;
     const BOTTOM_RIGHT = 4;
 
-    public function getLabel($productIds = '')
+    public function getLabel(array $productIdLabel)
     {
-        if (! empty($productIds)) {
-            $products = Mage::getModel('catalog/product')
-                ->getCollection()
-                ->addAttributeToSelect('product_label')
-                ->addAttributeToFilter('entity_id', array('in' => $productIds))
-            ;
-            $productImageInfo = array();
-            foreach ($products as $product) {
-                if ($listLabelId = $product->getProductLabel()) {
-                    $arrLabelId = explode(',', $listLabelId);
-                    $labelCollection = Mage::getModel('productlabel/productlabel')
-                        ->getCollection()
-                        ->addFieldToFilter('label_id', array('in' => $arrLabelId))
-                    ;
+        if (! empty($productIdLabel)) {
+
+            $labelCollection = Mage::getModel('productlabel/productlabel')->getCollection();
+            $labelInfo = array();
+            foreach ($labelCollection as $label) {
+                $labelInfo[$label->getLabelId()] = array(
+                    'imagename' => $label->getImageName(),
+                    'class'  => 'product-label' . ' ' . $this->translatePositionToClassHtml($label->getPosition()),
+                );
+            }// end foreach
+            $result = array();
+            foreach ($productIdLabel as $product) {
+                $labelIds = explode(',', $product['label']);
+                if (! empty($labelIds)) {
                     $imageInfo = array();
-                    foreach ($labelCollection as $label) {
-                        $imageInfo[] = array(
-                            'imagename' => $label->getImageName(),
-                            'class'  => 'product-label' . ' ' . $this->translatePositionToClassHtml($label->getPosition()),
-                        );
-                    } // end foreach $labelCollection
-                    $productImageInfo[$product->getId()] = $imageInfo;
+                    foreach ($labelIds as $id) {
+                        if (isset($labelInfo[$id])) {
+                            $imageInfo[] = ($labelInfo[$id]);
+                        }
+                    } // end foreach
+                    $result[$product['id']] = $imageInfo;
                 } // end if $listLabelID
             } // end foreach
-            return $productImageInfo;
+            return $result;
         } //end if $productIds
     } // end method getLabel()
 
@@ -71,7 +70,7 @@ class SM_Productlabel_Helper_RetrieveLabel
             foreach ($this->getPositionArray() as $item) {
                 if ($positionCode == $item['value']) {
                     $result = strtolower(preg_replace('/(.)\s([A-Z])/', "$1-$2", $item['label']));
-                    return $result;;
+                    return $result;
                 } // end if
             } // end foreach
         } // end if
