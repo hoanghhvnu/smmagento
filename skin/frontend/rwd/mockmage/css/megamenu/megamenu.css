@@ -100,7 +100,7 @@ div.megacontainer{
 for featured slider
 */
 div.featured img{
-    width: 100%;
+    /*width: 100%;*/
 }
 
 /*
@@ -138,4 +138,32 @@ li span.color-name, li span.count-color{
 }
 li a.color{
     text-decoration: none;
+}
+ img.product-label{
+    position: absolute;
+    width: 30% !important;
+    z-index: 200;
+}
+img.product-label.top-right{
+    /*transform: rotate(45deg);*/
+    top: 0;
+    right: 0;
+}
+ img.product-label.top-left{
+    top: 0;
+    left: 0;
+}
+ img.product-label.bottom-right{
+    /*transform: rotate(180deg);*/
+    bottom: 0;
+    right: 0;
+}
+ img.product-label.bottom-left{
+    position: absolute;
+    z-index: 200;
+    bottom: 0;
+    left: 0;
+}
+a.product-image{
+    position: relative !important;
 }

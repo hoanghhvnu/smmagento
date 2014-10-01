@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+    <productlabelrouter_adminhtml_productlabel_index>
+        <reference name="content">
+            <block type="productlabel/adminhtml_productlabel" name="list.label" />
+        </reference>
+    </productlabelrouter_adminhtml_productlabel_index>
+
+</layout>

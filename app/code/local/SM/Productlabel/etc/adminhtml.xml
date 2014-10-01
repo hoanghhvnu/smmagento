@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <productlabel translate='title' module="slider">
+            <title>Product label</title>
+            <sort_order>310</sort_order>
+            <children>
+                <manage_label translate="title">
+                    <title>Manage label</title>
+                    <sort_order>10</sort_order>
+                    <action>productlabelrouter/adminhtml_productlabel</action>
+                </manage_label>
+                <item3 translate="title">
+                    <title>Config</title>
+                    <sort_order>30</sort_order>
+                    <action>adminhtml/system_config/edit/section/sm_productlabel</action>
+                </item3>
+
+            </children>
+        </productlabel>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <sm_productlabel>
+                                        <title>Product label</title>
+                                    </sm_productlabel>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

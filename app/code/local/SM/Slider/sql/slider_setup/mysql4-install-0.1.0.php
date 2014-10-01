@@ -1,11 +1,6 @@
 <?php
 
 $installer = $this;
-//echo $this->getTable('slider/imageslider');
-//die();
-//$table = $this->getTable('slider/slider');
-//die('ten bang la' . $table);
-
 $installer->startSetup();
 
 $installer->run("

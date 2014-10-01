@@ -7,6 +7,10 @@
  */
 class SM_Filter_Model_Observer_FilterObserver
 {
+    /**
+     * add Field to change type of filter in admin edit tab
+     * @param Varien_Event_Observer $observer
+     */
     public function addField(Varien_Event_Observer $observer)
     {
 //        echo __METHOD__;
@@ -23,20 +27,27 @@ class SM_Filter_Model_Observer_FilterObserver
         );
     } // end method addField()
 
+    /**
+     * Change template file of filter
+     * @param Varien_Event_Observer $observer
+     */
     public function changeFilterTemplate(Varien_Event_Observer $observer)
     {
-        $block = $observer->getBlock();
-        if ($block instanceof Mage_Catalog_Block_Layer_View) {
-            $listChild = $block->getChild();
-            foreach ($listChild as $child) {
-                if  ($child->getType() == 'catalog/layer_filter_attribute'
-                    || $child->getType() == 'catalog/layer_filter_price'
-                ) {
-                    $child->setTemplate('catalog/layer/otherfilter.phtml');
-                }
+        if (Mage::getStoreConfig('sm_filter/sm_filter/enable')) {
+            $block = $observer->getBlock();
+            if ($block instanceof Mage_Catalog_Block_Layer_View) {
+                $listChild = $block->getChild();
+                foreach ($listChild as $child) {
+                    if  ($child->getType() == 'catalog/layer_filter_attribute'
+                        || $child->getType() == 'catalog/layer_filter_price'
+                    ) {
+                        $child->setTemplate('catalog/layer/otherfilter.phtml');
+                    }
 
-            }
-        } // end if
+                }
+            } // end if
+        } // end if enable module
+
     } // end method changeFilterTemplate()
 } // end class
 // end file

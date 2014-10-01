@@ -3,6 +3,9 @@
  * This template show featured product
  */
 ?>
+<?php
+    $productLabelUrl = Mage::getBaseUrl('media') . 'images/productlabel/';
+?>
 
 <!--<hr class="style-eight"/>-->
 <!--<h3>Featured show here</h3>-->
@@ -15,10 +18,20 @@
         <?php $i=0; foreach ($_products->getItems() as $_product): ?>
 
         <div class="swiper-slide">
+
                 <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->escapeHtml($_product->getName()) ?>" class="product-image">
 <!--                    --><?php //$_imgSize = 260; ?>
                     <?php $_imgSize = 150; ?>
                     <img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($_imgSize); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
+                    <!--show image label-->
+<!--                    --><?php //if (Mage::helper('productlabel/retrievelabel')->shouldShowLabel()) : ?>
+                    <?php  if (Mage::getStoreConfig('sm_productlabel/sm_productlabel/enable')) : ?>
+                        <?php $listImage =  Mage::Helper('productlabel/retrievelabel')->getLabel($_product->getId()); ?>
+                        <?php foreach ($listImage as $image) : ?>
+                                 <img <?php echo "class='" . $image['class'] . "'"; ?>
+                                     src="<?php echo $productLabelUrl . $image['imagename'] ?>" alt="">
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                 </a>
                 <h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->escapeHtml($_product->getName()) ?>"><?php echo $this->escapeHtml($_product->getName()) ?></a></h3>
                 <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
