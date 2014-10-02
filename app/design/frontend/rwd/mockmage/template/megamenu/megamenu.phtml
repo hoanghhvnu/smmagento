@@ -2,23 +2,39 @@
     <ul id="megamenu">
         <?php
         $megaItems = $this->getMegaItem();
+
+
         foreach ($megaItems as $item){
             switch($item['type']){
-                case 1:
-                    echo "<li class='category-link' category_id=".$item['value']. ">";
-                    echo $this->createCategoryLink($item['title'],$item['value']);
-                    echo "</li>";
-                    break;
+                case SM_Megamenu_Block_Megamenu::CATEGORY_LINK_TYPE:?>
 
-                case 2:
-                    echo "<li class='custom-link'>";
-                    echo $this->createCustomLink($item['title'],$item['value']);
-                    echo "</li>";
+<!--                    <li class='category-link' category_id= --><?php //echo $item['value'];?><!-- >-->
+                        <?php echo $this->createCategoryLink($item['title'],$item['value']);?>
+<!--                    </li>-->
+                       <?php
                     break;
-                case 3:
-                    echo "<li class='block-link'>";
-                    echo $this->createBlockLink($item['title'],$item['value']);
-                    echo "</li>";
+                case SM_Megamenu_Block_Megamenu::CUSTOM_LINK_TYPE:
+        ?>
+                    <li class='custom-link'>
+                        <a href='<?php echo $item['value']; ?>'>
+                             <?php echo $item['title'];?>
+                        </a>
+                    </li>
+        <?php
+                    break;
+                case SM_Megamenu_Block_Megamenu::BLOCK_LINK_TYPE:
+                    ?>
+
+                    <li class="block-link">
+                        <?php echo $item['title'];?>
+                        <ul>
+                            <li>
+                                <?php echo $this->createBlockLink($item['value']); ?>
+                            </li>
+                        </ul>
+                    </li>
+        <?php
+
                     break;
             }
         } // end foreach
@@ -35,7 +51,7 @@
         $j(function(){
 
             <?php foreach ($pathIds as $id) : ?>
-            $j('li[category_id=<?php echo $id; ?>]').addClass('active-category');
+            $j('li[category-id=<?php echo $id; ?>]').addClass('active-category');
             <?php endforeach; ?>
             /**
              * for Home

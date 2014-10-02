@@ -1,71 +1,65 @@
-
-<style>
-     /*.swiper-slide img{*/
-        /*height: 400px;*/
-    /*}*/
-    .pagination {
-        position: absolute;
-        z-index: 20;
-        left: 10px;
-        bottom: 10px;
-    }
-
-    .swiper-container, .swiper-slide {
-        width: 100%;
-        height: 400px;
-    }
-    p.image-description{
-        position: relative;
-        bottom: 15%;
-        background-color: rgba(0,255,0,0.8);
-        color: black;
-        text-shadow: #808080;
-    }
-</style>
-
-
-<?php $ImageArray = $this->getImagesForSlider();
-    if($ImageArray == NULL){
-        return FALSE;
-    }
-?>
-
-<div class="swiper-container slider">
-    <div class="swiper-wrapper">
-        <?php foreach($ImageArray as $Image) : ?>
-        <div class="swiper-slide">
-            <?php //$path =  Mage::getBaseUrl('media') . DS . 'images' . DS . 'slider' . DS . $Image['imagename'];?>
-            <?php $path =  Mage::getBaseUrl('media') . "images/slider/" .  $Image['imagename'];?>
-            <img src="<?php echo $path ?>" alt="">
-            <p class="image-description"><?php echo $Image['description']; ?></p>
-        </div>
-        <?php endforeach; ?>
-
-    </div>
-    <div class="pagination"></div>
-</div>
-
 <?php
-// get store config for slider
-$AllSliderConfig = Mage::getStoreConfig('sm_slider/sm_slider');
-$AutoPlayTime = isset($AllSliderConfig['autoplay']) ? $AllSliderConfig['autoplay'] : 5000;
-$SpeedAnimation = isset($AllSliderConfig['speedanimate']) ? $AllSliderConfig['speedanimate'] : 300;
-$Mode = isset($AllSliderConfig['mode']) ? $AllSliderConfig['mode'] : 'horizontal';
-$SlidePerView = isset($AllSliderConfig['slideperview']) ? $AllSliderConfig['slideperview'] : 1;
-
-$AdvanceSliderConfig = Mage::getStoreConfig('sm_slider/sm_slider_advance');
-$ExtraOption = isset($AdvanceSliderConfig['extraoption']) ? $AdvanceSliderConfig['extraoption'] : '';
-
+/**
+ * This template show Slider on Home Page of site
+ */
 ?>
-<script>
-    var sliderswipe = new Swiper('.slider',{
-        mode: <?php if(isset($Mode)) echo "'" . $Mode . "'"; ?>,
-        loop: true,
-        pagination: '.pagination',
-        paginationClickable: true,
-        slidesPerView: <?php if(isset($SlidePerView)) echo $SlidePerView; ?>,
-        speed: <?php if(isset($SpeedAnimation)) echo $SpeedAnimation; ?>,
-        autoplay: <?php if(isset($AutoPlayTime)) echo $AutoPlayTime; ?>,
-        <?php  echo $ExtraOption; ?>
-    });
-</script>
+
+<?php $imageArray = $this->getImagesForSlider(); // get all Image infomation for slider?>
+
+<?php if(! empty($imageArray)) : ?>
+    <div class="swiper-container slider">
+        <div class="swiper-wrapper">
+            <?php foreach($imageArray as $image) : ?>
+                <div class="swiper-slide">
+                    <?php $path =  Mage::getBaseUrl('media') . "images/slider/" .  $image['imagename'];?>
+                    <img src="<?php echo $path ?>" alt="">
+                    <p class="image-description"><?php echo $image['description']; ?></p>
+                </div>
+            <?php endforeach; ?>
+        </div>
+        <div class="pagination"></div>
+    </div>
+    <?php
+    // get store config for slider
+
+    $sliderType = Mage::getStoreConfig('sm_slider/sm_slider/type');
+
+    $allSliderConfig = Mage::getStoreConfig('sm_slider/sm_slider');
+    $autoPlayTime    = isset($allSliderConfig['autoplay']) ? $allSliderConfig['autoplay'] : 5000;
+    $speedAnimation  = isset($allSliderConfig['speedanimate']) ? $allSliderConfig['speedanimate'] : 300;
+    $mode            = isset($allSliderConfig['mode']) ? $allSliderConfig['mode'] : 'horizontal';
+    $slidePerView    =  1;
+
+    if ($sliderType == 'activecenter'){
+        $slidePerView = isset($allSliderConfig['slideperview']) ? $allSliderConfig['slideperview'] : 3;
+    }
+
+
+    ?>
+    <script>
+        $j(function(){
+            var containerWidth = $j('.slider.swiper-container').width();
+            var containerHeight = $j('.slider.swiper-container').height();
+//            alert(containerWidth);
+            $j('.slider .swiper-slide img').each(function(){
+                $j(this).width(containerWidth / <?php echo $slidePerView; ?>)
+                        .height(containerHeight)
+                ;
+            })
+        });
+
+        var sliderswipe = new Swiper('.slider',{
+            mode: <?php  echo "'" . $mode . "'"; ?>,
+            loop: true,
+            pagination: '.pagination',
+            paginationClickable: true,
+            <?php if ($sliderType == 'activecenter'){
+                echo 'slidesPerView:' . $slidePerView . ',';
+            }
+            ?>
+            speed: <?php  echo $speedAnimation; ?>,
+            autoplay:  <?php echo $autoPlayTime; ?>,
+            centeredSlides: true
+        });
+    </script>
+<?php endif; ?>

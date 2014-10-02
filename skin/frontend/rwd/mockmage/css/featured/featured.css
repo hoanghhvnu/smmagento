@@ -1,0 +1,10 @@
+
+
+.featured.swiper-container, .featured .swiper-slide {
+    max-width: 100%;
+    height: 360px;
+}
+/*.featured .swiper-wrapper{*/
+    /*width: 100% !important;*/
+    /*height: inherit;*/
+/*}*/

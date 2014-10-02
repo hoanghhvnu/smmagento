@@ -108,6 +108,17 @@
                     </add_massaction>
                 </observers>
             </adminhtml_catalog_product_grid_prepare_massaction>
+
+            <!--<core_block_abstract_prepare_layout_before  >-->
+                <!--<observers>-->
+                    <!--<add_featured_to_home_page>-->
+                        <!--&lt;!&ndash;<type>singleton</type>&ndash;&gt;-->
+                        <!--<type>disabled</type>-->
+                        <!--<class>SM_Featured_Model_Observer_AddBlockFrontend</class>-->
+                        <!--<method>addBlockFeatured</method>-->
+                    <!--</add_featured_to_home_page>-->
+                <!--</observers>-->
+            <!--</core_block_abstract_prepare_layout_before  >-->
         </events>
         <models>
             <featured>

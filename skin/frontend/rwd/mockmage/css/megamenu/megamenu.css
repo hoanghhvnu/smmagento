@@ -16,9 +16,10 @@
     list-style-type: none;
 
 }
+
 #megamenu > li ul > li{
     padding-left: 10px;
-    width: 10em;
+    width: 12em;
     border-top: 1px solid red;
 }
 #megamenu > li {
@@ -60,6 +61,15 @@
     position: absolute;
     /*top: 40;*/
     /*width: 155px;*/
+}
+#megamenu li.has-children{
+    border-right: 5px solid blue;
+}
+#megamenu li.last-child{
+    border-bottom: 2px solid yellowgreen;
+}
+#megamenu li.first-child{
+    border-top: 2px solid yellowgreen;
 }
 #megamenu li ul li ul {
     display: none;
@@ -144,25 +154,19 @@ li a.color{
     width: 30% !important;
     z-index: 200;
 }
-img.product-label.top-right{
+img.product-label.top{
     /*transform: rotate(45deg);*/
     top: 0;
-    right: 0;
 }
- img.product-label.top-left{
-    top: 0;
+ img.product-label.left{
     left: 0;
 }
- img.product-label.bottom-right{
+ img.product-label.right{
     /*transform: rotate(180deg);*/
-    bottom: 0;
     right: 0;
 }
- img.product-label.bottom-left{
-    position: absolute;
-    z-index: 200;
+ img.product-label.bottom{
     bottom: 0;
-    left: 0;
 }
 a.product-image{
     position: relative !important;

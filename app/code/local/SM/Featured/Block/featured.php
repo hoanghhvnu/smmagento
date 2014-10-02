@@ -53,11 +53,15 @@ class SM_Featured_Block_Featured extends Mage_Catalog_Block_Product_New{
 
     public function _prepareLayout()
     {
+//        echo __METHOD__;
         $featuredStatus = Mage::getStoreConfig('sm_featured/sm_featured/enable');
         if($featuredStatus == 1){
-            Mage::app()->getLayout()->getBlock('head')->addItem('skin_css', 'css/slider/lib/idangerous.swiper.css');
-            $this->getLayout()->getBlock('head')->addItem('skin_js', 'js/slider/lib/idangerous.swiper.js');
+            $blockHead = Mage::app()->getLayout()->getBlock('head');
+            $blockHead->addItem('skin_css', 'css/slider/lib/idangerous.swiper.css');
+            $blockHead->addItem('skin_js', 'js/slider/lib/idangerous.swiper.js');
+            $blockHead->addItem('skin_css', 'css/featured/featured.css');
         }
+
 
         return parent::_prepareLayout();
     } // end _prepareLayout()

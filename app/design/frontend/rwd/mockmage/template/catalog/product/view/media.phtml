@@ -36,6 +36,18 @@
     $_product = $this->getProduct();
     $_helper = $this->helper('catalog/output');
 ?>
+<?php
+/**
+ * get Productzoom config
+ */
+$zoomConfig = Mage::getStoreConfig('sm_productzoom/sm_productzoom');
+$zoomEnable = $zoomConfig['enable'];
+//Zend_debug::dump($zoomConfig);
+$thumbnailWidth = ($zoomConfig['thumbnail_width']) ? $zoomConfig['thumbnail_width'] : 75;
+$thumbnailHeight = ($zoomConfig['thumbnail_height']) ? $zoomConfig['thumbnail_height'] : 75;
+?>
+
+
 
 <div class="product-image product-image-zoom">
     <div class="product-image-gallery">
@@ -43,7 +55,13 @@
              class="gallery-image visible"
              src="<?php echo $this->helper('catalog/image')->init($_product, 'image') ?>"
              alt="<?php echo $this->escapeHtml($this->getImageLabel()) ?>"
-             title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>" />
+             title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>"
+             <?php
+                echo ($zoomEnable && $zoomConfig['image_main_width'] && $zoomConfig['image_main_height'])
+                    ? " style='max-height:" . $zoomConfig['image_main_width']
+                    . "; max-height:" . $zoomConfig['image_main_height'] .  "'" : '' ;
+             ?>
+            />
         <!--show image label-->
         <?php  if (Mage::getStoreConfig('sm_productlabel/sm_productlabel/enable')) : ?>
             <?php $productLabelUrl = Mage::getBaseUrl('media') . 'images/productlabel/'; ?>
@@ -93,8 +111,9 @@
         ?>
         <li>
             <a class="thumb-link" href="#" title="<?php echo $this->escapeHtml($_image->getLabel()) ?>" data-image-index="<?php echo $i; ?>">
-                <img src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(75); ?>"
-                     width="75" height="75" alt="<?php echo $this->escapeHtml($_image->getLabel()) ?>" />
+                <img src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(($zoomEnable) ? $thumbnailWidth : 75);//75); ?>"
+                     width="<?php echo ($zoomEnable) ? $thumbnailWidth : 75;?>"
+                     height="<?php echo ($zoomEnable) ? $thumbnailHeight : 75;?>" alt="<?php echo $this->escapeHtml($_image->getLabel()) ?>" />
             </a>
         </li>
     <?php $i++; endforeach; ?>
@@ -103,22 +122,150 @@
 <?php endif; ?>
 
 <?php echo $this->getChildHtml('after'); ?>
+<?php if($zoomEnable) : ?>
 <script>
-//    for zoom
-    $j(function(){
-       $j('#image-main').elevateZoom({
-           scrollZoom: true,
-           zoomWindowWidth:400,
-           zoomWindowHeight:400
-       });
-    });
-    $j('.thumb-link').click(function(){
-        var imageId = $j('.gallery-image.visible').attr('id');
-            alert(imageId);
-//            $j('#' + imageId).elevateZoom({
-//                scrollZoom: true,
-//                zoomWindowWidth:400,
-//                zoomWindowHeight:400
-//        });
-    });
+////    for zoom
+
+// ==============================================
+// PDP - image zoom - needs to be available outside document.ready scope
+// ==============================================
+
+var ProductMediaManager = {
+    IMAGE_ZOOM_THRESHOLD: 20,
+    zoomEnabled: Modernizr.mq("screen and (min-width:768px)"),
+    imageWrapper: null,
+
+    destroyZoom: function() {
+        $j('.zoomContainer').remove();
+        $j('.product-image-gallery .gallery-image').removeData('elevateZoom');
+    },
+
+    createZoom: function(image) {
+        ProductMediaManager.destroyZoom();
+
+        if(!ProductMediaManager.zoomEnabled) { //zoom not enabled
+            return;
+        }
+
+        if(image.length <= 0) { //no image found
+            return;
+        }
+
+        if(image[0].naturalWidth && image[0].naturalHeight) {
+            var widthDiff = image[0].naturalWidth - image.width() - ProductMediaManager.IMAGE_ZOOM_THRESHOLD;
+            var heightDiff = image[0].naturalHeight - image.height() - ProductMediaManager.IMAGE_ZOOM_THRESHOLD;
+
+            if(widthDiff < 0 && heightDiff < 0) {
+                //image not big enough
+
+                image.parents('.product-image').removeClass('zoom-available');
+
+                return;
+            } else {
+                image.parents('.product-image').addClass('zoom-available');
+            }
+        }
+
+        image.elevateZoom({
+            scrollZoom: true,
+            zoomWindowWidth: <?php echo ($zoomEnable && $zoomConfig['box_zoom_width']) ? $zoomConfig['box_zoom_width']: 400?> ,
+//            zoomWindowWidth:400,
+//            zoomWindowHeight:400,
+            zoomWindowHeight: <?php echo ($zoomEnable &&  $zoomConfig['box_zoom_height']) ? $zoomConfig['box_zoom_height']: 400?> ,
+            easing: true
+        });
+    },
+
+    swapImage: function(targetImage) {
+        targetImage = $j(targetImage);
+        targetImage.addClass('gallery-image');
+
+        ProductMediaManager.destroyZoom();
+
+        var imageGallery = $j('.product-image-gallery');
+
+        if(targetImage[0].complete) { //image already loaded -- swap immediately
+
+            imageGallery.find('.gallery-image').removeClass('visible');
+
+            //move target image to correct place, in case it's necessary
+            imageGallery.append(targetImage);
+
+            //reveal new image
+            targetImage.addClass('visible');
+
+            //wire zoom on new image
+            ProductMediaManager.createZoom(targetImage);
+
+        } else { //need to wait for image to load
+
+            //add spinner
+            imageGallery.addClass('loading');
+
+            //move target image to correct place, in case it's necessary
+            imageGallery.append(targetImage);
+
+            //wait until image is loaded
+            imagesLoaded(targetImage, function() {
+                //remove spinner
+                imageGallery.removeClass('loading');
+
+                //hide old image
+                imageGallery.find('.gallery-image').removeClass('visible');
+
+                //reveal new image
+                targetImage.addClass('visible');
+
+                //wire zoom on new image
+                ProductMediaManager.createZoom(targetImage);
+            });
+
+        }
+    },
+
+    wireThumbnails: function() {
+        //trigger image change event on thumbnail click
+        $j('.product-image-thumbs .thumb-link').click(function(e) {
+            e.preventDefault();
+            var jlink = $j(this);
+            var target = $j('#image-' + jlink.data('image-index'));
+
+            ProductMediaManager.swapImage(target);
+        });
+    },
+
+    initZoom: function() {
+        ProductMediaManager.createZoom($j(".no-touch .gallery-image.visible")); //set zoom on first image
+    },
+
+    init: function() {
+        ProductMediaManager.imageWrapper = $j('.product-img-box');
+
+        enquire.register("screen and (min-width:768px)", {
+            match : function() {
+                ProductMediaManager.zoomEnabled = true;
+                ProductMediaManager.initZoom();
+            },
+            unmatch : function() {
+                ProductMediaManager.destroyZoom();
+                ProductMediaManager.zoomEnabled = false;
+            }
+        });
+
+        //resizing the window causes problems with zoom -- reinitialize
+        $j(window).on('delayed-resize', function(e, resizeEvent) {
+            ProductMediaManager.destroyZoom();
+            ProductMediaManager.initZoom();
+        });
+
+        ProductMediaManager.wireThumbnails();
+
+        $j(document).trigger('product-media-loaded', ProductMediaManager);
+    }
+};
+
+$j(document).ready(function() {
+    ProductMediaManager.init();
+});
 </script>
+<?php endif;?>

@@ -13,7 +13,6 @@
     </cms_index_index>
 
     <catalog_category_view>
-
         <reference name="content">
             <block type="featured/featured" name="show.feature.product" before="-">
                 <action method="setTemplate" ifconfig="sm_featured/sm_featured/enable">

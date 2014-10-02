@@ -9,12 +9,13 @@ class SM_Featured_Model_Showhandle{
     public function showHandle($o)
     {
         $handle = $o->getLayout()->getUpdate()->getHandles();
+        Zend_debug::dump($handle);
 //        echo "<pre>";
 //        var_dump( $handle);
 //        echo Mage::helper('core/url')->getCurrentUrl();
 //        echo Mage::registry('current_category')->getId();
 //        Mage::getModel('catalog/layer')->getCurrentCategory()->getId();
-//        die();
+        die();
 //        echo "</pre>";
 //        return true;
         echo __METHOD__;

@@ -3,32 +3,32 @@
  * This template show bestseller product
  */
 ?>
-<?php
-/**
- * prepare for show label product
- */
-$shouldShowLabel = Mage::getStoreConfig('sm_productlabel/sm_productlabel/enable');
-$labelImageAllProducts = array();
-if ($shouldShowLabel) {
-    $productLabelUrl = Mage::getBaseUrl('media') . 'images/productlabel/';
+<?php $_products = $this->myBest(); ?>
 
-    $productIdLabel = array();
-    foreach ($_products = $this->myBest()->getItems() as $_product){
-        $productIdLabel[] = array(
-            'id' => $_product->getId(),
-            'label' => $_product->getProductLabel()
-        );
-    }
-    // get label image for all products
-    if (! empty($productIdLabel)) {
-        $labelImageAllProducts = Mage::Helper('productlabel/retrievelabel')->getLabel($productIdLabel);
-    }
-} // end if shouldSHowLabel
-?>
-<!--<h3>Bestseller show here</h3>-->
-<?php if (($_products = $this->myBest()) && $_products->getSize()): ?>
-<?php //if (($_products = $this->getBestsellerProducts()) && $_products->getSize()): ?>
-<!--    --><?php //echo var_dump($_products->getData());die();?>
+<?php if (($_products) && $_products->getSize()): ?>
+    <?php
+    /**
+     * prepare for show label product
+     */
+    $shouldShowLabel = Mage::getStoreConfig('sm_productlabel/sm_productlabel/enable');
+    $labelImageAllProducts = array();
+    if ($shouldShowLabel) {
+        $productLabelUrl = Mage::getBaseUrl('media') . 'images/productlabel/';
+
+        $productIdLabel = array();
+        foreach ($_products->getItems() as $_product){
+            $productIdLabel[] = array(
+                'id' => $_product->getId(),
+                'label' => $_product->getProductLabel()
+            );
+        }
+        // get label image for all products
+        if (! empty($productIdLabel)) {
+            $labelImageAllProducts = Mage::Helper('productlabel/retrievelabel')->getLabel($productIdLabel);
+        }
+    } // end if shouldSHowLabel
+    ?>
+
     <h2 class="subtitle"><?php echo $this->__('Bestseller Products') ?></h2>
     <?php $_columnCount = $this->getColumnCount(); ?>
 <div class="swiper-container bestseller">

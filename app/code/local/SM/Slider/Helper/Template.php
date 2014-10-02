@@ -8,29 +8,16 @@
 class SM_Slider_Helper_Template{
     public function choose(){
         $sliderType = Mage::getStoreConfig('sm_slider/sm_slider/type');
-//        var_dump($sliderType);
-//        die();
         if($sliderType == ''){
             return FALSE;
         }
         switch($sliderType){
             case 'dynamic' :
-//                $this->mysetTemplate('slider/showslider.phtml');
                 return 'slider/showslider.phtml';
                 break;
             case 'activecenter':
                 return 'slider/centeractiveslider.phtml';
-//                $this->mysetTemplate('slider/centeractiveslider.phtml');
                 break;
-
         }
     } // end choose
-
-    public function mysetTemplate($path){
-//        die('myset');
-        Mage::app()->getLayout()
-            ->getBlock('show.slider')
-            ->setTemplate($path)
-        ;
-    }
 }

@@ -106,10 +106,14 @@ class SM_Bestseller_Block_Bestseller extends Mage_Catalog_Block_Product_New
 
     public function _prepareLayout()
     {
-        $bestsellerStatus = Mage::getStoreConfig('sm_featured/sm_bestseller/enable');
+
+        $bestsellerStatus = Mage::getStoreConfig('sm_bestseller/sm_bestseller/enable');
         if ($bestsellerStatus == 1) {
-            Mage::app()->getLayout()->getBlock('head')->addItem('skin_css', 'css/slider/lib/idangerous.swiper.css');
-            $this->getLayout()->getBlock('head')->addItem('skin_js', 'js/slider/lib/idangerous.swiper.js');
+//            echo __METHOD__;
+            $blockHead = Mage::app()->getLayout()->getBlock('head');
+            $blockHead->addItem('skin_css', 'css/slider/lib/idangerous.swiper.css');
+            $blockHead->addItem('skin_js', 'js/slider/lib/idangerous.swiper.js');
+            $blockHead->addItem('skin_css', 'css/bestseller/bestseller.css');
         }
 
         return parent::_prepareLayout();

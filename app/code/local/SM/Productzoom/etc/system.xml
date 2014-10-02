@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <sm_productzoom>
+        <!--<general>-->
+            <label>Product zoom</label>
+            <!--<tab>slider</tab>-->
+            <tab>mymodule</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>70</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <sm_productzoom translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable translate="label" module="core">
+                            <label>Enabled</label>
+                            <sort_order>4</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enable>
+
+                        <image_main_width >
+                            <label>Image main width</label>
+                            <sort_order>10</sort_order>
+                            <frontend_type>text</frontend_type>
+                            <comment>Max Width of image main, default: 100%</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_main_width>
+
+                        <image_main_height >
+                            <label>Image main height</label>
+                            <sort_order>20</sort_order>
+                            <frontend_type>text</frontend_type>
+                            <comment>Max Height of image main, default: 750px</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </image_main_height>
+
+                        <box_zoom_width >
+                            <label>Box zoom width</label>
+                            <sort_order>30</sort_order>
+                            <frontend_type>text</frontend_type>
+                            <comment>Width of zoom box, default: 400</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </box_zoom_width>
+
+                        <box_zoom_height >
+                            <label>Box zoom height</label>
+                            <sort_order>40</sort_order>
+                            <frontend_type>text</frontend_type>
+                            <comment>Height of zoom box, default: 400</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </box_zoom_height>
+
+                        <thumbnail_width >
+                            <label>Thumbnail width</label>
+                            <sort_order>50</sort_order>
+                            <frontend_type>text</frontend_type>
+                            <comment>Width of thumbnail, default: 75px</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </thumbnail_width>
+
+                        <thumbnail_height >
+                            <label>Thumbnail height</label>
+                            <sort_order>60</sort_order>
+                            <frontend_type>text</frontend_type>
+                            <comment>Height of thumbnail, default: 75px</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </thumbnail_height>
+                    </fields>
+                </sm_productzoom>
+            </groups>
+        </sm_productzoom>
+        <!--</general>-->
+    </sections>
+</config>

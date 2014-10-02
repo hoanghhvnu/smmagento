@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SM_Filter>
+            <version>0.1.0</version>
+        </SM_Filter>
+    </modules>
+
+    for default values
+    <default>
+        <sm_productzoom>
+            <sm_productzoom>
+                <enable>0</enable>
+                <image_main_width>100%</image_main_width>
+                <image_main_height>750px</image_main_height>
+                <box_zoom_width>400</box_zoom_width>
+                <box_zoom_height>400</box_zoom_height>
+                <thumbnail_width>75px</thumbnail_width>
+                <thumbnail_height>75px</thumbnail_height>
+            </sm_productzoom>
+
+        </sm_productzoom>
+    </default>
+</config>

@@ -1,22 +1,24 @@
 <?php
 class SM_Slider_Block_Slider extends Mage_Core_Block_Template
-//class SM_Slider_Block_Slider extends Mage_Page_Block_Html_Head
 {
     public function __construct() {
-//        echo __METHOD__;
         return parent::__construct();
     }
 	public function _prepareLayout()
     {
-        
-//        echo __METHOD__;
         $sliderStatus = Mage::getStoreConfig('sm_slider/sm_slider/show');
-
         if ($sliderStatus == 1) {
             $blockHead = Mage::app()->getLayout()->getBlock('head');
-            Mage::app()->getLayout()->getBlock('head')->addItem('skin_css', 'css/slider/lib/idangerous.swiper.css');
-            $this->getLayout()->getBlock('head')->addItem('skin_js', 'js/slider/lib/idangerous.swiper.js');
-//            $blockHead->addItem('skin_js','js/runslider.js','defer');
+            $blockHead->addItem('skin_css', 'css/slider/lib/idangerous.swiper.css');
+            $blockHead->addItem('skin_js', 'js/slider/lib/idangerous.swiper.js');
+
+            $sliderType = Mage::getStoreConfig('sm_slider/sm_slider/type');
+            if ($sliderType == 'dynamic') {
+                $blockHead->addItem('skin_css', 'css/slider/slider_dynamic.css');
+            } elseif ($sliderType == 'activecenter') {
+                $blockHead->addItem('skin_css', 'css/slider/slider_activecenter.css');
+            }
+
         }
 
 		return parent::_prepareLayout();

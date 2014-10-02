@@ -33,15 +33,15 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </show>
-                        <!--<level translate="label">-->
-                            <!--<label>Level</label>-->
-                            <!--<frontend_type>text</frontend_type>-->
-                            <!--<sort_order>10</sort_order>-->
-                            <!--<comment>Level Subcategory</comment>-->
-                            <!--<show_in_default>1</show_in_default>-->
-                            <!--<show_in_website>1</show_in_website>-->
-                            <!--<show_in_store>1</show_in_store>-->
-                        <!--</level>-->
+                        <level translate="label">
+                            <label>Max category level</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <comment>Leave empty or number 0 (zero) for unlimit</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </level>
                     </fields>
                 </sm_megamenu>
             </groups>

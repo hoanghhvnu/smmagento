@@ -1,16 +1,13 @@
 <?xml version="1.0"?>
 <layout version="0.1.0">
-    <!--<slider_index_index>-->
-    <!--<default>-->
     <cms_index_index>
         <reference name="content">
             <block type="slider/slider" name="show.slider" before="-">
                 <action method="setTemplate" ifconfig="sm_slider/sm_slider/show">
-                    <template helper="slider/template/choose"/>
+                    <!--<template helper="slider/template/choose"/>-->
+                    <template>slider/showslider.phtml</template>
                 </action>
             </block>
         </reference>
-    <!--</slider_index_index>-->
-    <!--</default>-->
     </cms_index_index>
 </layout>

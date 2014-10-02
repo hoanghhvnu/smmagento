@@ -69,7 +69,7 @@ class SM_Productlabel_Helper_RetrieveLabel
         if ($positionCode) {
             foreach ($this->getPositionArray() as $item) {
                 if ($positionCode == $item['value']) {
-                    $result = strtolower(preg_replace('/(.)\s([A-Z])/', "$1-$2", $item['label']));
+                    $result = strtolower(preg_replace('/(.)\s([A-Z])/', "$1 $2", $item['label']));
                     return $result;
                 } // end if
             } // end foreach

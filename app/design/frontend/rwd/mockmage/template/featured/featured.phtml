@@ -3,17 +3,20 @@
  * This template show featured product
  */
 ?>
-<?php
-/**
- * prepare for show label product
- */
+<?php $_products = $this->getProductCollection();?>
+
+<?php if (($_products) && $_products->getSize()): ?>
+    <?php
+    /**
+     * prepare for show label product
+     */
     $shouldShowLabel = Mage::getStoreConfig('sm_productlabel/sm_productlabel/enable');
     $labelImageAllProducts = array();
     if ($shouldShowLabel) {
         $productLabelUrl = Mage::getBaseUrl('media') . 'images/productlabel/';
 
         $productIdLabel = array();
-        foreach ($_products = $this->getProductCollection()->getItems() as $_product){
+        foreach ($_products->getItems() as $_product){
             $productIdLabel[] = array(
                 'id' => $_product->getId(),
                 'label' => $_product->getProductLabel()
@@ -24,8 +27,8 @@
             $labelImageAllProducts = Mage::Helper('productlabel/retrievelabel')->getLabel($productIdLabel);
         }
     } // end if shouldSHowLabel
-?>
-<?php if (($_products = $this->getProductCollection()) && $_products->getSize()): ?>
+    ?>
+
     <h2 class="subtitle"><?php echo $this->__('Featured Products') ?></h2>
     <?php $_columnCount = $this->getColumnCount(); ?>
 <div class="swiper-container featured">
