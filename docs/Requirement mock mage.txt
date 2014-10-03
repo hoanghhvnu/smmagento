@@ -6,7 +6,7 @@ Yêu cầu: Tạo các module thực hiện các chức năng sau
 
 1.	Module Mega Menu
 - Tên module SM_MegaMenu
-- Hiện thị menu dạng mega 
+- Hiện thị menu dạng mega
   (tham khảo http://www.brienlabs.com/wayout-css-menu/fullwidth-theme-customization.html)
 - Cho phép quản lí menu item trong admin, mỗi item có các type  khác nhau (category link, custom link, block link )
 - Cấu hình trong system tối thiểu phải có 

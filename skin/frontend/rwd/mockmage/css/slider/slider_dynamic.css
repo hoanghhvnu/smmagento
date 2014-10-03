@@ -10,10 +10,20 @@
     height: 500px;
 }
 
-div.slider p.image-description{
-    position: absolute;
+
+div.slider p.image-description {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
     bottom: 15%;
-    background-color: rgba(0,255,0,0.8);
-    color: black;
-    text-shadow: #808080;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 10px;
+    position: absolute;
+}
+div.page-header-container{
+    position: absolute !important;
+}
+#header-nav {
+    top:125px !important;
 }

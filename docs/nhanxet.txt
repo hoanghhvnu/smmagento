@@ -1,0 +1,24 @@
+Slider
+Cau hinh position slider
+Text tren anh phai gioi han ky tu, de gon trong 1 div, khong tran tat ca ra slider
+Cấu hình slider,
+    phân trang, khi disable module
+
+// gop y cua anh Phu
+Megamenu
+chua chieu id
+Neu chon nhiều, chọn cha rồi chọn cả con nữa thì không bị lặp,
+hoặc khi click cha clichk cả con, có thể bỏ cone
+Có thể có static block trong category
+
+lay cac config de trong block
+xu ly 2 label cung vi tri khong de len nhau
+chi checkbox multi
+multislect cho gia price
+
+besteller lay tu bang bestseller
+
+Featured set theo khonag time (!important) thu dung trigger
+
+xem truoc megamenu trong admin
+Slider o trang bat ki va vi tri bat ky

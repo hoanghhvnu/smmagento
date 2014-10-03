@@ -14,31 +14,145 @@
                 <sm_featured translate="label">
                     <label>Enable/Disable</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>2000</sort_order>
+                    <sort_order>20</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <enable translate="label" module="core">
-                            <label>Enabled</label>
+                        <enable translate="label">
+                            <label>Enabled Global</label>
                             <sort_order>10</sort_order>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
+
                         </enable>
                     </fields>
                 </sm_featured>
-                <sm_featured_config translate="label">
-                    <label>Config</label>
+
+                <home translate="label">
+                    <label>Home page</label>
                     <frontend_type>text</frontend_type>
-                    <sort_order>3000</sort_order>
+                    <sort_order>40</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
                     <fields>
-                        <featuredquantity translate="label" module="core">
+                        <enable_home translate="label">
+                            <label>Enabled Home page</label>
+                            <comment>Show or not in Home page</comment>
+                            <sort_order>10</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+                        </enable_home>
+                        <home_before_after translate="label">
+                            <label>Before/After</label>
+                            <comment>Before or after other block</comment>
+                            <sort_order>10</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>featured/source_preposition</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <enable_home>
+                                    <value>1</value>
+                                </enable_home>
+                            </depends>
+                        </home_before_after>
+
+                        <home_block_name translate="label">
+                            <label>Block name</label>
+                            <comment>Block name apply</comment>
+                            <sort_order>20</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>featured/source_blocknamehomepage</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <home_before_after separator="|">
+                                    <value>before|after</value>
+                                </home_before_after>
+                                <enable_home>
+                                    <value>1</value>
+                                </enable_home>
+                            </depends>
+                        </home_block_name>
+                    </fields>
+                </home>
+
+                <category translate="label">
+                    <label>Category page</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable_category translate="label">
+                            <label>Enabled Category page</label>
+                            <comment>Show or not in Category page</comment>
+                            <sort_order>10</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+                        </enable_category>
+                        <category_before_after translate="label">
+                            <label>Before/After</label>
+                            <comment>Before or after other block</comment>
+                            <sort_order>10</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>featured/source_preposition</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <enable_category>
+                                    <value>1</value>
+                                </enable_category>
+                            </depends>
+                        </category_before_after>
+
+                        <category_block_name translate="label">
+                            <label>Block name</label>
+                            <comment>Block name apply</comment>
+                            <sort_order>20</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>featured/source_blocknamecategorypage</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <category_before_after separator="|">
+                                    <value>before|after</value>
+                                </category_before_after>
+                                <enable_category>
+                                    <value>1</value>
+                                </enable_category>
+                            </depends>
+                        </category_block_name>
+                    </fields>
+                </category>
+
+                <sm_featured_config translate="label">
+                    <label>Config</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>60</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <featuredquantity translate="label">
                             <label>Product / slide</label>
                             <sort_order>10</sort_order>
                             <frontend_type>text</frontend_type>
@@ -48,7 +162,7 @@
                             <show_in_store>1</show_in_store>
                         </featuredquantity>
 
-                        <!--<slidetype translate="label" module="core">-->
+                        <!--<slidetype translate="label">-->
                             <!--<label>Slide Type</label>-->
                             <!--<sort_order>20</sort_order>-->
                             <!--<frontend_type>select</frontend_type>-->
@@ -69,7 +183,7 @@
                             <show_in_store>1</show_in_store>
                         </limitfeatured>
 
-                        <autoplay translate="label" module="core">
+                        <autoplay translate="label">
                             <label>Autoplay time (in ms)</label>
                             <sort_order>20</sort_order>
                             <frontend_type>text</frontend_type>
@@ -79,7 +193,7 @@
                             <show_in_store>5000</show_in_store>
                         </autoplay>
 
-                        <speedanimate translate="label" module="core">
+                        <speedanimate translate="label">
                             <label>Speed of animation  (in ms)</label>
                             <sort_order>30</sort_order>
                             <frontend_type>text</frontend_type>

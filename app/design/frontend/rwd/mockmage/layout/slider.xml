@@ -2,7 +2,7 @@
 <layout version="0.1.0">
     <cms_index_index>
         <reference name="content">
-            <block type="slider/slider" name="show.slider" before="-">
+            <block type="slider/slider" name="show.slider" before="-" >
                 <action method="setTemplate" ifconfig="sm_slider/sm_slider/show">
                     <!--<template helper="slider/template/choose"/>-->
                     <template>slider/showslider.phtml</template>

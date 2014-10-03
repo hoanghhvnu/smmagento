@@ -5,6 +5,7 @@
 }
 #megamenu {
 
+
     height: 40px;
     position: relative;
     z-index: 9999 !important;
@@ -51,13 +52,17 @@
     left: 0;
     position: absolute;
     top: 40px;
+    ;
     /*width: 155px;*/
+}
+#megamenu li.category-link{
+    opacity: 0.75;
 }
 
 #megamenu li.block-link ul {
     /*background-color: #111;*/
     display: none;
-    left: 100%;
+    left: -321px;
     position: absolute;
     /*top: 40;*/
     /*width: 155px;*/
@@ -98,7 +103,7 @@ div.megacontainer{
 
 .swiper-container.slider {
     position: relative;
-    top: -110px;
+    /*top: -150px;*/
 }
 
 #header a.logo{
@@ -128,15 +133,7 @@ li.filter-hidden{
 div.filter-color{
     position: relative;
 }
-/*div.filter-color span{*/
-    /*position: absolute;*/
-    /*top: 0px;*/
-    /*left: 100%;*/
-    /*display: none;*/
-/*}*/
-/*div.filter-color:hover span{*/
-    /*display: inline-block;*/
-/*}*/
+
 div.filter-color{
     /*float: left;*/
     display: inline-block;
@@ -170,4 +167,70 @@ img.product-label.top{
 }
 a.product-image{
     position: relative !important;
+}
+
+div.page-header-container{
+    position: relative;
+    /*position: absolute;*/
+    z-index: 400;
+    width: 89%;
+    /*background-color: #f1f1f1;*/
+    /*opacity: 0.3;*/
+}
+
+div.top-bar-container{
+    height: 30px;
+    background-color: #d3d3d3;
+}
+div.top-bar-container * {
+    float: left;
+}
+div.top-bar-container .hot-line {
+    display: inline-block;
+    width: 450px;
+    text-align: center;
+    float:left;
+    font-weight: bold;
+}
+div.top-bar-container .function{
+    display: inline-block;
+    float:right;
+}
+div.top-bar-container .function ul li{
+    float: left;
+}
+div.clear-both{
+    clear: both;
+}
+
+div.header-minicart {
+    bottom: 109px;
+    /*position: absolute;*/
+    right: 26px;
+    
+}
+#search_mini_form input{
+    background-color: black;
+}
+
+#search::-moz-placeholder {
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+#header-nav {
+    background-color: #111;
+    position: relative;
+    /*top: 125px;*/
+    z-index: 10;
+}
+div.megamenu-wrapper{
+    display: inline-block;
+    /*float:left;*/
+}
+
+div.search-wrapper{
+    width: 103px;
+    display: inline-block;
+    float:right;
 }

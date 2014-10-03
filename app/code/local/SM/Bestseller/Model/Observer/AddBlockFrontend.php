@@ -7,19 +7,19 @@
  */
 
 /**
- * Use to add Block Featured product to frontend, instead of use xml layout file
- * Class SM_Featured_Model_Observer_AddBlockFrontend
+ * Use to add Block Bestseller product to frontend, instead of use xml layout file
+ * Class SM_Bestseller_Model_Observer_AddBlockFrontend
  */
-class SM_Featured_Model_Observer_AddBlockFrontend
+class SM_Bestseller_Model_Observer_AddBlockFrontend
 {
     const HOME_PAGE_ACTION = 'cms_index_index';
     const CATEGORY_PAGE_ACTION = 'catalog_category_view';
 
-    public function addBlockFeatured(Varien_Event_Observer $observer)
+    public function addBlockBestseller(Varien_Event_Observer $observer)
     {
-        $moduleStatus = Mage::getStoreConfig('sm_featured/sm_featured/enable');
-        $homeStatus = Mage::getStoreConfig('sm_featured/home/enable_home');
-        $categoryStatus = Mage::getStoreConfig('sm_featured/category/enable_category');
+        $moduleStatus = Mage::getStoreConfig('sm_bestseller/sm_bestseller/enable');
+        $homeStatus = Mage::getStoreConfig('sm_bestseller/home/enable_home');
+        $categoryStatus = Mage::getStoreConfig('sm_bestseller/category/enable_category');
         if ($moduleStatus) {
             $action = $observer->getEvent()->getAction();
             $fullActionName = $action->getFullActionName();
@@ -45,7 +45,7 @@ class SM_Featured_Model_Observer_AddBlockFrontend
         $position = '';
         if ($pageAction){
             $group = ($pageAction == self::HOME_PAGE_ACTION) ? 'home' : 'category';
-            $positionConfig = Mage::getStoreConfig('sm_featured/' . $group);
+            $positionConfig = Mage::getStoreConfig('sm_bestseller/' . $group);
 
             if ($positionConfig[$group . '_before_after'] && $positionConfig[$group . '_block_name']) {
                 $position = $positionConfig[$group . '_before_after'] . '="' . $positionConfig[$group . '_block_name'] . '"';
@@ -54,13 +54,13 @@ class SM_Featured_Model_Observer_AddBlockFrontend
 
 
 
-        $featuredXml = '<reference name="content">'
-                    . '<block type="featured/featured"
-                        name="show.featured.product"
-                        template="featured/featured.phtml" '
+        $bestsellerXml = '<reference name="content">'
+                    . '<block type="bestseller/bestseller"
+                        name="show.bestseller.product"
+                        template="bestseller/bestseller.phtml" '
                     . $position .  ' />'
                     . '</reference>';
-        return $featuredXml;
+        return $bestsellerXml;
     } // end method _generateXML
 } // end class
 // end file

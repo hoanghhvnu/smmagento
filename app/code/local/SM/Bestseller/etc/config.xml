@@ -48,16 +48,16 @@
 
     <global>
         <events>
-            <core_block_abstract_to_html_before>
+            <controller_action_layout_generate_blocks_before  >
                 <observers>
-                    <add_bestseller_every_home_page>
-                        <!--<type>singleton</type>-->
-                        <type>disabled</type>
-                        <class>SM_Bestseller_Model_Observer_AddBestsellerBlock</class>
-                        <method>addBestseller</method>
-                    </add_bestseller_every_home_page>
+                    <add_bestseller_to_home_page>
+                        <type>singleton</type>
+                        <!--<type>disabled</type>-->
+                        <class>SM_Bestseller_Model_Observer_AddBlockFrontend</class>
+                        <method>addBlockBestseller</method>
+                    </add_bestseller_to_home_page>
                 </observers>
-            </core_block_abstract_to_html_before>
+            </controller_action_layout_generate_blocks_before  >
         </events>
         <models>
             <bestseller>

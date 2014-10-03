@@ -26,101 +26,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="featured.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/featured.xml">
+      <file leaf-file-name="AddBlockFrontend.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/Model/Observer/AddBlockFrontend.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="3" selection-start="51" selection-end="434" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="510">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bestseller.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/bestseller/bestseller.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="943" selection-end="943" vertical-scroll-proportion="-0.65384614" vertical-offset="459" max-vertical-offset="1802">
+            <state line="52" column="9" selection-start="2074" selection-end="2074" vertical-scroll-proportion="-24.538462" vertical-offset="246" max-vertical-offset="1207">
               <folding>
-                <marker date="1412155287668" expanded="true" signature="1115:4036" placeholder="..." />
-                <marker date="1412155287668" expanded="true" signature="1148:4025" placeholder="..." />
-                <marker date="1412155287668" expanded="true" signature="1254:3843" placeholder="..." />
-                <marker date="1412155287668" expanded="true" signature="1406:2219" placeholder="..." />
-                <marker date="1412155287668" expanded="true" signature="1970:2117" placeholder="..." />
-                <marker date="1412155287668" expanded="true" signature="2628:3824" placeholder="..." />
-                <marker date="1412155287668" expanded="true" signature="3185:3801" placeholder="..." />
-                <marker date="1412155287668" expanded="true" signature="4475:4829" placeholder="..." />
-                <marker date="1412155287668" expanded="true" signature="4527:4818" placeholder="{...}" />
+                <element signature="e#6#86#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Featured.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/Block/Featured.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="0" selection-start="2636" selection-end="2636" vertical-scroll-proportion="-14.923077" vertical-offset="683" max-vertical-offset="1258">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/etc/config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="62" selection-start="3625" selection-end="4203" vertical-scroll-proportion="-18.384615" vertical-offset="1562" max-vertical-offset="3332">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Layout.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Core/Model/Layout.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="490" column="41" selection-start="15169" selection-end="15169" vertical-scroll-proportion="-13.923077" vertical-offset="7577" max-vertical-offset="10710">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AddBlockFrontend.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/Model/Observer/AddBlockFrontend.php">
+        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/Model/Observer/AddBlockFrontend.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="89" selection-end="1064" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="612">
+            <state line="62" column="26" selection-start="2434" selection-end="2434" vertical-scroll-proportion="-15.538462" vertical-offset="650" max-vertical-offset="1207">
+              <folding>
+                <element signature="e#6#86#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlockNameCategoryPage.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/Model/Source/BlockNameCategoryPage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="105" selection-start="642" selection-end="642" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="425">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bestseller.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/Block/Bestseller.php">
+      <file leaf-file-name="Language.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Language.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="30" selection-start="4353" selection-end="4353" vertical-scroll-proportion="-14.269231" vertical-offset="1533" max-vertical-offset="2448">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="442">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/default/css/styles.css">
+      <file leaf-file-name="Frequency.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Frequency.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9715" column="17" selection-start="205708" selection-end="205708" vertical-scroll-proportion="0.0" vertical-offset="164775" max-vertical-offset="165444">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="425">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="media.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/catalog/product/view/media.phtml">
+      <file leaf-file-name="Currency.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Currency.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="268" column="3" selection-start="9694" selection-end="9694" vertical-scroll-proportion="-97.30769" vertical-offset="1635" max-vertical-offset="4352">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="391">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Megamenu.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/code/local/SM/Megamenu/Block/Megamenu.php">
+      <file leaf-file-name="Checktype.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Checktype.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="1818" selection-end="1818" vertical-scroll-proportion="0.23130435" vertical-offset="853" max-vertical-offset="2856">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Allregion.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Allregion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.076923" vertical-offset="106" max-vertical-offset="918">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="8.653846" vertical-offset="225" max-vertical-offset="782">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Locale.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Locale.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
@@ -136,26 +130,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/code/local/SM/Productlabel/Block/Adminhtml/Productlabel/Edit/Tabs.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Productlabel/Block/Adminhtml/Productlabel/Edit/Form.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Productlabel/Block/Adminhtml/Productlabel/Edit.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Productlabel/Block/Adminhtml/Productlabel/Renderer/Imagepreview.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Productlabel/controllers/Adminhtml/ProductlabelController.php" />
-        <option value="$PROJECT_DIR$/app/design/adminhtml/default/mockmage/layout/productlabel.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Productlabel/Block/Adminhtml/Productlabel/Edit/Tab/Form.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Productlabel/sql/productlabel_setup/mysql4-upgrade-0.1.1-0.1.2.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Productlabel/Block/Adminhtml/Productlabel/Grid.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Productlabel/Model/Source/ProductLabelType.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Productlabel/etc/adminhtml.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/etc/adminhtml.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Filter/Model/Observer/FilterObserver.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Productlabel/Model/Observer/ProductLabel.php" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Productlabel/etc/config.xml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/bestseller/bestseller.phtml" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Featured/Model/Showhandle.php" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/local.xml" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/catalog/product/list.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/bestseller.xml" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Productzoom/etc/adminhtml.xml" />
         <option value="$PROJECT_DIR$/app/etc/modules/SM_Productzoom.xml" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Productlabel/Helper/RetrieveLabel.php" />
@@ -163,39 +140,56 @@
         <option value="$PROJECT_DIR$/app/code/local/SM/Productzoom/etc/system.xml" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Filter/etc/system.xml" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Productlabel/etc/system.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/system.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/etc/system.xml" />
         <option value="$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/slider/slider.css" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/slider/centeractiveslider.phtml" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Slider/Helper/Template.php" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/slider.xml" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Slider/Block/Slider.php" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/slider/showslider.phtml" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Slider/etc/system.xml" />
-        <option value="$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/slider/slider_activecenter.css" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Megamenu/etc/system.xml" />
-        <option value="$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/megamenu/megamenu.css" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/megamenu/megamenu.phtml" />
         <option value="$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/bestseller/bestseller.css" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Bestseller/Block/Bestseller.php" />
         <option value="$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/featured/featured.css" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/featured/featured.phtml" />
-        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/featured.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/etc/config.xml" />
-        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/Model/Observer/AddBlockFrontend.php" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Featured/Block/Featured.php" />
         <option value="$PROJECT_DIR$/skin/frontend/rwd/default/css/styles.css" />
         <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/catalog/product/view/media.phtml" />
+        <option value="$PROJECT_DIR$/docs/nhanxet.txt" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/etc/config.xml" />
         <option value="$PROJECT_DIR$/app/code/local/SM/Megamenu/Block/Megamenu.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/page/html/header.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/slider.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/catalogsearch/form.mini.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/megamenu/megamenu.phtml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/slider/showslider.phtml" />
+        <option value="$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/slider/slider_dynamic.css" />
+        <option value="$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/slider/slider_activecenter.css" />
+        <option value="$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/megamenu/megamenu.css" />
+        <option value="$PROJECT_DIR$/docs/Requirement mock mage.txt" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/Model/Source/temp.php" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/featured.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Bestseller/Model/Source/BlockName.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/config.xml" />
+        <option value="$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/bestseller.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/Model/Source/PrePosition.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Bestseller/Model/Source/PrePosition.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/Model/Source/BlockName.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/Model/Source/BlockNameHomePage.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/Model/Source/BlockNameCategoryPage.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/etc/system.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/system.xml" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Bestseller/Model/Source/BlockNameCategoryPage.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Bestseller/Model/Source/BlockNameHomePage.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Featured/Model/Observer/AddBlockFrontend.php" />
+        <option value="$PROJECT_DIR$/app/code/local/SM/Bestseller/Model/Observer/AddBlockFrontend.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1364" />
+    <option name="height" value="736" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -551,7 +545,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="docs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -566,328 +560,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mockmage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mockmage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="featured" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mockmage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="catalog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="product" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mockmage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="catalog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="product" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mockmage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="catalog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mockmage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bestseller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mockmage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rwd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smmagento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="design" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -935,15 +607,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Filter" />
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -970,7 +634,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="options.lastSelected" value="preferences.sourceCode.PHP" />
+    <property name="options.lastSelected" value="editor" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -980,11 +644,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\smmagento\skin\frontend\rwd\mockmage\css\bestseller" />
-      <recent name="C:\xampp\htdocs\smmagento\skin\frontend\rwd\mockmage\css\featured" />
-      <recent name="C:\xampp\htdocs\smmagento\skin\frontend\rwd\mockmage\css\slider" />
-      <recent name="C:\xampp\htdocs\smmagento\app\code\local\SM\Productzoom\etc" />
-      <recent name="C:\xampp\htdocs\smmagento\app\code\local\SM\Productzomo\etc" />
+      <recent name="C:\xampp\htdocs\smmagento\app\code\local\SM\Bestseller\Model\Observer" />
+      <recent name="C:\xampp\htdocs\smmagento\app\code\local\SM\Bestseller\Model\Source" />
+      <recent name="C:\xampp\htdocs\smmagento\app\code\local\SM\Featured\Model\Source" />
+      <recent name="C:\xampp\htdocs\smmagento\app\code\local\SM\Bestseller\Model" />
+      <recent name="C:\xampp\htdocs\smmagento\app\design\frontend\rwd\mockmage\template\catalogsearch" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\smmagento\app\code\local\SM\Productlabel\Block\Adminhtml\Productlabel" />
@@ -1008,6 +672,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9e3b85cd-58ba-47f5-bbdd-7ce15fe1331f" name="Default" comment="" />
@@ -1017,16 +698,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="1" y="1" width="1364" height="736" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33179012" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21669106" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21958457" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -1034,6 +714,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33179012" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1061,308 +742,353 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/design/adminhtml/default/mockmage/layout/megamenu.xml">
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Core/Block/Template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601" />
+        <state line="34" column="50" selection-start="1148" selection-end="1148" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="5797" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/adminhtml/default/mockmage/layout/productlabel.xml">
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Core/Block/Abstract.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="34" selection-start="136" selection-end="136" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="255" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/function list.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1357" selection-end="1393" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="901" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/etc/adminhtml.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="191" selection-end="191" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="765" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Model/Resource/Product/Collection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="528" column="23" selection-start="14750" selection-end="14750" vertical-scroll-proportion="-8.0" vertical-offset="8377" max-vertical-offset="36686" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Productlabel/Block/Adminhtml/Productlabel/Renderer/Imagepreview.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="759" selection-end="759" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="476" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Productlabel/Block/Adminhtml/Productlabel/Grid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1349" selection-end="1349" vertical-scroll-proportion="-4.4615383" vertical-offset="632" max-vertical-offset="2227" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Catalog/Block/Product/List.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="23" selection-start="1617" selection-end="1617" vertical-scroll-proportion="-0.5547826" vertical-offset="863" max-vertical-offset="4318" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Productlabel/Model/Observer/ProductLabel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="260" selection-end="260" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="493" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Productlabel/etc/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="53" selection-start="1685" selection-end="1685" vertical-scroll-proportion="-13.615385" vertical-offset="632" max-vertical-offset="2040" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/page.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="59" selection-start="6041" selection-end="6042" vertical-scroll-proportion="42.215687" vertical-offset="3768" max-vertical-offset="4318" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/default/layout/catalog.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="62" selection-start="5375" selection-end="5375" vertical-scroll-proportion="233.53847" vertical-offset="7772" max-vertical-offset="8347" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/Model/Showhandle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="32" selection-start="257" selection-end="257" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="850" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/catalog/product/list.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1519" selection-end="1519" vertical-scroll-proportion="-7.1923075" vertical-offset="170" max-vertical-offset="3349" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/default/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="617" column="12" selection-start="21603" selection-end="25821" vertical-scroll-proportion="0.0" vertical-offset="10075" max-vertical-offset="12716">
+        <state line="941" column="45" selection-start="24441" selection-end="24474" vertical-scroll-proportion="-14.538462" vertical-offset="15228" max-vertical-offset="24769">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/etc/modules/SM_Productzoom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="10" selection-start="153" selection-end="153" vertical-scroll-proportion="0.1773913" vertical-offset="0" max-vertical-offset="575" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Productlabel/Helper/RetrieveLabel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="76" selection-start="2657" selection-end="2657" vertical-scroll-proportion="-7.076923" vertical-offset="1023" max-vertical-offset="1683" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Productzoom/etc/adminhtml.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="41" selection-start="246" selection-end="246" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="748" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Productzoom/etc/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="38" selection-start="586" selection-end="586" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="493" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Productzoom/etc/system.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="26" selection-start="279" selection-end="279" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="1751" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/etc/system.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="25" selection-start="267" selection-end="267" vertical-scroll-proportion="-3.2692308" vertical-offset="68" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Productlabel/etc/system.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="25" selection-start="280" selection-end="280" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/system.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="215" selection-end="215" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="2839" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/slider.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="53" selection-start="381" selection-end="381" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Slider/Helper/Template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="18" selection-start="437" selection-end="449" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="476" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/local/SM/Slider/Block/Slider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="12" selection-start="547" selection-end="610" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1088" />
+        <state line="1" column="51" selection-start="57" selection-end="57" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="1088" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/slider/showslider.phtml">
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Megamenu/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="28" selection-start="2159" selection-end="2159" vertical-scroll-proportion="-16.23077" vertical-offset="530" max-vertical-offset="1190" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Slider/Model/Slidertype.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Slider/etc/system.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="42" selection-start="3700" selection-end="3700" vertical-scroll-proportion="-12.423077" vertical-offset="935" max-vertical-offset="2244" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/slider/slider_activecenter.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="27" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/Requirement mock mage.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="43" selection-start="570" selection-end="570" vertical-scroll-proportion="-9.52" vertical-offset="0" max-vertical-offset="1343" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/etc/system.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="218" selection-end="218" vertical-scroll-proportion="-0.65384614" vertical-offset="119" max-vertical-offset="1717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Megamenu/etc/system.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="31" selection-start="1497" selection-end="1497" vertical-scroll-proportion="-10.192307" vertical-offset="313" max-vertical-offset="935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/megamenu/megamenu.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="64" selection-start="959" selection-end="959" vertical-scroll-proportion="-12.423077" vertical-offset="85" max-vertical-offset="1326" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/megamenu/megamenu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="38" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.0" vertical-offset="857" max-vertical-offset="3026" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/slider/slider_dynamic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/bestseller/bestseller.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="14" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/featured/featured.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="27" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/featured/featured.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="4639" selection-end="4639" vertical-scroll-proportion="0.0" vertical-offset="1547" max-vertical-offset="1887">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/bestseller.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="31" selection-start="562" selection-end="562" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Filter/Model/Observer/FilterObserver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="66" selection-start="1270" selection-end="1368" vertical-scroll-proportion="-11.115385" vertical-offset="340" max-vertical-offset="986">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/featured.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="3" selection-start="51" selection-end="434" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/Model/Observer/AddBlockFrontend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="89" selection-end="1064" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/etc/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="62" selection-start="3625" selection-end="4203" vertical-scroll-proportion="-18.384615" vertical-offset="1562" max-vertical-offset="3332">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Core/Model/Layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="490" column="41" selection-start="15169" selection-end="15169" vertical-scroll-proportion="-13.923077" vertical-offset="7577" max-vertical-offset="10710">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/bestseller/bestseller.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="943" selection-end="943" vertical-scroll-proportion="-0.65384614" vertical-offset="459" max-vertical-offset="1802">
-          <folding>
-            <marker date="1412155287668" expanded="true" signature="1115:4036" placeholder="..." />
-            <marker date="1412155287668" expanded="true" signature="1148:4025" placeholder="..." />
-            <marker date="1412155287668" expanded="true" signature="1254:3843" placeholder="..." />
-            <marker date="1412155287668" expanded="true" signature="1406:2219" placeholder="..." />
-            <marker date="1412155287668" expanded="true" signature="1970:2117" placeholder="..." />
-            <marker date="1412155287668" expanded="true" signature="2628:3824" placeholder="..." />
-            <marker date="1412155287668" expanded="true" signature="3185:3801" placeholder="..." />
-            <marker date="1412155287668" expanded="true" signature="4475:4829" placeholder="..." />
-            <marker date="1412155287668" expanded="true" signature="4527:4818" placeholder="{...}" />
-          </folding>
-        </state>
+        <state line="5" column="17" selection-start="135" selection-end="135" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="238" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/Block/Featured.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="2636" selection-end="2636" vertical-scroll-proportion="-14.923077" vertical-offset="683" max-vertical-offset="1258">
-          <folding />
-        </state>
+        <state line="63" column="0" selection-start="2636" selection-end="2636" vertical-scroll-proportion="-15.230769" vertical-offset="675" max-vertical-offset="1258" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/Block/Bestseller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="30" selection-start="4353" selection-end="4353" vertical-scroll-proportion="-14.269231" vertical-offset="1533" max-vertical-offset="2448">
+        <state line="112" column="30" selection-start="4353" selection-end="4353" vertical-scroll-proportion="-23.884615" vertical-offset="1843" max-vertical-offset="3212" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Productlabel/Model/Productlabel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Productlabel/Block/Adminhtml/Productlabel/Grid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="81" selection-start="1652" selection-end="1694" vertical-scroll-proportion="0.61764705" vertical-offset="510" max-vertical-offset="2227" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Productlabel/Block/Adminhtml/Productlabel/Edit/Tab/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.44117647" vertical-offset="255" max-vertical-offset="1190" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Productlabel/controllers/Adminhtml/ProductlabelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="84" selection-start="3320" selection-end="3320" vertical-scroll-proportion="0.26124567" vertical-offset="1649" max-vertical-offset="3456" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Megamenu/controllers/Adminhtml/MegamenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="78" selection-start="2269" selection-end="2269" vertical-scroll-proportion="1.5384616" vertical-offset="1440" max-vertical-offset="3980" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Productlabel/Block/Adminhtml/Productlabel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/page/html/header.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="37" selection-start="2956" selection-end="2977" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="3009">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/default/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/page/html/top.links.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9715" column="17" selection-start="205708" selection-end="205708" vertical-scroll-proportion="0.0" vertical-offset="164775" max-vertical-offset="165444">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604">
+          <folding>
+            <marker date="1400058218000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/page/html/topmenu.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604">
+          <folding>
+            <marker date="1400058218000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1400058218000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/page/html/wrapper.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/catalog/product/view/media.phtml">
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/base/default/template/catalogsearch/form.mini.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="268" column="3" selection-start="9694" selection-end="9694" vertical-scroll-proportion="-97.30769" vertical-offset="1635" max-vertical-offset="4352">
+        <state line="35" column="28" selection-start="1851" selection-end="1851" vertical-scroll-proportion="0.42123893" vertical-offset="0" max-vertical-offset="565">
+          <folding>
+            <marker date="1400058218000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1400058218000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1400058218000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/catalogsearch/form.mini.phtml.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="110" selection-start="1993" selection-end="2014" vertical-scroll-proportion="0.64705884" vertical-offset="289" max-vertical-offset="867">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/code/local/SM/Megamenu/Block/Megamenu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="0" selection-start="1818" selection-end="1818" vertical-scroll-proportion="0.23130435" vertical-offset="853" max-vertical-offset="2856">
+        <state line="130" column="35" selection-start="5159" selection-end="5159" vertical-scroll-proportion="2.5674741" vertical-offset="726" max-vertical-offset="2907">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/megamenu/megamenu.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="29" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.8235294" vertical-offset="85" max-vertical-offset="1326">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/template/slider/showslider.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="0" selection-start="2401" selection-end="2401" vertical-scroll-proportion="0.8235294" vertical-offset="595" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/slider/slider_activecenter.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="34" selection-start="946" selection-end="946" vertical-scroll-proportion="0.79635763" vertical-offset="386" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/slider/slider_dynamic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="19" selection-start="515" selection-end="515" vertical-scroll-proportion="0.787307" vertical-offset="0" max-vertical-offset="583">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/Requirement mock mage.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="43" selection-start="378" selection-end="569" vertical-scroll-proportion="0.4265233" vertical-offset="0" max-vertical-offset="1343">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin/frontend/rwd/mockmage/css/megamenu/megamenu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="174" column="17" selection-start="2864" selection-end="2864" vertical-scroll-proportion="5.073756" vertical-offset="0" max-vertical-offset="4114">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/Model/FeaturedType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Yesno.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="5.8846154" vertical-offset="153" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Website.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Yesnocustom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/featured.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="508" selection-end="529" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/etc/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="12" selection-start="3621" selection-end="4132" vertical-scroll-proportion="-12.5" vertical-offset="1562" max-vertical-offset="3332">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="44" selection-start="1407" selection-end="1407" vertical-scroll-proportion="-7.0384617" vertical-offset="752" max-vertical-offset="2057">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/slider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="70" selection-start="174" selection-end="174" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/design/frontend/rwd/mockmage/layout/bestseller.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="108" selection-start="699" selection-end="716" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="527">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/Model/Source/BlockNameCategoryPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="109" selection-start="644" selection-end="644" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/Model/Source/BlockNameHomePage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="48" selection-start="135" selection-end="135" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/etc/system.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="16" selection-start="1424" selection-end="7414" vertical-scroll-proportion="-9.153846" vertical-offset="340" max-vertical-offset="3655">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/etc/system.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="52" selection-start="6669" selection-end="6669" vertical-scroll-proportion="-28.615385" vertical-offset="1483" max-vertical-offset="4777">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/Model/Source/PrePosition.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="12" selection-start="208" selection-end="283" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/Model/Source/BlockNameHomePage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="50" selection-start="578" selection-end="583" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/Model/Source/PrePosition.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="87" selection-start="285" selection-end="285" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Featured/Model/Observer/AddBlockFrontend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="9" selection-start="2074" selection-end="2074" vertical-scroll-proportion="-24.538462" vertical-offset="246" max-vertical-offset="1207">
+          <folding>
+            <element signature="e#6#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/Model/Observer/AddBlockFrontend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="26" selection-start="2434" selection-end="2434" vertical-scroll-proportion="-15.538462" vertical-offset="650" max-vertical-offset="1207">
+          <folding>
+            <element signature="e#6#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/local/SM/Bestseller/Model/Source/BlockNameCategoryPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="105" selection-start="642" selection-end="642" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Currency.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Locale.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Language.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Frequency.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="583">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Allregion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.076923" vertical-offset="106" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="8.653846" vertical-offset="225" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/code/core/Mage/Adminhtml/Model/System/Config/Source/Checktype.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
           <folding />
         </state>
       </provider>

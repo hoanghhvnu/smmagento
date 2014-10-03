@@ -109,16 +109,16 @@
                 </observers>
             </adminhtml_catalog_product_grid_prepare_massaction>
 
-            <!--<core_block_abstract_prepare_layout_before  >-->
-                <!--<observers>-->
-                    <!--<add_featured_to_home_page>-->
-                        <!--&lt;!&ndash;<type>singleton</type>&ndash;&gt;-->
+            <controller_action_layout_generate_blocks_before  >
+                <observers>
+                    <add_featured_to_home_page>
+                        <type>singleton</type>
                         <!--<type>disabled</type>-->
-                        <!--<class>SM_Featured_Model_Observer_AddBlockFrontend</class>-->
-                        <!--<method>addBlockFeatured</method>-->
-                    <!--</add_featured_to_home_page>-->
-                <!--</observers>-->
-            <!--</core_block_abstract_prepare_layout_before  >-->
+                        <class>SM_Featured_Model_Observer_AddBlockFrontend</class>
+                        <method>addBlockFeatured</method>
+                    </add_featured_to_home_page>
+                </observers>
+            </controller_action_layout_generate_blocks_before  >
         </events>
         <models>
             <featured>

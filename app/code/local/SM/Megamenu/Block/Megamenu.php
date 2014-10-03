@@ -77,13 +77,16 @@ class SM_Megamenu_Block_Megamenu extends Mage_Core_Block_Template
         $currentDepth = 0;
         $result = '';
         $categoryRootId = trim($categoryRootId);
+
         if ($categoryRootId != '' && ctype_digit($categoryRootId)){
             $rootCategory = Mage::getModel('catalog/category')->load($categoryRootId);
             $rootPath = $rootCategory->getPath();
+
             if ($rootPath != '') {
                 $result .= '<li class="category-link" category-id=' . $categoryRootId . '>';
                 $result .=  '<a href="' . Mage::getBaseUrl() . $rootCategory->getUrlPath() . '">'
                         .  $rootCategory->getName() . '</a>';
+
                 if ( (is_null($maxDepth) || ($currentDepth < $maxDepth) ) && $rootCategory->hasChildren()) {
                     $currentDepth++;
                     $childrenCollection = Mage::getModel('catalog/category')
