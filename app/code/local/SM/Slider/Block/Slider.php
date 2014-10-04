@@ -1,6 +1,8 @@
 <?php
 class SM_Slider_Block_Slider extends Mage_Core_Block_Template
 {
+    protected $_sliderClass;
+
     public function __construct() {
         return parent::__construct();
     }
@@ -26,34 +28,78 @@ class SM_Slider_Block_Slider extends Mage_Core_Block_Template
 
 
     /**
-     * show only one slider, so must choose one to show
-     * @return False if not config or not valid
+     * get id should be shown
+     *
      * @return int id if it's valid
      */
     public function getActiveSliderId() {
-        $activeSliderId = Mage::getStoreConfig('sm_slider/sm_slider/active_slider');
-        if ($activeSliderId == NULL || ! ctype_digit($activeSliderId)) {
-            return FALSE;
-        } // end if
-        return $activeSliderId;
+        $arrSliderIdForRequestHandle = $this->getSliderByPage();
+        $arrSliderId = $arrSliderIdForRequestHandle;
+        if ( ! empty($arrSliderId)) {
+            $sliderId = '';
+            if (count($arrSliderId) == 1) {
+                $sliderId = $arrSliderId[0];
+            } elseif (count($arrSliderId) > 1) {
+                $beforeSessionId = Mage::registry('showed_slider_id_key');
+                if (is_null($beforeSessionId) ) {
+                    Mage::register('showed_slider_id_key', 0);
+                    $sliderId = $arrSliderId[0];
+                } else {
+                    Mage::unregister('showed_slider_id_key');
+                    Mage::register('showed_slider_id_key', $beforeSessionId + 1);
+                    $sliderId = $arrSliderId[$beforeSessionId + 1];
+                    if ( ($beforeSessionId + 1) == (count($arrSliderId) - 1) ) {
+                        Mage::unregister('showed_slider_id_key');
+                    } // end if unregister
+                } // end if is_null
+            } // end if assign slider id
+            $this->_sliderClass = 'slider' . $sliderId;
+            return $sliderId;
+        } // end if empty
     } // end method getActiveSliderId()
 
     /**
      * get Array image for slider will be show
      * @return array
      */
-    public function getImagesForSlider() {
+    public function getImagesForSlider()
+    {
         $sliderId = $this->getActiveSliderId();
-        if ($sliderId == NULL) {
-            return FALSE;
-        }
-        $imageCollection = Mage::getModel('slider/imageslider')
-            ->getCollection()
-            ->addFieldToFilter('slider_id',array('eq'=> $sliderId))
-            ->setOrder('sortorder','ASC');
-        ;
-        return $imageCollection;
+        if ($sliderId) {
+            $imageCollection = Mage::getModel('slider/imageslider')
+                ->getCollection()
+                ->addFieldToFilter('slider_id',array('eq'=> $sliderId))
+                ->setOrder('sortorder','ASC');
+            ;
+            return $imageCollection;
+        } // end if
     } // end method getSliderInfo
 
+    /**
+     * get all slider id which should be showed in request handle
+     * @return array of ids
+     */
+    public function getSliderByPage()
+    {
+        $arrCurrentHandle = $this->getLayout()->getUpdate()->getHandles();
+        $sliders = Mage::getModel('slider/slider')
+            ->getCollection()
+            ->addFieldToSelect('slider_id')
+            ->addFieldToFilter('status', array('eq' => 1))
+            ->addFieldToFilter('handle', array('in' => $arrCurrentHandle))
+        ;
+        if ($sliders->count() > 0) {
+            $arrId = array();
+            foreach ($sliders as $slider) {
+                $arrId[] = $slider->getSliderId();
+            }
+            return $arrId;
+        } // end if getCount
+    } // end method getSlider
+
+    public function getSliderClass()
+    {
+        return $this->_sliderClass;
+    }
 } // end class
 // end file

@@ -9,19 +9,43 @@ class SM_Slider_Block_Adminhtml_Slider_Edit_Tab_Form extends Mage_Adminhtml_Bloc
       $this->setForm($form);
       $fieldset = $form->addFieldset('slider_form', array('legend'=>Mage::helper('slider')->__('Item information')));
      
-      $fieldset->addField('title', 'text', array(
+      $title = $fieldset->addField('title', 'text', array(
           'label'     => Mage::helper('slider')->__('Title'),
           'class'     => 'required-entry',
           'required'  => true,
           'name'      => 'title',
       ));
 
-//      $fieldset->addField('type', 'text', array(
-//          'label'     => Mage::helper('slider')->__('Type'),
-//          'name'      => 'type',
-//      ));
+      $handle = $fieldset->addField('handle', 'multiselect', array(
+          'label'     => Mage::helper('slider')->__('Apply page'),
+          'name'      => 'handle',
+          'class'     => 'require-entry',
 
-      $fieldset->addField('status', 'select', array(
+          'require'   => true,
+          'values'   => Mage::getModel('slider/source_somehandle')->toOptionArray()
+      ));
+
+      $sliderType = Mage::getModel('slider/slidertype')->toOptionArray();
+      array_unshift($sliderType, array('value'=>'', 'label'=>''));
+      $typeShow = $fieldset->addField('type_show', 'select', array(
+          'label'     => Mage::helper('slider')->__('Type show'),
+          'name'      => 'type_show',
+          'values'   => $sliderType,
+      ));
+
+      $beforeAfter = $fieldset->addField('before_after', 'select', array(
+          'label'     => Mage::helper('slider')->__('Position'),
+          'name'      => 'before_after',
+          'values'   => Mage::getModel('slider/source_preposition')->toOptionArray()
+      ));
+
+      $blockName = $fieldset->addField('block_name', 'select', array(
+          'label'     => Mage::helper('slider')->__('Block name'),
+          'name'      => 'block_name',
+          'values'   => Mage::getModel('slider/source_blockname')->toOptionArray()
+      ));
+
+      $status = $fieldset->addField('status', 'select', array(
           'label'     => Mage::helper('slider')->__('Status'),
           'name'      => 'status',
           'values'    => array(
@@ -45,6 +69,24 @@ class SM_Slider_Block_Adminhtml_Slider_Edit_Tab_Form extends Mage_Adminhtml_Bloc
       } elseif ( Mage::registry('slider_data') ) {
           $form->setValues(Mage::registry('slider_data')->getData());
       }
+
+      $this->setForm($form);
+      $this->setChild('form_after', $this->getLayout()->createBlock('adminhtml/widget_form_element_dependence')
+              ->addFieldMap($title->getHtmlId(), $title->getName())
+              ->addFieldMap($handle->getHtmlId(), $handle->getName())
+              ->addFieldMap($typeShow->getHtmlId(), $typeShow->getName())
+              ->addFieldMap($beforeAfter->getHtmlId(), $beforeAfter->getName())
+              ->addFieldMap($blockName->getHtmlId(), $blockName->getName())
+              ->addFieldMap($status->getHtmlId(), $status->getName())
+
+
+              ->addFieldDependence(
+                  $blockName->getName(),
+                  $beforeAfter->getName(),
+                  array('before', 'after')
+              )
+      );
+
       return parent::_prepareForm();
   }
 

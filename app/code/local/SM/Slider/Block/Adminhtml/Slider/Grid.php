@@ -34,12 +34,31 @@ class SM_Slider_Block_Adminhtml_Slider_Grid extends Mage_Adminhtml_Block_Widget_
           'align'     =>'left',
           'index'     => 'title',
       ));
+      $this->addColumn('handle', array(
+          'header'    => Mage::helper('slider')->__('Apply page'),
+          'align'     =>'left',
+          'index'     => 'handle',
+      ));
 
-//      $this->addColumn('type', array(
-//          'header'    => Mage::helper('slider')->__('Type'),
-//          'align'     =>'left',
-//          'index'     => 'type',
-//      ));
+      $this->addColumn('type_show', array(
+          'header'    => Mage::helper('slider')->__('Type show'),
+          'align'     =>'left',
+          'index'     => 'type_show',
+      ));
+
+      $this->addColumn('before_after', array(
+          'header'    => Mage::helper('slider')->__('Position'),
+          'align'     =>'left',
+          'index'     => 'before_after',
+      ));
+
+      $this->addColumn('block_name', array(
+          'header'    => Mage::helper('slider')->__('Block name'),
+          'align'     =>'left',
+          'index'     => 'block_name',
+      ));
+
+
 
       $this->addColumn('status', array(
           'header'    => Mage::helper('slider')->__('Status'),

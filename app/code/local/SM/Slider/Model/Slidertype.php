@@ -12,4 +12,11 @@ class SM_Slider_Model_Slidertype{
             array('value' => 'activecenter', 'label' => Mage::helper('slider')->__('Active Center'))
         );
     }
+
+    public function toArray(){
+        return array(
+            array('dynamic' => Mage::helper('slider')->__('Dynamic')),
+            array('activecenter' => Mage::helper('slider')->__('Active Center'))
+        );
+    }
 }

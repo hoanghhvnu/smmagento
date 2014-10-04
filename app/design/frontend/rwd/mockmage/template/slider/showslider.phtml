@@ -7,7 +7,8 @@
 <?php $imageArray = $this->getImagesForSlider(); // get all Image infomation for slider?>
 
 <?php if(! empty($imageArray)) : ?>
-    <div class="swiper-container slider">
+<!--    <div class="swiper-container slider">-->
+    <div class="swiper-container slider <?php echo $this->getSliderClass(); ?>">
         <div class="swiper-wrapper">
             <?php foreach($imageArray as $image) : ?>
                 <div class="swiper-slide">
@@ -48,7 +49,7 @@
             })
         });
 
-        var sliderswipe = new Swiper('.slider',{
+        var sliderswipe = new Swiper(".<?php echo $this->getSliderClass(); ?>",{
             mode: <?php  echo "'" . $mode . "'"; ?>,
             loop: true,
             pagination: '.pagination',

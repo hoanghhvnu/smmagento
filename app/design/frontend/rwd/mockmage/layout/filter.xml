@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <layout version="0.1.0">
-    <filterrouter_index_index>
-        <reference name='content'>
-            <block type="core/template" name="filter.show" template="filter/filter.phtml"/>
-        </reference>
-    </filterrouter_index_index>
+    <!--<filterrouter_index_index>-->
+        <!--<reference name='content'>-->
+            <!--<block type="core/template" name="filter.show" template="filter/filter.phtml"/>-->
+        <!--</reference>-->
+    <!--</filterrouter_index_index>-->
 </layout>

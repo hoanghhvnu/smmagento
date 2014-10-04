@@ -83,7 +83,13 @@ class SM_Slider_Adminhtml_SliderController extends Mage_Adminhtml_Controller_act
 	  			
 	  			
 			$model = Mage::getModel('slider/slider');
-			$model->setData($data)
+
+            /**
+             * convert array to string for handle
+             */
+            $data['handle'] = implode(',', $data['handle']);
+
+            $model->setData($data)
 				->setId($this->getRequest()->getParam('id'));
 			
 			try {
