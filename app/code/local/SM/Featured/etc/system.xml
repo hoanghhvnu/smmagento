@@ -87,7 +87,7 @@
                         </home_block_name>
                         <home_block_name_other>
                             <label>Block name specify</label>
-                            <comment>This field will apply to above field. Notice: slider block have name follow: "slider.$id", example "slider.2" is slider have id = 2</comment>
+                            <comment>This field will apply to above field. Notice: slider block have name follow: "show.slider.$id", example "show.slider.2" is slider have id = 2</comment>
                             <sort_order>30</sort_order>
                             <frontend_type>text</frontend_type>
 

@@ -48,7 +48,12 @@ class SM_Bestseller_Model_Observer_AddBlockFrontend
             $positionConfig = Mage::getStoreConfig('sm_bestseller/' . $group);
 
             if ($positionConfig[$group . '_before_after'] && $positionConfig[$group . '_block_name']) {
-                $position = $positionConfig[$group . '_before_after'] . '="' . $positionConfig[$group . '_block_name'] . '"';
+                $position = $positionConfig[$group . '_before_after'] . '="';
+                if ($positionConfig[$group . '_block_name'] == 'custom'){
+                    $position .= $positionConfig[$group . '_block_name_other'] . '"';
+                } else {
+                    $position .= $positionConfig[$group . '_block_name'] . '"';
+                } // end if = custom
             }
         }
 

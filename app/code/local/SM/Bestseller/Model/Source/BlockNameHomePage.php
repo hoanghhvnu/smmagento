@@ -13,7 +13,8 @@ class SM_Bestseller_Model_Source_BlockNameHomePage
             array('value' => '-', 'label' => Mage::helper('adminhtml')->__('All other') ),
             array('value' => 'show.featured.product', 'label' => Mage::helper('adminhtml')->__('Featured Block') ),
 //            array('value' => 'show.bestseller.product', 'label' => Mage::helper('adminhtml')->__('Bestseller Block') ),
-            array('value' => 'show.slider', 'label' => Mage::helper('adminhtml')->__('Slider') ),
+//            array('value' => 'show.slider', 'label' => Mage::helper('adminhtml')->__('Slider') ),
+            array('value' => 'custom', 'label' => Mage::helper('adminhtml')->__('Other') ),
         );
     }
 } // end class

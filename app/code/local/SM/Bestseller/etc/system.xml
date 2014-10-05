@@ -86,6 +86,27 @@
                                 </enable_home>
                             </depends>
                         </home_block_name>
+                        <home_block_name_other>
+                            <label>Block name specify</label>
+                            <comment>This field will apply to above field. Notice: slider block have name follow: "show.slider.$id", example "show.slider.2" is slider have id = 2</comment>
+                            <sort_order>30</sort_order>
+                            <frontend_type>text</frontend_type>
+
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <home_before_after separator="|">
+                                    <value>before|after</value>
+                                </home_before_after>
+                                <enable_home>
+                                    <value>1</value>
+                                </enable_home>
+                                <home_block_name>
+                                    <value>custom</value>
+                                </home_block_name>
+                            </depends>
+                        </home_block_name_other>
                     </fields>
                 </home>
 
@@ -142,6 +163,27 @@
                                 </enable_category>
                             </depends>
                         </category_block_name>
+                        <category_block_name_other>
+                            <label>Block name specify</label>
+                            <comment>This field will apply to above field. Notice: slider block have name follow: "show.slider.$id", example "show.slider.2" is slider have id = 2</comment>
+                            <sort_order>30</sort_order>
+                            <frontend_type>text</frontend_type>
+
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <category_before_after separator="|">
+                                    <value>before|after</value>
+                                </category_before_after>
+                                <enable_category>
+                                    <value>1</value>
+                                </enable_category>
+                                <category_block_name>
+                                    <value>custom</value>
+                                </category_block_name>
+                            </depends>
+                        </category_block_name_other>
                     </fields>
                 </category>
 
