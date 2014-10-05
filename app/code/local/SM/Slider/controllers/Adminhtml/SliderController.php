@@ -53,6 +53,8 @@ class SM_Slider_Adminhtml_SliderController extends Mage_Adminhtml_Controller_act
  
 	public function saveAction() {
 		if ($data = $this->getRequest()->getPost()) {
+            Zend_debug::dump($data);
+
 			
 			if(isset($_FILES['filename']['name']) && $_FILES['filename']['name'] != '') {
 				try {	
@@ -88,6 +90,13 @@ class SM_Slider_Adminhtml_SliderController extends Mage_Adminhtml_Controller_act
              * convert array to string for handle
              */
             $data['handle'] = implode(',', $data['handle']);
+            /**
+             * Handle if block name is specify, not in listed
+             */
+            if ($data['block_name'] == 'other'){
+                $data['block_name'] = $data['block_name_other'];
+                unset($data['block_name_other']);
+            }
 
             $model->setData($data)
 				->setId($this->getRequest()->getParam('id'));

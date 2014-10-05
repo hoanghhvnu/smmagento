@@ -45,6 +45,11 @@ class SM_Slider_Block_Adminhtml_Slider_Edit_Tab_Form extends Mage_Adminhtml_Bloc
           'values'   => Mage::getModel('slider/source_blockname')->toOptionArray()
       ));
 
+      $blockNameOther = $fieldset->addField('block_name_other', 'text', array(
+          'label'     => Mage::helper('slider')->__('Block name other'),
+          'name'      => 'block_name_other',
+      ));
+
       $status = $fieldset->addField('status', 'select', array(
           'label'     => Mage::helper('slider')->__('Status'),
           'name'      => 'status',
@@ -77,13 +82,20 @@ class SM_Slider_Block_Adminhtml_Slider_Edit_Tab_Form extends Mage_Adminhtml_Bloc
               ->addFieldMap($typeShow->getHtmlId(), $typeShow->getName())
               ->addFieldMap($beforeAfter->getHtmlId(), $beforeAfter->getName())
               ->addFieldMap($blockName->getHtmlId(), $blockName->getName())
+              ->addFieldMap($blockNameOther->getHtmlId(), $blockNameOther->getName())
               ->addFieldMap($status->getHtmlId(), $status->getName())
+
 
 
               ->addFieldDependence(
                   $blockName->getName(),
                   $beforeAfter->getName(),
                   array('before', 'after')
+              )
+              ->addFieldDependence(
+                  $blockNameOther->getName(),
+                  $blockName->getName(),
+                  'other'
               )
       );
 
