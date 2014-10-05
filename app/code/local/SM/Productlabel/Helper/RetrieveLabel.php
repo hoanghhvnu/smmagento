@@ -20,21 +20,59 @@ class SM_Productlabel_Helper_RetrieveLabel
             $labelInfo = array();
             foreach ($labelCollection as $label) {
                 $labelInfo[$label->getLabelId()] = array(
-                    'imagename' => $label->getImageName(),
-                    'class'  => 'product-label' . ' ' . $this->translatePositionToClassHtml($label->getPosition()),
-                );
+                        'imagename' => $label->getImageName(),
+                        'class'  => 'product-label' . ' ' . $this->translatePositionToClassHtml($label->getPosition()),
+                        'position' => $label->getPosition(),
+                    )
+                ;
             }// end foreach
             $result = array();
             foreach ($productIdLabel as $product) {
-                $labelIds = explode(',', $product['label']);
+                $productId = $product['id'];
+                $labels = $product['label'];
+                $labelIds = explode(',', $labels);
                 if (! empty($labelIds)) {
+                    $exisPosition = array();
                     $imageInfo = array();
                     foreach ($labelIds as $id) {
                         if (isset($labelInfo[$id])) {
-                            $imageInfo[] = ($labelInfo[$id]);
+                            // check if position is exis then ignore this label
+//                            Zend_debug::dump($exisPosition);
+                            $flag = TRUE;
+                            switch ($labelInfo[$id]['position']) {
+                                case self::TOP_LEFT :
+                                    if (is_null($exisPosition['top-left']) ){
+                                        $exisPosition['top-left'] = TRUE;
+                                        break;
+                                    } else {
+                                        $flag = FALSE;
+                                    }
+                                case self::TOP_RIGHT :
+                                    if (is_null($exisPosition['top-right']) ){
+                                        $exisPosition['top-right'] = TRUE;
+                                        break;
+                                    } else {
+                                        $flag = FALSE;
+                                    }
+                                case self::BOTTOM_LEFT :
+                                    if (is_null($exisPosition['bottom-left']) ){
+                                        $exisPosition['bottom-left'] = TRUE;
+                                        break;
+                                    } else {
+                                        $flag = FALSE;
+                                    }
+                                case self::BOTTOM_RIGHT :
+                                    if (is_null($exisPosition['bottom-right']) ){
+                                        $exisPosition['bottom-right'] = TRUE;
+                                        break;
+                                    } else {
+                                        $flag = FALSE;
+                                    }
+                            }
+                            if ($flag) $imageInfo[] = $labelInfo[$id];
                         }
                     } // end foreach
-                    $result[$product['id']] = $imageInfo;
+                    $result[$productId] = $imageInfo;
                 } // end if $listLabelID
             } // end foreach
             return $result;
