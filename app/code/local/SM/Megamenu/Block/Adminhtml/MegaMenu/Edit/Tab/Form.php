@@ -20,29 +20,9 @@ class SM_Megamenu_Block_Adminhtml_Megamenu_Edit_Tab_Form extends Mage_Adminhtml_
       $type = $fieldset->addField('type', 'select', array(
           'label'     => Mage::helper('megamenu')->__('Type'),
           'name'      => 'type',
-          'values'    => array(
-              array(
-                  'value'     => 1,
-                  'label'     => Mage::helper('megamenu')->__('Category link'),
-              ),
-
-              array(
-                  'value'     => 2,
-                  'label'     => Mage::helper('megamenu')->__('Custom link'),
-              ),
-
-              array(
-                  'value'     => 3,
-                  'label'     => Mage::helper('megamenu')->__('Block link'),
-              ),
-          ),
+          'values'    => Mage::getModel('megamenu/megaitemtype')->getOptionArray(),
       ));
 
-//      $fieldset->addField('filename', 'file', array(
-//          'label'     => Mage::helper('megamenu')->__('File'),
-//          'required'  => false,
-//          'name'      => 'filename',
-//	  ));
       $link = $fieldset->addField('link', 'text', array(
           'label'     => Mage::helper('megamenu')->__('Link'),
           'name'      => 'link',
@@ -69,17 +49,7 @@ class SM_Megamenu_Block_Adminhtml_Megamenu_Edit_Tab_Form extends Mage_Adminhtml_
       $status = $fieldset->addField('status', 'select', array(
           'label'     => Mage::helper('megamenu')->__('Status'),
           'name'      => 'status',
-          'values'    => array(
-              array(
-                  'value'     => 1,
-                  'label'     => Mage::helper('megamenu')->__('Enabled'),
-              ),
-
-              array(
-                  'value'     => 2,
-                  'label'     => Mage::helper('megamenu')->__('Disabled'),
-              ),
-          ),
+          'values'    => Mage::getModel('megamenu/status')->getOptionArray(),
       ));
 
       $position = $fieldset->addField('position', 'text', array(
@@ -178,9 +148,7 @@ class SM_Megamenu_Block_Adminhtml_Megamenu_Edit_Tab_Form extends Mage_Adminhtml_
 
     private function getCategory($levelSign = ""){
        $sequenceList = $this->getRawCategory();
-        if( empty($sequenceList)){
-            echo "Have no category!";
-        } else{
+        if( !empty($sequenceList)){
             // get Category level 0, ParentId = 0;
             $strLevel = "";
             $sortedList = $this->recursive(0, $sequenceList, $strLevel);
@@ -251,76 +219,76 @@ class SM_Megamenu_Block_Adminhtml_Megamenu_Edit_Tab_Form extends Mage_Adminhtml_
         } // end if ! empty()
     } // end recursive()
 
-    protected function getSortedCategory(){
-        $categories = Mage::getModel('catalog/category')
-            ->getCollection()
-            ->addAttributeToSelect('name')
-//            ->addAttributeToFilter('level',array('eq'=>'0'))
-//            ->setOrder('position','ASC')
-        ;
-//        Zend_Debug::dump($listCateLevel0->getData());
-        $sortedArray = array();
-        foreach($categories as $category){
-            $sortedArray[] = array(
-                'label' => $this->_separateCategoryLevelSign($category->getLevel(), '--')
-                         . $category->getName(),
-                'value' => $category->getId(),
-            );
-            $this->listSortedChildreenByCategoryId($category->getId());
-//            if($cate->hasChildren()){
-////                Zend_Debug::dump($cate->getAllChildren());
-//                $childrenArray = explode(',',$cate->getChildren());
-////                Zend_Debug::dump($childrenArray);
+//    protected function getSortedCategory(){
+//        $categories = Mage::getModel('catalog/category')
+//            ->getCollection()
+//            ->addAttributeToSelect('name')
+////            ->addAttributeToFilter('level',array('eq'=>'0'))
+////            ->setOrder('position','ASC')
+//        ;
+////        Zend_Debug::dump($listCateLevel0->getData());
+//        $sortedArray = array();
+//        foreach($categories as $category){
+//            $sortedArray[] = array(
+//                'label' => $this->_separateCategoryLevelSign($category->getLevel(), '--')
+//                         . $category->getName(),
+//                'value' => $category->getId(),
+//            );
+//            $this->listSortedChildreenByCategoryId($category->getId());
+////            if($cate->hasChildren()){
+//////                Zend_Debug::dump($cate->getAllChildren());
+////                $childrenArray = explode(',',$cate->getChildren());
+//////                Zend_Debug::dump($childrenArray);
+////
+////                foreach ($childrenArray as $cateChild){
+////                    $sortedArray[] = array(
+////                        'label' => $this->_separateCategoryLevelSign($cateChild->getLevel(), '--')
+////                                .  $cateChild->getName(),
+////                        'value' => $cateChild->getId(),
+////                    );
+////                } // end foreach
+//////                Zend_debug::dump($childrenArray);
+////            }
+//        }// end forearch
+//        Zend_Debug::dump($sortedArray);
+//    } // end method getSortedCategory
 //
-//                foreach ($childrenArray as $cateChild){
-//                    $sortedArray[] = array(
-//                        'label' => $this->_separateCategoryLevelSign($cateChild->getLevel(), '--')
-//                                .  $cateChild->getName(),
-//                        'value' => $cateChild->getId(),
-//                    );
-//                } // end foreach
+//    public function listSortedChildrenByCategoryId($categoryId = ''){
+//        if (! $categoryId  || ! ctype_digit($categoryId)) {
+//            return FALSE;
+//        }
+//        $cateAndChilden = array();
+//        $cate = Mage::getModel('catalog/category')
+//            ->load($categoryId)
+//        ;
+//        $cateAndChilden[] = array(
+//            'label' => $this->_separateCategoryLevelSign($cate->getLevel(), '--')
+//                    . $cate->getName(),
+//            'value' => $cate->getId(),
+//        );
+//        if($cate->hasChildren()){
+//            $childrenArray = explode(',',$cate->getChildren());
+//            foreach ($childrenArray as $cateChild){
+//                $cateAndChilden[] = array(
+//                    'label' => $this->_separateCategoryLevelSign($cateChild->getLevel(), '--')
+//                        .  $cateChild->getName(),
+//                    'value' => $cateChild->getId(),
+//                );
+//                $this->listSortedChildrenByCategoryId($cateChild->getId());
+//            } // end foreach
 ////                Zend_debug::dump($childrenArray);
+//        } // end if
+//        return $cateAndChilden;
+//    } // end method listSortedChildernByCategoryId
+//
+//    protected function _separateCategoryLevelSign($level='',$sign = '' ){
+//        $result = '';
+//        if ($level && ctype_digit($level) && ($level > 0) && $sign ) {
+//            for ($i = 0; $i < $level; $i++) {
+//                $result .= $sign;
 //            }
-        }// end forearch
-        Zend_Debug::dump($sortedArray);
-    } // end method getSortedCategory
-
-    public function listSortedChildrenByCategoryId($categoryId = ''){
-        if (! $categoryId  || ! ctype_digit($categoryId)) {
-            return FALSE;
-        }
-        $cateAndChilden = array();
-        $cate = Mage::getModel('catalog/category')
-            ->load($categoryId)
-        ;
-        $cateAndChilden[] = array(
-            'label' => $this->_separateCategoryLevelSign($cate->getLevel(), '--')
-                    . $cate->getName(),
-            'value' => $cate->getId(),
-        );
-        if($cate->hasChildren()){
-            $childrenArray = explode(',',$cate->getChildren());
-            foreach ($childrenArray as $cateChild){
-                $cateAndChilden[] = array(
-                    'label' => $this->_separateCategoryLevelSign($cateChild->getLevel(), '--')
-                        .  $cateChild->getName(),
-                    'value' => $cateChild->getId(),
-                );
-                $this->listSortedChildrenByCategoryId($cateChild->getId());
-            } // end foreach
-//                Zend_debug::dump($childrenArray);
-        } // end if
-        return $cateAndChilden;
-    } // end method listSortedChildernByCategoryId
-
-    protected function _separateCategoryLevelSign($level='',$sign = '' ){
-        $result = '';
-        if ($level && ctype_digit($level) && ($level > 0) && $sign ) {
-            for ($i = 0; $i < $level; $i++) {
-                $result .= $sign;
-            }
-        }
-        return $result;
-    } // end method separateLevelSign
+//        }
+//        return $result;
+//    } // end method separateLevelSign
 } // end class
 // end file

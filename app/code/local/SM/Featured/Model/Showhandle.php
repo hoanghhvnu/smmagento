@@ -15,6 +15,7 @@ class SM_Featured_Model_Showhandle{
 //        echo Mage::helper('core/url')->getCurrentUrl();
 //        echo Mage::registry('current_category')->getId();
 //        Mage::getModel('catalog/layer')->getCurrentCategory()->getId();
+        return;
         die();
 //        echo "</pre>";
 //        return true;

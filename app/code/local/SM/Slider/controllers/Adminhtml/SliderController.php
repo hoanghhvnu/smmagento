@@ -89,7 +89,7 @@ class SM_Slider_Adminhtml_SliderController extends Mage_Adminhtml_Controller_act
             /**
              * convert array to string for handle
              */
-            $data['handle'] = implode(',', $data['handle']);
+//            $data['handle'] = implode(',', $data['handle']);
             /**
              * Handle if block name is specify, not in listed
              */

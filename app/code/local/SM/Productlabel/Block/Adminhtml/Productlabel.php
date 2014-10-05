@@ -9,7 +9,7 @@ class SM_Productlabel_Block_Adminhtml_Productlabel extends Mage_Adminhtml_Block_
 //      echo __METHOD__;
       $this->_headerText = Mage::helper('productlabel')->__('Productlabel Manager');
 
-    $this->_addButtonLabel = Mage::helper('productlabel')->__('Add Item');
+    $this->_addButtonLabel = Mage::helper('productlabel')->__('Add label');
     parent::__construct();
   }
 }

@@ -35,6 +35,12 @@
         $slidePerView = isset($allSliderConfig['slideperview']) ? $allSliderConfig['slideperview'] : 3;
     }
 
+//    $config = $this->getSliderConfig();
+//    Zend_debug::dump($config);
+//    foreach ($config as $key => $value) {
+//        echo $key . ':' . $value . ',';
+//    }
+//    die();
 
     ?>
     <script>
@@ -51,6 +57,14 @@
 
         var sliderswipe = new Swiper(".<?php echo $this->getSliderClass(); ?>",{
             mode: <?php  echo "'" . $mode . "'"; ?>,
+<!--            --><?php
+//                $config = $this->getSliderConfig();
+//                Zend_debug::dump($config);
+//                foreach ($config as $key => $value) {
+//                    echo $key . ':' . $value . ',';
+//                }
+//
+//            ?>
             loop: true,
             pagination: '.pagination',
             paginationClickable: true,

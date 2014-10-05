@@ -108,9 +108,7 @@ class SM_Megamenu_Block_Adminhtml_Megamenu_Grid extends Mage_Adminhtml_Block_Wid
                 'is_system' => true,
         ));
 
-		
-		$this->addExportType('*/*/exportCsv', Mage::helper('megamenu')->__('CSV'));
-		$this->addExportType('*/*/exportXml', Mage::helper('megamenu')->__('XML'));
+
 	  
       return parent::_prepareColumns();
   }

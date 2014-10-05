@@ -19,12 +19,7 @@ class SM_Slider_Block_Adminhtml_Slider_Edit_Tabs extends Mage_Adminhtml_Block_Wi
           'label'     => Mage::helper('slider')->__('General'),
           'content'   => $this->getLayout()->createBlock('slider/adminhtml_slider_edit_tab_form')->toHtml(),
       ));
-//      $this->addTab('form_section2', array(
-//          'title'     => Mage::helper('slider')->__('Manage Images'),
-//          'label'     => Mage::helper('slider')->__('Images'),
-//          'content'   => $this->getLayout()->createBlock('slider/adminhtml_imageslider_edit_tab_form')->toHtml(),
-//      ));
-     
+
       return parent::_beforeToHtml();
   }
 }

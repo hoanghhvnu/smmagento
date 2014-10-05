@@ -9,7 +9,7 @@ class SM_Slider_Block_Adminhtml_Slider extends Mage_Adminhtml_Block_Widget_Grid_
 //      echo __METHOD__;
       $this->_headerText = Mage::helper('slider')->__('Slider Manager');
 
-    $this->_addButtonLabel = Mage::helper('slider')->__('Add Item');
+    $this->_addButtonLabel = Mage::helper('slider')->__('Add Slider');
     parent::__construct();
   }
 }

@@ -20,8 +20,7 @@ class SM_Slider_Block_Slider extends Mage_Core_Block_Template
             } elseif ($sliderType == 'activecenter') {
                 $blockHead->addItem('skin_css', 'css/slider/slider_activecenter.css');
             }
-
-        }
+        } // end if enable module
 
 		return parent::_prepareLayout();
     } // end _prepareLayout()
@@ -101,5 +100,27 @@ class SM_Slider_Block_Slider extends Mage_Core_Block_Template
     {
         return $this->_sliderClass;
     }
+
+//    public function getSliderConfig()
+//    {
+//        $sliderType = Mage::getStoreConfig('sm_slider/sm_slider/type');
+//
+//        $allSliderConfig = Mage::getStoreConfig('sm_slider/sm_slider');
+//        $autoPlayTime    = isset($allSliderConfig['autoplay']) ? $allSliderConfig['autoplay'] : 5000;
+//        $speedAnimation  = isset($allSliderConfig['speedanimate']) ? $allSliderConfig['speedanimate'] : 300;
+//        $mode            = isset($allSliderConfig['mode']) ? $allSliderConfig['mode'] : 'horizontal';
+//        $slidePerView    =  1;
+//
+//        if ($sliderType == 'activecenter'){
+//            $slidePerView = isset($allSliderConfig['slideperview']) ? $allSliderConfig['slideperview'] : 3;
+//        }
+//
+//        return array(
+//            'autoplay' => $autoPlayTime,
+//            'speed'    => $speedAnimation,
+//            'mode'     => $mode,
+//            'slidesPerView' => $slidePerView,
+//        );
+//    }// end method getSliderConfig
 } // end class
 // end file

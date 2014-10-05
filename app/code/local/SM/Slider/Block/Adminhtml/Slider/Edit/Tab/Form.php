@@ -16,7 +16,7 @@ class SM_Slider_Block_Adminhtml_Slider_Edit_Tab_Form extends Mage_Adminhtml_Bloc
           'name'      => 'title',
       ));
 
-      $handle = $fieldset->addField('handle', 'multiselect', array(
+      $handle = $fieldset->addField('handle', 'select', array(
           'label'     => Mage::helper('slider')->__('Apply page'),
           'name'      => 'handle',
           'class'     => 'require-entry',

@@ -9,7 +9,7 @@ class SM_Slider_Block_Adminhtml_Imageslider extends Mage_Adminhtml_Block_Widget_
 //      echo __METHOD__;
         $this->_headerText = Mage::helper('slider')->__('Image Manager');
 
-        $this->_addButtonLabel = Mage::helper('slider')->__('Add Item');
+        $this->_addButtonLabel = Mage::helper('slider')->__('Add Image');
         parent::__construct();
     }
 }

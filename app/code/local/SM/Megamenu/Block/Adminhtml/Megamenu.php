@@ -9,7 +9,7 @@ class SM_Megamenu_Block_Adminhtml_Megamenu extends Mage_Adminhtml_Block_Widget_G
 //      echo __METHOD__;
       $this->_headerText = Mage::helper('megamenu')->__('Mega menu Manager');
 
-    $this->_addButtonLabel = Mage::helper('megamenu')->__('Add Item');
+    $this->_addButtonLabel = Mage::helper('megamenu')->__('Add Mega item');
     parent::__construct();
   }
 }

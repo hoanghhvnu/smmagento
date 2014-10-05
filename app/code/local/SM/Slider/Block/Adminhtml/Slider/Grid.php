@@ -94,8 +94,7 @@ class SM_Slider_Block_Adminhtml_Slider_Grid extends Mage_Adminhtml_Block_Widget_
         ));
 
 		
-		$this->addExportType('*/*/exportCsv', Mage::helper('slider')->__('CSV'));
-		$this->addExportType('*/*/exportXml', Mage::helper('slider')->__('XML'));
+
 	  
       return parent::_prepareColumns();
   }
