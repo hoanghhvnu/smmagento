@@ -14,6 +14,7 @@ class SM_Featured_Model_Source_BlockNameCategoryPage
 //            array('value' => 'show.featured.product', 'label' => Mage::helper('adminhtml')->__('Featured Block') ),
             array('value' => 'show.bestseller.product', 'label' => Mage::helper('adminhtml')->__('Bestseller Block') ),
             array('value' => 'category.products', 'label' => Mage::helper('adminhtml')->__('Category product list') ),
+            array('value' => 'custom', 'label' => Mage::helper('adminhtml')->__('Other') ),
         );
     }
 } // end class
