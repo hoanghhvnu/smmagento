@@ -29,6 +29,31 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </enable>
+
+                        <enable_multiselect translate="label" module="core">
+                            <label>Enabled multiselect</label>
+                            <sort_order>20</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enable_multiselect>
+
+                        <multiselect translate="label" module="core">
+                            <label>Apply multiselect</label>
+                            <sort_order>30</sort_order>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>filter/source_filterrenderertype</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <enable_multiselect>
+                                    <value>1</value>
+                                </enable_multiselect>
+                            </depends>
+                        </multiselect>
                     </fields>
                 </sm_filter>
             </groups>

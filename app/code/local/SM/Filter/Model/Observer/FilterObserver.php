@@ -13,7 +13,6 @@ class SM_Filter_Model_Observer_FilterObserver
      */
     public function addField(Varien_Event_Observer $observer)
     {
-//        echo __METHOD__;
         $fieldset = $observer->getForm()->getElement('base_fieldset');
         $filterType = Mage::getModel('filter/source_filterrenderertype')->toOptionArray();
         array_unshift($filterType, array('label' => '', 'value' => ''));

@@ -44,6 +44,24 @@ class SM_Filter_Model_Layer_Filter_Attribute extends Mage_Catalog_Model_Layer_Fi
      */
     public function apply(Zend_Controller_Request_Abstract $request, $filterBlock)
     {
+        $typeRenderer = $this->getAttributeModel()->getFilterFrontendRendererType();
+//        echo $typeRenderer;
+        $filterConfig = Mage::getStoreConfig('sm_filter/sm_filter');
+        $arrTypeApplyMultiselect = explode(',', $filterConfig['multiselect']);
+//        echo 'type';
+//        Zend_debug::dump($typeRenderer);
+//        echo 'inarray';
+//        Zend_debug::dump(! in_array($typeRenderer, $arrTypeApplyMultiselect));
+        if (! $filterConfig['enable'] || ! $filterConfig['enable_multiselect']
+        || ! in_array($typeRenderer, $arrTypeApplyMultiselect)) {
+            return parent::apply($request, $filterBlock);
+        }
+//        Zend_debug::dump($filterConfig);
+
+//        die();
+//        echo 'tiep tuc lamf viec';
+//        echo $typeRenderer;
+//        echo __METHOD__;
         $this->_filter = $request->getParam($this->_requestVar);
         if (is_array($this->_filter)) {
             return $this;
